@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-05-11 12:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: boards.cpp:47
+msgid "Form1"
+msgstr ""
+
+#: keda.cpp:113
+msgid "show Grid"
+msgstr ""
+
+#: keda.cpp:115
+msgid "New Project "
+msgstr ""
+
+#: keda.cpp:116
+msgid "Last opened"
+msgstr ""
+
+#: keda.cpp:118
+msgid "EDA and emulation"
+msgstr ""
+
+#: keda.cpp:119
+msgid "PCB and autorouting"
+msgstr ""
+
+#: keda.cpp:120
+msgid "Output"
+msgstr ""
+
+#: keda.cpp:121
+msgid "CNC shape and drilling"
+msgstr ""
+
+#: keda.cpp:122
+msgid "CNC prototyping"
+msgstr ""
+
+#: keda.cpp:124
+msgid "Part composer"
+msgstr ""
+
+#: keda.cpp:125
+msgid "Simulation"
+msgstr ""
+
+#: keda.cpp:126
+msgid "New oscilloscope"
+msgstr ""
+
+#: keda.cpp:127
+msgid "New meter"
+msgstr ""
+
+#: keda.cpp:212
+msgid "Open Location"
+msgstr ""
+
+#: kedaview.cpp:83
+msgid "Could not find a suitable HTML component"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 16
+#: kedawidget.cpp:196 rc.cpp:12
+#, no-c-format
+msgid "KedaWidget"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 95
+#: kedawidget.cpp:197 rc.cpp:15
+#, no-c-format
+msgid "Boards"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 115
+#: kedawidget.cpp:198 rc.cpp:18
+#, no-c-format
+msgid "Part groups"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 135
+#: kedawidget.cpp:199 rc.cpp:21
+#, no-c-format
+msgid "Logical ICs"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 155
+#: kedawidget.cpp:200 rc.cpp:24
+#, no-c-format
+msgid "Linear ICs"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 175
+#: kedawidget.cpp:201 rc.cpp:27
+#, no-c-format
+msgid "Other ICs"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 195
+#: kedawidget.cpp:202 rc.cpp:30
+#, no-c-format
+msgid "OPs"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 215
+#: kedawidget.cpp:203 rc.cpp:33
+#, no-c-format
+msgid "Resistors"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 235
+#: kedawidget.cpp:204 rc.cpp:36
+#, no-c-format
+msgid "Diodes"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 255
+#: kedawidget.cpp:205 rc.cpp:39
+#, no-c-format
+msgid "LEDs"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 275
+#: kedawidget.cpp:206 rc.cpp:42
+#, no-c-format
+msgid "Diacs"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 295
+#: kedawidget.cpp:207 rc.cpp:45
+#, no-c-format
+msgid "Triacs"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 315
+#: kedawidget.cpp:208 rc.cpp:48
+#, no-c-format
+msgid "Transistors"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 335
+#: kedawidget.cpp:209 rc.cpp:51
+#, no-c-format
+msgid "Tyristors"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 355
+#: kedawidget.cpp:210 rc.cpp:54
+#, no-c-format
+msgid "Capacitors"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 375
+#: kedawidget.cpp:211 rc.cpp:57
+#, no-c-format
+msgid "Coils"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 395
+#: kedawidget.cpp:212 rc.cpp:60
+#, no-c-format
+msgid "Connectors"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 415
+#: kedawidget.cpp:213 rc.cpp:63
+#, no-c-format
+msgid "Switches"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 435
+#: kedawidget.cpp:214 rc.cpp:66
+#, no-c-format
+msgid "Power supplys"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 455
+#: kedawidget.cpp:215 rc.cpp:69
+#, no-c-format
+msgid "Heat sinks"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 478
+#: kedawidget.cpp:217 rc.cpp:73
+#, no-c-format
+msgid "Cases"
+msgstr ""
+
+#. i18n: file ./kedawidget.ui line 501
+#: kedawidget.cpp:219 rc.cpp:77
+#, no-c-format
+msgid "Custom"
+msgstr ""
+
+#: main.cpp:30
+msgid "A KDE Application"
+msgstr ""
+
+#: main.cpp:36
+msgid "Document to open"
+msgstr ""
+
+#: main.cpp:42
+msgid "Keda"
+msgstr ""
+
+#: offerselection.cpp:57
+msgid "Offer"
+msgstr ""
+
+#: offerwidget.cpp:87
+msgid "OfferWidget"
+msgstr ""
+
+#: offerwidget.cpp:88
+msgid "..."
+msgstr ""
+
+#: pref.cpp:30
+msgid "Keda Preferences"
+msgstr ""
+
+#: pref.cpp:37
+msgid "First Page"
+msgstr ""
+
+#: pref.cpp:37
+msgid "Page One Options"
+msgstr ""
+
+#: pref.cpp:40
+msgid "Second Page"
+msgstr ""
+
+#: pref.cpp:40
+msgid "Page Two Options"
+msgstr ""
+
+#: pref.cpp:50 pref.cpp:59
+msgid "Add something here"
+msgstr ""
+
+#. i18n: file ./kedaui.rc line 4
+#: rc.cpp:3
+#, no-c-format
+msgid "&Project"
+msgstr ""
+
+#. i18n: file ./kedaui.rc line 8
+#: rc.cpp:6
+#, no-c-format
+msgid "&Work Mode"
+msgstr ""

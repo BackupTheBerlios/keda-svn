@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="resistor_8h" kind="file">
+    <compoundname>resistor.h</compoundname>
+    <includes local="no">qvariant.h</includes>
+    <includes local="no">qwidget.h</includes>
+    <includedby refid="composerview_8cpp" local="yes">/home/bastl/Kdevel/keda/composer/composerview.cpp</includedby>
+    <includedby refid="resistor_8cpp" local="yes">/home/bastl/Kdevel/keda/composer/resistor.cpp</includedby>
+    <includedby refid="resistor_8moc" local="yes">/home/bastl/Kdevel/keda/composer/resistor.moc</includedby>
+    <incdepgraph>
+      <node id="286">
+        <label>qvariant.h</label>
+      </node>
+      <node id="287">
+        <label>qwidget.h</label>
+      </node>
+      <node id="285">
+        <label>/home/bastl/Kdevel/keda/composer/resistor.h</label>
+        <link refid="resistor.h"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classResistor">Resistor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Form<sp/>interface<sp/>generated<sp/>from<sp/>reading<sp/>ui<sp/>file<sp/>&apos;/home/bastl/Kdevel/composer/src/resistor.ui&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created:<sp/>Fr<sp/>Mai<sp/>18<sp/>18:45:19<sp/>2007</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>The<sp/>User<sp/>Interface<sp/>Compiler<sp/>($Id:<sp/>qt/main.cpp<sp/><sp/><sp/>3.3.5<sp/><sp/><sp/>edited<sp/>Aug<sp/>31<sp/>12:13<sp/>$)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RESISTOR_H</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RESISTOR_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qvariant.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qwidget.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QVBoxLayout;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QHBoxLayout;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QGridLayout;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QSpacerItem;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QCheckBox;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QLabel;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QFrame;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KDoubleNumInput;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KComboBox;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KURLRequester;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classResistor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classResistor" kindref="compound">Resistor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classResistor_18ad6bc599c1c2a94cab0940f59706688" kindref="member">Resistor</ref>(<sp/>QWidget*<sp/>parent<sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>=<sp/>0,<sp/>WFlags<sp/>fl<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classResistor_13230942344edf5a000a0cd5ac73ba702" kindref="member">~Resistor</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classResistor_13758abb78fafac30c6d61b2a274c1945" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QCheckBox*<sp/><ref refid="classResistor_13758abb78fafac30c6d61b2a274c1945" kindref="member">checkBox1</ref>;</highlight></codeline>
+<codeline lineno="36" refid="classResistor_1ffcf8e7bfc1a56d26954eb062d22890b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QCheckBox*<sp/><ref refid="classResistor_1ffcf8e7bfc1a56d26954eb062d22890b" kindref="member">checkBox1_2</ref>;</highlight></codeline>
+<codeline lineno="37" refid="classResistor_1128973f53c357e5b31af198edd456214" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1128973f53c357e5b31af198edd456214" kindref="member">textLabel1_2</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classResistor_1137f72c3708c6bd0de00a0e5a69c699b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QFrame*<sp/><ref refid="classResistor_1137f72c3708c6bd0de00a0e5a69c699b" kindref="member">line1</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classResistor_1b60b8844bd3aae6c007ae70e1096ab97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1b60b8844bd3aae6c007ae70e1096ab97" kindref="member">textLabel1_4_4_2</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classResistor_16f28f23f836b83f8355095538f35efd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KDoubleNumInput*<sp/><ref refid="classResistor_16f28f23f836b83f8355095538f35efd2" kindref="member">kDoubleNumInput1_2_2_3</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classResistor_136fd995c1305c9ba573f28b8d2456b26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_136fd995c1305c9ba573f28b8d2456b26" kindref="member">textLabel1_4_3_3</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classResistor_1eb8f69d1230d1fcce558c454cb6f23ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1eb8f69d1230d1fcce558c454cb6f23ec" kindref="member">textLabel1_3</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classResistor_18da5a8fb6ca52804add7911113131930" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_18da5a8fb6ca52804add7911113131930" kindref="member">textLabel1_4_3</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classResistor_1605c117038e3fd0256c5e7a1863b0f39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KDoubleNumInput*<sp/><ref refid="classResistor_1605c117038e3fd0256c5e7a1863b0f39" kindref="member">kDoubleNumInput1_2</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classResistor_1befa3c190a03acd5e5e0d8b687602300" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KDoubleNumInput*<sp/><ref refid="classResistor_1befa3c190a03acd5e5e0d8b687602300" kindref="member">kDoubleNumInput1_2_3_2</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classResistor_1c4685a3a32bd436155356f5110fbcf89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1c4685a3a32bd436155356f5110fbcf89" kindref="member">textLabel1_4_3_2_2</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classResistor_1d4e18fbe8e481a305e15e27ab4a9b2fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KDoubleNumInput*<sp/><ref refid="classResistor_1d4e18fbe8e481a305e15e27ab4a9b2fa" kindref="member">kDoubleNumInput1_2_2_2</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classResistor_135dda349c5b8c6dbd64363d2f494bfe0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_135dda349c5b8c6dbd64363d2f494bfe0" kindref="member">textLabel1_4_3_2_3</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classResistor_158d57a880bcf675f48cb199c80c099d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KComboBox*<sp/><ref refid="classResistor_158d57a880bcf675f48cb199c80c099d7" kindref="member">kComboBox1_2_2</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classResistor_14c67544a1b61d325260cad8e7fef1ec1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_14c67544a1b61d325260cad8e7fef1ec1" kindref="member">textLabel1_4_2_2</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classResistor_116a8c094c62599bd9f915973b6f10920" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_116a8c094c62599bd9f915973b6f10920" kindref="member">textLabel1_4_3_2</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classResistor_101ba1f978c8e08b9e9b0b83c0eb31652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KDoubleNumInput*<sp/><ref refid="classResistor_101ba1f978c8e08b9e9b0b83c0eb31652" kindref="member">kDoubleNumInput1_2_3</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classResistor_133043bedc4341c4afa5e8887ef0605cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_133043bedc4341c4afa5e8887ef0605cb" kindref="member">textLabel1_4_2_3</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classResistor_131bb502a489610855621e36f12d84ece" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_131bb502a489610855621e36f12d84ece" kindref="member">textLabel1_4_4_3</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classResistor_14589ed77410ff800a4170e92a8308fc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KComboBox*<sp/><ref refid="classResistor_14589ed77410ff800a4170e92a8308fc2" kindref="member">kComboBox1</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classResistor_1c0c3252833af084df07ac1cc38f7260e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KURLRequester*<sp/><ref refid="classResistor_1c0c3252833af084df07ac1cc38f7260e" kindref="member">kURLRequester1</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classResistor_1b35d15a548de6e2f82da51573a42970d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1b35d15a548de6e2f82da51573a42970d" kindref="member">textLabel1_4_4</ref>;</highlight></codeline>
+<codeline lineno="58" refid="classResistor_13b4168a110e77a2e5f81cfabb7b6e32a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_13b4168a110e77a2e5f81cfabb7b6e32a" kindref="member">textLabel1_4_3_4</ref>;</highlight></codeline>
+<codeline lineno="59" refid="classResistor_1912cf04a09acb6e3e1d2d9d85a6dfa0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KDoubleNumInput*<sp/><ref refid="classResistor_1912cf04a09acb6e3e1d2d9d85a6dfa0a" kindref="member">kDoubleNumInput1_2_2</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classResistor_1b179b3a77b3f159b9393a3fbb5445f24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KDoubleNumInput*<sp/><ref refid="classResistor_1b179b3a77b3f159b9393a3fbb5445f24" kindref="member">kDoubleNumInput1_2_4</ref>;</highlight></codeline>
+<codeline lineno="61" refid="classResistor_17a0957b1f5a1613a3cfdf4ba70540b79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KDoubleNumInput*<sp/><ref refid="classResistor_17a0957b1f5a1613a3cfdf4ba70540b79" kindref="member">kDoubleNumInput1</ref>;</highlight></codeline>
+<codeline lineno="62" refid="classResistor_1cdad8e45cff78b41e2f24a8ae41c7975" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1cdad8e45cff78b41e2f24a8ae41c7975" kindref="member">textLabel1_4_2</ref>;</highlight></codeline>
+<codeline lineno="63" refid="classResistor_1a5970359eaaefa2cbc0863d538503900" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1a5970359eaaefa2cbc0863d538503900" kindref="member">textLabel1_4_6_2</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classResistor_11e25b50c021907f3ae210afcca2d4a1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_11e25b50c021907f3ae210afcca2d4a1c" kindref="member">textLabel1_4</ref>;</highlight></codeline>
+<codeline lineno="65" refid="classResistor_11671a2e501448b4b1568b77eb64cf336" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_11671a2e501448b4b1568b77eb64cf336" kindref="member">textLabel1_4_5_2</ref>;</highlight></codeline>
+<codeline lineno="66" refid="classResistor_1eda3020ecf830da0b9dbe1baad1007da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1eda3020ecf830da0b9dbe1baad1007da" kindref="member">textLabel1</ref>;</highlight></codeline>
+<codeline lineno="67" refid="classResistor_13fe321d3c6659a5a3747ba784eb9506e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_13fe321d3c6659a5a3747ba784eb9506e" kindref="member">textLabel1_4_5</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classResistor_1fe5af8d88934b635303f290c67eddf11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLabel*<sp/><ref refid="classResistor_1fe5af8d88934b635303f290c67eddf11" kindref="member">textLabel1_4_6</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71" refid="classResistor_11167cf98935e3cceb61cbd92cdbd6320" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/><ref refid="classResistor_11167cf98935e3cceb61cbd92cdbd6320" kindref="member">ResistorLayout</ref>;</highlight></codeline>
+<codeline lineno="72" refid="classResistor_1e03c4c0fa63ca587a74b625d0fb7528b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSpacerItem*<sp/><ref refid="classResistor_1e03c4c0fa63ca587a74b625d0fb7528b" kindref="member">spacer1</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classResistor_11182bf5637039731d24c9b1e622b4179" kindref="member">languageChange</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>RESISTOR_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/bastl/Kdevel/keda/composer/resistor.h"/>
+  </compounddef>
+</doxygen>

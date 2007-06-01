@@ -1,0 +1,134 @@
+/****************************************************************************
+** Keda meta object code from reading C++ file 'keda.h'
+**
+** Created: Thu May 17 20:43:02 2007
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.5   edited Sep 2 14:41 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "keda.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Keda::className() const
+{
+    return "Keda";
+}
+
+QMetaObject *Keda::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Keda( "Keda", &Keda::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Keda::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Keda", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Keda::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Keda", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Keda::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KMainWindow::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "url", &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"load", 1, param_slot_0 };
+    static const QUMethod slot_1 = {"fileNew", 0, 0 };
+    static const QUMethod slot_2 = {"fileOpen", 0, 0 };
+    static const QUMethod slot_3 = {"fileSave", 0, 0 };
+    static const QUMethod slot_4 = {"fileSaveAs", 0, 0 };
+    static const QUMethod slot_5 = {"filePrint", 0, 0 };
+    static const QUMethod slot_6 = {"optionsPreferences", 0, 0 };
+    static const QUParameter param_slot_7[] = {
+	{ "text", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"changeStatusbar", 1, param_slot_7 };
+    static const QUParameter param_slot_8[] = {
+	{ "text", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"changeCaption", 1, param_slot_8 };
+    static const QMetaData slot_tbl[] = {
+	{ "load(const KURL&)", &slot_0, QMetaData::Public },
+	{ "fileNew()", &slot_1, QMetaData::Private },
+	{ "fileOpen()", &slot_2, QMetaData::Private },
+	{ "fileSave()", &slot_3, QMetaData::Private },
+	{ "fileSaveAs()", &slot_4, QMetaData::Private },
+	{ "filePrint()", &slot_5, QMetaData::Private },
+	{ "optionsPreferences()", &slot_6, QMetaData::Private },
+	{ "changeStatusbar(const QString&)", &slot_7, QMetaData::Private },
+	{ "changeCaption(const QString&)", &slot_8, QMetaData::Private }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Keda", parentObject,
+	slot_tbl, 9,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Keda.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Keda::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Keda" ) )
+	return this;
+    return KMainWindow::qt_cast( clname );
+}
+
+bool Keda::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: load((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    case 1: fileNew(); break;
+    case 2: fileOpen(); break;
+    case 3: fileSave(); break;
+    case 4: fileSaveAs(); break;
+    case 5: filePrint(); break;
+    case 6: optionsPreferences(); break;
+    case 7: changeStatusbar((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 8: changeCaption((const QString&)static_QUType_QString.get(_o+1)); break;
+    default:
+	return KMainWindow::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Keda::qt_emit( int _id, QUObject* _o )
+{
+    return KMainWindow::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Keda::qt_property( int id, int f, QVariant* v)
+{
+    return KMainWindow::qt_property( id, f, v);
+}
+
+bool Keda::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

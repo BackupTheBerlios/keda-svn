@@ -1,0 +1,21 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="composer" version="1">
+<MenuBar>
+	<Menu name="part"><text>&amp;Part</text>
+		<Action name="new_action" />
+		<Action name="open_action" />
+		<Separator/>
+		<Action name="save_action" />
+		<Separator/>
+		<Action name="del_action" />
+		<Separator/>
+		<Action name="quit_action" />
+	</Menu>
+</MenuBar>
+<ToolBar noMerge="1" name="mainToolBar" ><text>Main Toolbar</text>
+	<Action name="new_action" />
+	<Action name="open_action" />
+	<Action name="save_action" />
+	<Action name="del_action" />
+</ToolBar>
+</kpartgui>

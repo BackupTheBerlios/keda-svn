@@ -1,0 +1,977 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Transistor</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>Transistor</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>526</width>
+            <height>465</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>526</width>
+            <height>465</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Transistor</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <spacer row="15" column="1" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>310</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLabel" row="2" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2</cstring>
+            </property>
+            <property name="text">
+                <string>Max. current :</string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="2" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="4" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2_2_2</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>&lt;p&gt;The voltage drop of silicon is arround 0.7V, So with a max. current of 10A &lt;b&gt;P&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;tot&lt;/font&gt; is then 7W. &lt;p&gt;</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="2" column="0">
+            <property name="name">
+                <cstring>checkBox1_3</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2_2_2</cstring>
+            </property>
+            <property name="text">
+                <string>Max. power (&lt;b&gt;P&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;tot&lt;/font&gt;) :</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="4" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_2_2</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="0" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_4</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="1">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Material :</string>
+            </property>
+        </widget>
+        <widget class="KComboBox" row="0" column="3" rowspan="1" colspan="6">
+            <item>
+                <property name="text">
+                    <string>Silicon</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Germanium</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>kComboBox1</cstring>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="1" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_4_2</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="1">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Type :</string>
+            </property>
+        </widget>
+        <widget class="KComboBox" row="1" column="3" rowspan="1" colspan="6">
+            <item>
+                <property name="text">
+                    <string>PNP</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>NPN</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>FET-N</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>FET-P</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>MOS-FET-N</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>MOS-FET-P</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>VMOS</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>kComboBox1_2</cstring>
+            </property>
+        </widget>
+        <widget class="KComboBox" row="4" column="8">
+            <item>
+                <property name="text">
+                    <string>W</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>mW</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>kComboBox1_2_2_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="Line" row="14" column="0" rowspan="1" colspan="9">
+            <property name="name">
+                <cstring>line1</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="frameShape">
+                <enum>HLine</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QLabel" row="12" column="5">
+            <property name="name">
+                <cstring>textLabel1_4_3_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>20</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>20</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>°C</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="10" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_2_3_3</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="12" column="0">
+            <property name="name">
+                <cstring>checkBox1</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="9" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_2_3_2</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="9" column="8">
+            <property name="name">
+                <cstring>textLabel1_4_3_3_2_3_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>ns</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="13" column="6">
+            <property name="name">
+                <cstring>textLabel1_4_4_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>20</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>20</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>to</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="13" column="5">
+            <property name="name">
+                <cstring>textLabel1_4_3_4</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>20</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>20</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>°C</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="13" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_6</cstring>
+            </property>
+            <property name="text">
+                <string>Store temperature :</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="12" column="6">
+            <property name="name">
+                <cstring>textLabel1_4_4_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>20</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>20</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>to</string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="10" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2_2_3_3</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="KURLRequester" row="11" column="3" rowspan="1" colspan="6">
+            <property name="name">
+                <cstring>kURLRequester1</cstring>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>&lt;p&gt;A file that includs values of &lt;b&gt;I&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;CE&lt;/font&gt; : &lt;b&gt;I&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;B&lt;/font&gt; (&lt;b&gt;R&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;DS&lt;/font&gt; : &lt;b&gt;V&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;G&lt;/font&gt;) as double values, starting at &lt;b&gt;I&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;B&lt;/font&gt; (&lt;b&gt;V&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;G&lt;/font&gt;) = 0.&lt;p&gt;
+&lt;p&gt;
+The first value is a byte of this:
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;000~~~01 &lt;/td&gt;&lt;td&gt;Messured values are of unit nA (nV)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;000~~~10 &lt;/td&gt;&lt;td&gt;Messured values are of unit mA (mV)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;000~~~01 &lt;/td&gt;&lt;td&gt;Messured values are of unit A (V)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;000001~~ &lt;/td&gt;&lt;td&gt;Messured values are of steps in 1 of unit&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;000010~~ &lt;/td&gt;&lt;td&gt;Messured values are of steps in 5 of unit&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;000011~~ &lt;/td&gt;&lt;td&gt;Messured values are of steps in 10 of unit&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;000100~~ &lt;/td&gt;&lt;td&gt;Messured values are of steps in 50 of unit&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;000101~~ &lt;/td&gt;&lt;td&gt;Messured values are of steps in 100 of unit&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;000110~~ &lt;/td&gt;&lt;td&gt;Messured values are of steps in 500 of unit&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/p&gt;</string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="13" column="7">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_2_3</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="9" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2_2_3_2</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QLabel" row="9" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2_2_3_2</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;t&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;off&lt;/font&gt; :</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="10" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2_2_3_3</cstring>
+            </property>
+            <property name="text">
+                <string>Max. frequency :</string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="12" column="7">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_2_2</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="12" column="4">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QLabel" row="12" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel1_4_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>30</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>30</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>from</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="13" column="8">
+            <property name="name">
+                <cstring>textLabel1_4_3_2_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>°C</string>
+            </property>
+        </widget>
+        <widget class="KComboBox" row="10" column="8">
+            <item>
+                <property name="text">
+                    <string>MHz</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>GHz</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>kComboBox1_2_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLabel" row="12" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5</cstring>
+            </property>
+            <property name="text">
+                <string>Working temperature :</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="13" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel1_4_2_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>30</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>30</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>from</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="11" column="0">
+            <property name="name">
+                <cstring>checkBox1_2_2</cstring>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="12" column="8">
+            <property name="name">
+                <cstring>textLabel1_4_3_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>°C</string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="13" column="4">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_4</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="13" column="0">
+            <property name="name">
+                <cstring>checkBox1_2</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="11" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel1_4_6_2</cstring>
+            </property>
+            <property name="text">
+                <string>Amplifier factors :</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="8" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_2_3</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="8" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2_2_3</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;t&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;on&lt;/font&gt; :</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="8" column="8">
+            <property name="name">
+                <cstring>textLabel1_4_3_3_2_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>ns</string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="8" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2_2_3</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="3" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2_2</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="3" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_2</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2_2</cstring>
+            </property>
+            <property name="text">
+                <string>Max. voltage :</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="8">
+            <property name="name">
+                <cstring>textLabel1_4_3_3_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>V</string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="6" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2_2_4</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QLabel" row="7" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2_2_3_4</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;R&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;DSon&lt;/font&gt; :</string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="7" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2_2_3_4</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QLabel" row="6" column="8">
+            <property name="name">
+                <cstring>textLabel1_4_3_3_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>V</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="7" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_2_3_4</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="7" column="8">
+            <property name="name">
+                <cstring>textLabel1_4_3_3_2_3_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>ns</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="6" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_2_4</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="5" column="3" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kDoubleNumInput1_2_3_2_2_5</cstring>
+            </property>
+            <property name="precision">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="5" column="0">
+            <property name="name">
+                <cstring>checkBox1_3_2_5</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>17</width>
+                    <height>17</height>
+                </size>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="6" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2_2_4</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;U&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;Gon&lt;/font&gt; :</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="5" column="1">
+            <property name="name">
+                <cstring>textLabel1_4_5_2_2_5</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;I&lt;/b&gt;&lt;font size="-1" face="Voreinstellung"&gt;Bmax&lt;/font&gt; :</string>
+            </property>
+        </widget>
+        <widget class="KComboBox" row="2" column="8">
+            <item>
+                <property name="text">
+                    <string>A</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>mA</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>kComboBox1_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="KComboBox" row="5" column="8">
+            <item>
+                <property name="text">
+                    <string>A</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>mA</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>kComboBox1_2_2_4</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>55</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>55</width>
+                    <height>32767</height>
+                </size>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>kcombobox.h</includehint>
+    <includehint>kcombobox.h</includehint>
+    <includehint>kcombobox.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>kurlrequester.h</includehint>
+    <includehint>klineedit.h</includehint>
+    <includehint>kpushbutton.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>kcombobox.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>kcombobox.h</includehint>
+    <includehint>kcombobox.h</includehint>
+</includehints>
+</UI>
