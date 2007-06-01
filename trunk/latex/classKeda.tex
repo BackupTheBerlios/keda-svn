@@ -1,0 +1,187 @@
+\section{Keda Class Reference}
+\label{classKeda}\index{Keda@{Keda}}
+Main window class.  
+
+
+{\tt \#include $<$keda.h$>$}
+
+\subsection*{Public Slots}
+\begin{CompactItemize}
+\item 
+void {\bf load} (const KURL \&url)
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Keda} ()
+\item 
+{\bf $\sim$Keda} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf Keda\-View} $\ast$ {\bf m\_\-view}
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void {\bf drag\-Enter\-Event} (QDrag\-Enter\-Event $\ast$event)
+\item 
+virtual void {\bf drop\-Event} (QDrop\-Event $\ast$event)
+\item 
+void {\bf read\-Properties} (KConfig $\ast$)
+\item 
+void {\bf save\-Properties} (KConfig $\ast$)
+\end{CompactItemize}
+\subsection*{Private Slots}
+\begin{CompactItemize}
+\item 
+void {\bf change\-Caption} (const QString \&text)
+\item 
+void {\bf change\-Statusbar} (const QString \&text)
+\item 
+void {\bf file\-New} ()
+\item 
+void {\bf file\-Open} ()
+\item 
+void {\bf file\-Print} ()
+\item 
+void {\bf file\-Save} ()
+\item 
+void {\bf file\-Save\-As} ()
+\item 
+void {\bf options\-Preferences} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf setup\-Accel} ()
+\item 
+void {\bf setup\-Actions} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+KPrinter $\ast$ {\bf m\_\-printer}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Main window class. 
+
+\begin{Desc}
+\item[Author:]sebastian $<${\tt sebastian.bw@freenet.de}$>$ \end{Desc}
+\begin{Desc}
+\item[Version:]0.1 \end{Desc}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Keda@{Keda}!Keda@{Keda}}
+\index{Keda@{Keda}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Keda::Keda ()}\label{classKeda_bdcde5bd2edacf1aabd359bcb83de9a2}
+
+
+\index{Keda@{Keda}!~Keda@{$\sim$Keda}}
+\index{~Keda@{$\sim$Keda}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Keda::$\sim$Keda ()}\label{classKeda_29492221c9b967fa0983a48503b2e371}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Keda@{Keda}!changeCaption@{changeCaption}}
+\index{changeCaption@{changeCaption}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::change\-Caption (const QString \& {\em text})\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_52961c3165b7817bdd6bec5a017670a5}
+
+
+\index{Keda@{Keda}!changeStatusbar@{changeStatusbar}}
+\index{changeStatusbar@{changeStatusbar}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::change\-Statusbar (const QString \& {\em text})\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_d8f40236954797adc7686383a2ebf1cd}
+
+
+\index{Keda@{Keda}!dragEnterEvent@{dragEnterEvent}}
+\index{dragEnterEvent@{dragEnterEvent}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::drag\-Enter\-Event (QDrag\-Enter\-Event $\ast$ {\em event})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classKeda_dba09a7801d36df546c0f3e9dac3ec02}
+
+
+\index{Keda@{Keda}!dropEvent@{dropEvent}}
+\index{dropEvent@{dropEvent}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::drop\-Event (QDrop\-Event $\ast$ {\em event})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classKeda_ccd73598789b64c97d431c5630cd93d0}
+
+
+\index{Keda@{Keda}!fileNew@{fileNew}}
+\index{fileNew@{fileNew}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::file\-New ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_c6e5ef9b70f7aef4ce21d148961c22df}
+
+
+\index{Keda@{Keda}!fileOpen@{fileOpen}}
+\index{fileOpen@{fileOpen}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::file\-Open ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_73c037cb31b2a21505b259ab65c7fdf2}
+
+
+\index{Keda@{Keda}!filePrint@{filePrint}}
+\index{filePrint@{filePrint}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::file\-Print ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_7dec969000b19eff8c0b35fbdfe7ac8c}
+
+
+\index{Keda@{Keda}!fileSave@{fileSave}}
+\index{fileSave@{fileSave}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::file\-Save ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_6f5a0bdd281c6c1c3951a27cf5ca8c5e}
+
+
+\index{Keda@{Keda}!fileSaveAs@{fileSaveAs}}
+\index{fileSaveAs@{fileSaveAs}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::file\-Save\-As ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_7cfe70767c0639e7826d67957f1699b3}
+
+
+\index{Keda@{Keda}!load@{load}}
+\index{load@{load}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::load (const KURL \& {\em url})\hspace{0.3cm}{\tt  [slot]}}\label{classKeda_71748e5aac2faece63af8155fa738a4c}
+
+
+\index{Keda@{Keda}!optionsPreferences@{optionsPreferences}}
+\index{optionsPreferences@{optionsPreferences}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::options\-Preferences ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_79dbe03b8b8a3ec215c89880f4b0a1bb}
+
+
+\index{Keda@{Keda}!readProperties@{readProperties}}
+\index{readProperties@{readProperties}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::read\-Properties (KConfig $\ast$)\hspace{0.3cm}{\tt  [protected]}}\label{classKeda_bf0df7468919a89fdb30295452012ce8}
+
+
+\index{Keda@{Keda}!saveProperties@{saveProperties}}
+\index{saveProperties@{saveProperties}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::save\-Properties (KConfig $\ast$)\hspace{0.3cm}{\tt  [protected]}}\label{classKeda_593f2a414b74c536bab317ddbc4ddb80}
+
+
+\index{Keda@{Keda}!setupAccel@{setupAccel}}
+\index{setupAccel@{setupAccel}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::setup\-Accel ()\hspace{0.3cm}{\tt  [private]}}\label{classKeda_0c5ff0cf39e2b82d94558c19d0488a58}
+
+
+\index{Keda@{Keda}!setupActions@{setupActions}}
+\index{setupActions@{setupActions}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::setup\-Actions ()\hspace{0.3cm}{\tt  [private]}}\label{classKeda_335f9f5dc82b43c02ca759b38cab1028}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Keda@{Keda}!m_printer@{m\_\-printer}}
+\index{m_printer@{m\_\-printer}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}KPrinter$\ast$ {\bf Keda::m\_\-printer}\hspace{0.3cm}{\tt  [private]}}\label{classKeda_8e823f6da24fcb64ec267d4c03581b26}
+
+
+\index{Keda@{Keda}!m_view@{m\_\-view}}
+\index{m_view@{m\_\-view}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Keda\-View}$\ast$ {\bf Keda::m\_\-view}}\label{classKeda_a06a9e343f346d86613242772a3ab385}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/home/bastl/Kdevel/keda/src/{\bf keda.h}\item 
+/home/bastl/Kdevel/keda/src/{\bf keda.cpp}\end{CompactItemize}

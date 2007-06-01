@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="composerwidget_8cpp" kind="file">
+    <compoundname>composerwidget.cpp</compoundname>
+    <includes local="no">kdialog.h</includes>
+    <includes local="no">klocale.h</includes>
+    <includes refid="composerwidget_8h" local="yes">composerwidget.h</includes>
+    <includes local="no">qvariant.h</includes>
+    <includes local="no">qpushbutton.h</includes>
+    <includes local="no">qtabwidget.h</includes>
+    <includes local="no">qlabel.h</includes>
+    <includes local="no">klineedit.h</includes>
+    <includes local="no">qcombobox.h</includes>
+    <includes local="no">qframe.h</includes>
+    <includes local="no">kurlrequester.h</includes>
+    <includes local="no">qtextedit.h</includes>
+    <includes local="no">qlayout.h</includes>
+    <includes local="no">qtooltip.h</includes>
+    <includes local="no">qwhatsthis.h</includes>
+    <includes local="yes">kpushbutton.h</includes>
+    <includes refid="composerwidget_8moc" local="yes">composerwidget.moc</includes>
+    <incdepgraph>
+      <node id="141">
+        <label>kurlrequester.h</label>
+      </node>
+      <node id="146">
+        <label>kpushbutton.h</label>
+      </node>
+      <node id="145">
+        <label>qwhatsthis.h</label>
+      </node>
+      <node id="140">
+        <label>qframe.h</label>
+      </node>
+      <node id="132">
+        <label>composerwidget.h</label>
+        <link refid="composerwidget_8h-source"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>qpushbutton.h</label>
+      </node>
+      <node id="143">
+        <label>qlayout.h</label>
+      </node>
+      <node id="131">
+        <label>klocale.h</label>
+      </node>
+      <node id="138">
+        <label>klineedit.h</label>
+      </node>
+      <node id="144">
+        <label>qtooltip.h</label>
+      </node>
+      <node id="136">
+        <label>qtabwidget.h</label>
+      </node>
+      <node id="133">
+        <label>qvariant.h</label>
+      </node>
+      <node id="137">
+        <label>qlabel.h</label>
+      </node>
+      <node id="134">
+        <label>qwidget.h</label>
+      </node>
+      <node id="142">
+        <label>qtextedit.h</label>
+      </node>
+      <node id="130">
+        <label>kdialog.h</label>
+      </node>
+      <node id="139">
+        <label>qcombobox.h</label>
+      </node>
+      <node id="129">
+        <label>/home/bastl/Kdevel/keda/composer/composerwidget.cpp</label>
+        <link refid="composerwidget.cpp"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;kdialog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;klocale.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Form<sp/>implementation<sp/>generated<sp/>from<sp/>reading<sp/>ui<sp/>file<sp/>&apos;/home/bastl/Kdevel/keda/composer/composerwidget.ui&apos;</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/>Created:<sp/>So<sp/>Mai<sp/>20<sp/>14:12:43<sp/>2007</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>The<sp/>User<sp/>Interface<sp/>Compiler<sp/>($Id:<sp/>qt/main.cpp<sp/><sp/><sp/>3.3.5<sp/><sp/><sp/>edited<sp/>Aug<sp/>31<sp/>12:13<sp/>$)</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="composerwidget_8h" kindref="compound">composerwidget.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qvariant.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qpushbutton.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qtabwidget.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qlabel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;klineedit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qcombobox.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qframe.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;kurlrequester.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qtextedit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qlayout.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qtooltip.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qwhatsthis.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;klineedit.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kurlrequester.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;kpushbutton.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/>Constructs<sp/>a<sp/>ComposerWidget<sp/>as<sp/>a<sp/>child<sp/>of<sp/>&apos;parent&apos;,<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/>name<sp/>&apos;name&apos;<sp/>and<sp/>widget<sp/>flags<sp/>set<sp/>to<sp/>&apos;f&apos;.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="classComposerWidget_13cb0fbb1aa2f045f4ea1c1060cfc7ca1" kindref="member">ComposerWidget::ComposerWidget</ref>(<sp/>QWidget*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/>WFlags<sp/>fl<sp/>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>QWidget(<sp/>parent,<sp/>name,<sp/>fl<sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!name<sp/>)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setName(<sp/></highlight><highlight class="stringliteral">&quot;ComposerWidget&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1312ead4374d2ccea757ab960a9ed7246" kindref="member">ComposerWidgetLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>1,<sp/>1,<sp/>0,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;ComposerWidgetLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTabWidget(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Tabwidget&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>400,<sp/>200<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" kindref="member">characteristics</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>,<sp/></highlight><highlight class="stringliteral">&quot;characteristics&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d3429d05b1dd4b311be1d48957af0d1d" kindref="member">characteristicsLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" kindref="member">characteristics</ref>,<sp/>1,<sp/>1,<sp/>10,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;characteristicsLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1bb9be264cdf3224abd3c1e60f4ac7580" kindref="member">textLabel1_5</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<sp/><ref refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" kindref="member">characteristics</ref>,<sp/></highlight><highlight class="stringliteral">&quot;textLabel1_5&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1bb9be264cdf3224abd3c1e60f4ac7580" kindref="member">textLabel1_5</ref>-&gt;setSizePolicy(<sp/>QSizePolicy(<sp/>(QSizePolicy::SizeType)1,<sp/>(QSizePolicy::SizeType)5,<sp/>0,<sp/>0,<sp/><ref refid="classComposerWidget_1bb9be264cdf3224abd3c1e60f4ac7580" kindref="member">textLabel1_5</ref>-&gt;sizePolicy().hasHeightForWidth()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d3429d05b1dd4b311be1d48957af0d1d" kindref="member">characteristicsLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1bb9be264cdf3224abd3c1e60f4ac7580" kindref="member">textLabel1_5</ref>,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1c42a6660463e31f5c186ce4a78642e78" kindref="member">kLineEdit1_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>KLineEdit(<sp/><ref refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" kindref="member">characteristics</ref>,<sp/></highlight><highlight class="stringliteral">&quot;kLineEdit1_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d3429d05b1dd4b311be1d48957af0d1d" kindref="member">characteristicsLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1c42a6660463e31f5c186ce4a78642e78" kindref="member">kLineEdit1_2</ref>,<sp/>0,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QComboBox(<sp/>FALSE,<sp/><ref refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" kindref="member">characteristics</ref>,<sp/></highlight><highlight class="stringliteral">&quot;comboBox1&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>200,<sp/>0<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;setSizeLimit(<sp/>20<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d3429d05b1dd4b311be1d48957af0d1d" kindref="member">characteristicsLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>,<sp/>0,<sp/>2<sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1544930c9a6c374521d32aa8b9eeb1f1a" kindref="member">spacer2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QSpacerItem(<sp/>340,<sp/>210,<sp/>QSizePolicy::Minimum,<sp/>QSizePolicy::Expanding<sp/>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d3429d05b1dd4b311be1d48957af0d1d" kindref="member">characteristicsLayout</ref>-&gt;addMultiCell(<sp/><ref refid="classComposerWidget_1544930c9a6c374521d32aa8b9eeb1f1a" kindref="member">spacer2</ref>,<sp/>2,<sp/>2,<sp/>0,<sp/>2<sp/>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1b6dc6d14088f1635235ea18189924d6a" kindref="member">line8</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFrame(<sp/><ref refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" kindref="member">characteristics</ref>,<sp/></highlight><highlight class="stringliteral">&quot;line8&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1b6dc6d14088f1635235ea18189924d6a" kindref="member">line8</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>16<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1b6dc6d14088f1635235ea18189924d6a" kindref="member">line8</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>16<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1b6dc6d14088f1635235ea18189924d6a" kindref="member">line8</ref>-&gt;setFrameShape(<sp/>QFrame::HLine<sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1b6dc6d14088f1635235ea18189924d6a" kindref="member">line8</ref>-&gt;setFrameShadow(<sp/>QFrame::Sunken<sp/>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1b6dc6d14088f1635235ea18189924d6a" kindref="member">line8</ref>-&gt;setFrameShape(<sp/>QFrame::HLine<sp/>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d3429d05b1dd4b311be1d48957af0d1d" kindref="member">characteristicsLayout</ref>-&gt;addMultiCellWidget(<sp/><ref refid="classComposerWidget_1b6dc6d14088f1635235ea18189924d6a" kindref="member">line8</ref>,<sp/>1,<sp/>1,<sp/>0,<sp/>2<sp/>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" kindref="member">characteristics</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" kindref="member">eda</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>,<sp/></highlight><highlight class="stringliteral">&quot;eda&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1803572be04c7f21d87ebfe9d80b0507d" kindref="member">edaLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" kindref="member">eda</ref>,<sp/>1,<sp/>1,<sp/>5,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;edaLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTabWidget(<sp/><ref refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" kindref="member">eda</ref>,<sp/></highlight><highlight class="stringliteral">&quot;eda_tab&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>155,<sp/>0<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>155,<sp/>32767<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1365a4a972db646c76d115b3897f2d4de" kindref="member">positions</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>,<sp/></highlight><highlight class="stringliteral">&quot;positions&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_1365a4a972db646c76d115b3897f2d4de" kindref="member">positions</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1a8998c31a141924d06220074fcdc6925" kindref="member">names</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>,<sp/></highlight><highlight class="stringliteral">&quot;names&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_1a8998c31a141924d06220074fcdc6925" kindref="member">names</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1803572be04c7f21d87ebfe9d80b0507d" kindref="member">edaLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>,<sp/>1,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17f5a8d1e14cfed47c4d14e4345db7f1b" kindref="member">eda_view</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFrame(<sp/><ref refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" kindref="member">eda</ref>,<sp/></highlight><highlight class="stringliteral">&quot;eda_view&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17f5a8d1e14cfed47c4d14e4345db7f1b" kindref="member">eda_view</ref>-&gt;setSizePolicy(<sp/>QSizePolicy(<sp/>(QSizePolicy::SizeType)7,<sp/>(QSizePolicy::SizeType)7,<sp/>0,<sp/>0,<sp/><ref refid="classComposerWidget_17f5a8d1e14cfed47c4d14e4345db7f1b" kindref="member">eda_view</ref>-&gt;sizePolicy().hasHeightForWidth()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17f5a8d1e14cfed47c4d14e4345db7f1b" kindref="member">eda_view</ref>-&gt;setPaletteBackgroundColor(<sp/>QColor(<sp/>253,<sp/>247,<sp/>210<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17f5a8d1e14cfed47c4d14e4345db7f1b" kindref="member">eda_view</ref>-&gt;setFrameShape(<sp/>QFrame::StyledPanel<sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17f5a8d1e14cfed47c4d14e4345db7f1b" kindref="member">eda_view</ref>-&gt;setFrameShadow(<sp/>QFrame::Sunken<sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1803572be04c7f21d87ebfe9d80b0507d" kindref="member">edaLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_17f5a8d1e14cfed47c4d14e4345db7f1b" kindref="member">eda_view</ref>,<sp/>1,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1af6da2d68e9e10f2381a5e50d5372908" kindref="member">layout1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout(<sp/>0,<sp/>0,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;layout1&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1ca2990cb7563155ff8f78f6c6892dafd" kindref="member">textLabel3</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<sp/><ref refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" kindref="member">eda</ref>,<sp/></highlight><highlight class="stringliteral">&quot;textLabel3&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1af6da2d68e9e10f2381a5e50d5372908" kindref="member">layout1</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1ca2990cb7563155ff8f78f6c6892dafd" kindref="member">textLabel3</ref><sp/>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_111bd6ffdecfef5c3c8b6d777c453a56f" kindref="member">image_eda</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>KURLRequester(<sp/><ref refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" kindref="member">eda</ref>,<sp/></highlight><highlight class="stringliteral">&quot;image_eda&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_111bd6ffdecfef5c3c8b6d777c453a56f" kindref="member">image_eda</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>26<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_111bd6ffdecfef5c3c8b6d777c453a56f" kindref="member">image_eda</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>26<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1af6da2d68e9e10f2381a5e50d5372908" kindref="member">layout1</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_111bd6ffdecfef5c3c8b6d777c453a56f" kindref="member">image_eda</ref><sp/>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1803572be04c7f21d87ebfe9d80b0507d" kindref="member">edaLayout</ref>-&gt;addMultiCellLayout(<sp/><ref refid="classComposerWidget_1af6da2d68e9e10f2381a5e50d5372908" kindref="member">layout1</ref>,<sp/>0,<sp/>0,<sp/>0,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" kindref="member">eda</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" kindref="member">pcb</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>,<sp/></highlight><highlight class="stringliteral">&quot;pcb&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1ced42430e791ac2e495dcd080c0ef3b5" kindref="member">pcbLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" kindref="member">pcb</ref>,<sp/>1,<sp/>1,<sp/>5,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;pcbLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1c2354104385f73c1aa1e700a51b08b57" kindref="member">eda_view_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFrame(<sp/><ref refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" kindref="member">pcb</ref>,<sp/></highlight><highlight class="stringliteral">&quot;eda_view_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1c2354104385f73c1aa1e700a51b08b57" kindref="member">eda_view_2</ref>-&gt;setSizePolicy(<sp/>QSizePolicy(<sp/>(QSizePolicy::SizeType)7,<sp/>(QSizePolicy::SizeType)7,<sp/>0,<sp/>0,<sp/><ref refid="classComposerWidget_1c2354104385f73c1aa1e700a51b08b57" kindref="member">eda_view_2</ref>-&gt;sizePolicy().hasHeightForWidth()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1c2354104385f73c1aa1e700a51b08b57" kindref="member">eda_view_2</ref>-&gt;setPaletteBackgroundColor(<sp/>QColor(<sp/>90,<sp/>90,<sp/>90<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1c2354104385f73c1aa1e700a51b08b57" kindref="member">eda_view_2</ref>-&gt;setFrameShape(<sp/>QFrame::StyledPanel<sp/>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1c2354104385f73c1aa1e700a51b08b57" kindref="member">eda_view_2</ref>-&gt;setFrameShadow(<sp/>QFrame::Sunken<sp/>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1ced42430e791ac2e495dcd080c0ef3b5" kindref="member">pcbLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1c2354104385f73c1aa1e700a51b08b57" kindref="member">eda_view_2</ref>,<sp/>1,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTabWidget(<sp/><ref refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" kindref="member">pcb</ref>,<sp/></highlight><highlight class="stringliteral">&quot;eda_tab_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>155,<sp/>0<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>155,<sp/>32767<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_19a933d840b6653550bff9d90782885e8" kindref="member">positions_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>,<sp/></highlight><highlight class="stringliteral">&quot;positions_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_188fa4e53210e375c44046f771c826db5" kindref="member">positionsLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_19a933d840b6653550bff9d90782885e8" kindref="member">positions_2</ref>,<sp/>1,<sp/>1,<sp/>10,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;positionsLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_19a933d840b6653550bff9d90782885e8" kindref="member">positions_2</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_13a18cdb54f0ad2117015a22df8a516e7" kindref="member">names_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>,<sp/></highlight><highlight class="stringliteral">&quot;names_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_16621e77c91f0e6897d7dc9edf63ab7b3" kindref="member">namesLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_13a18cdb54f0ad2117015a22df8a516e7" kindref="member">names_2</ref>,<sp/>1,<sp/>1,<sp/>2,<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;namesLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e97b0fa4bb84049c8cf1e27a06a78eae" kindref="member">textEdit1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTextEdit(<sp/><ref refid="classComposerWidget_13a18cdb54f0ad2117015a22df8a516e7" kindref="member">names_2</ref>,<sp/></highlight><highlight class="stringliteral">&quot;textEdit1&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_16621e77c91f0e6897d7dc9edf63ab7b3" kindref="member">namesLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1e97b0fa4bb84049c8cf1e27a06a78eae" kindref="member">textEdit1</ref>,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_13a18cdb54f0ad2117015a22df8a516e7" kindref="member">names_2</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1ced42430e791ac2e495dcd080c0ef3b5" kindref="member">pcbLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>,<sp/>1,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1393c65c6086c42c77ac851f10172deb8" kindref="member">layout7</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout(<sp/>0,<sp/>0,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;layout7&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d54358d4c86932bbc6c039667005d66a" kindref="member">textLabel3_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<sp/><ref refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" kindref="member">pcb</ref>,<sp/></highlight><highlight class="stringliteral">&quot;textLabel3_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1393c65c6086c42c77ac851f10172deb8" kindref="member">layout7</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1d54358d4c86932bbc6c039667005d66a" kindref="member">textLabel3_2</ref><sp/>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1a435c600ffc64c20371eba15b9aaf82f" kindref="member">image_pin</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>KURLRequester(<sp/><ref refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" kindref="member">pcb</ref>,<sp/></highlight><highlight class="stringliteral">&quot;image_pin&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1a435c600ffc64c20371eba15b9aaf82f" kindref="member">image_pin</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>26<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1a435c600ffc64c20371eba15b9aaf82f" kindref="member">image_pin</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>26<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1393c65c6086c42c77ac851f10172deb8" kindref="member">layout7</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1a435c600ffc64c20371eba15b9aaf82f" kindref="member">image_pin</ref><sp/>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1ced42430e791ac2e495dcd080c0ef3b5" kindref="member">pcbLayout</ref>-&gt;addMultiCellLayout(<sp/><ref refid="classComposerWidget_1393c65c6086c42c77ac851f10172deb8" kindref="member">layout7</ref>,<sp/>0,<sp/>0,<sp/>0,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" kindref="member">pcb</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1c4cf4802b30127a6ae42a1a1798c51b3" kindref="member">dimension</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>,<sp/></highlight><highlight class="stringliteral">&quot;dimension&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e529843722ff837c6ea2d1563aff9722" kindref="member">dimensionLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_1c4cf4802b30127a6ae42a1a1798c51b3" kindref="member">dimension</ref>,<sp/>1,<sp/>1,<sp/>5,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;dimensionLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_15271f90e8c2f0a98857949635499a2af" kindref="member">layout1_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QHBoxLayout(<sp/>0,<sp/>0,<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;layout1_2&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_11face088464e99f9bc70402a48986e0a" kindref="member">textLabel3_3</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QLabel(<sp/><ref refid="classComposerWidget_1c4cf4802b30127a6ae42a1a1798c51b3" kindref="member">dimension</ref>,<sp/></highlight><highlight class="stringliteral">&quot;textLabel3_3&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_15271f90e8c2f0a98857949635499a2af" kindref="member">layout1_2</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_11face088464e99f9bc70402a48986e0a" kindref="member">textLabel3_3</ref><sp/>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d7e13ede2b112574ca61da3cea91d667" kindref="member">image_dim</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>KURLRequester(<sp/><ref refid="classComposerWidget_1c4cf4802b30127a6ae42a1a1798c51b3" kindref="member">dimension</ref>,<sp/></highlight><highlight class="stringliteral">&quot;image_dim&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d7e13ede2b112574ca61da3cea91d667" kindref="member">image_dim</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>26<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d7e13ede2b112574ca61da3cea91d667" kindref="member">image_dim</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>26<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_15271f90e8c2f0a98857949635499a2af" kindref="member">layout1_2</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1d7e13ede2b112574ca61da3cea91d667" kindref="member">image_dim</ref><sp/>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e529843722ff837c6ea2d1563aff9722" kindref="member">dimensionLayout</ref>-&gt;addLayout(<sp/><ref refid="classComposerWidget_15271f90e8c2f0a98857949635499a2af" kindref="member">layout1_2</ref>,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTabWidget(<sp/><ref refid="classComposerWidget_1c4cf4802b30127a6ae42a1a1798c51b3" kindref="member">dimension</ref>,<sp/></highlight><highlight class="stringliteral">&quot;tabWidget6&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e7f8cbd87d347be881cba92dad128518" kindref="member">tab</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>,<sp/></highlight><highlight class="stringliteral">&quot;tab&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_137ed5af681fab9c3e22bfd4f582d96bd" kindref="member">tabLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_1e7f8cbd87d347be881cba92dad128518" kindref="member">tab</ref>,<sp/>1,<sp/>1,<sp/>2,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;tabLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e05442480afe59d8e45f70b289685b75" kindref="member">eda_view_2_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFrame(<sp/><ref refid="classComposerWidget_1e7f8cbd87d347be881cba92dad128518" kindref="member">tab</ref>,<sp/></highlight><highlight class="stringliteral">&quot;eda_view_2_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e05442480afe59d8e45f70b289685b75" kindref="member">eda_view_2_2</ref>-&gt;setSizePolicy(<sp/>QSizePolicy(<sp/>(QSizePolicy::SizeType)7,<sp/>(QSizePolicy::SizeType)7,<sp/>0,<sp/>0,<sp/><ref refid="classComposerWidget_1e05442480afe59d8e45f70b289685b75" kindref="member">eda_view_2_2</ref>-&gt;sizePolicy().hasHeightForWidth()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e05442480afe59d8e45f70b289685b75" kindref="member">eda_view_2_2</ref>-&gt;setPaletteBackgroundColor(<sp/>QColor(<sp/>0,<sp/>181,<sp/>130<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e05442480afe59d8e45f70b289685b75" kindref="member">eda_view_2_2</ref>-&gt;setFrameShape(<sp/>QFrame::StyledPanel<sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e05442480afe59d8e45f70b289685b75" kindref="member">eda_view_2_2</ref>-&gt;setFrameShadow(<sp/>QFrame::Sunken<sp/>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_137ed5af681fab9c3e22bfd4f582d96bd" kindref="member">tabLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_1e05442480afe59d8e45f70b289685b75" kindref="member">eda_view_2_2</ref>,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_1e7f8cbd87d347be881cba92dad128518" kindref="member">tab</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1936beb3789addd4616f024f2cd2caac8" kindref="member">tab_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>,<sp/></highlight><highlight class="stringliteral">&quot;tab_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d90b19861457e1cb706528a94e6e42ef" kindref="member">tabLayout_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_1936beb3789addd4616f024f2cd2caac8" kindref="member">tab_2</ref>,<sp/>1,<sp/>1,<sp/>2,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;tabLayout_2&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14cfddfb6e930b9e57cdb35a612d915e1" kindref="member">eda_view_2_2_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFrame(<sp/><ref refid="classComposerWidget_1936beb3789addd4616f024f2cd2caac8" kindref="member">tab_2</ref>,<sp/></highlight><highlight class="stringliteral">&quot;eda_view_2_2_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14cfddfb6e930b9e57cdb35a612d915e1" kindref="member">eda_view_2_2_2</ref>-&gt;setSizePolicy(<sp/>QSizePolicy(<sp/>(QSizePolicy::SizeType)7,<sp/>(QSizePolicy::SizeType)7,<sp/>0,<sp/>0,<sp/><ref refid="classComposerWidget_14cfddfb6e930b9e57cdb35a612d915e1" kindref="member">eda_view_2_2_2</ref>-&gt;sizePolicy().hasHeightForWidth()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14cfddfb6e930b9e57cdb35a612d915e1" kindref="member">eda_view_2_2_2</ref>-&gt;setPaletteBackgroundColor(<sp/>QColor(<sp/>0,<sp/>181,<sp/>130<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14cfddfb6e930b9e57cdb35a612d915e1" kindref="member">eda_view_2_2_2</ref>-&gt;setFrameShape(<sp/>QFrame::StyledPanel<sp/>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14cfddfb6e930b9e57cdb35a612d915e1" kindref="member">eda_view_2_2_2</ref>-&gt;setFrameShadow(<sp/>QFrame::Sunken<sp/>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d90b19861457e1cb706528a94e6e42ef" kindref="member">tabLayout_2</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_14cfddfb6e930b9e57cdb35a612d915e1" kindref="member">eda_view_2_2_2</ref>,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_1936beb3789addd4616f024f2cd2caac8" kindref="member">tab_2</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_116ca38670abb008d24f3f2170d656335" kindref="member">TabPage</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QWidget(<sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>,<sp/></highlight><highlight class="stringliteral">&quot;TabPage&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1ccd0a4006e9db31c4a3105b6b0b8fc12" kindref="member">TabPageLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/><ref refid="classComposerWidget_116ca38670abb008d24f3f2170d656335" kindref="member">TabPage</ref>,<sp/>1,<sp/>1,<sp/>2,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;TabPageLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_179e322855325868e5b56c9c5667195f2" kindref="member">eda_view_2_2_3</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFrame(<sp/><ref refid="classComposerWidget_116ca38670abb008d24f3f2170d656335" kindref="member">TabPage</ref>,<sp/></highlight><highlight class="stringliteral">&quot;eda_view_2_2_3&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_179e322855325868e5b56c9c5667195f2" kindref="member">eda_view_2_2_3</ref>-&gt;setSizePolicy(<sp/>QSizePolicy(<sp/>(QSizePolicy::SizeType)7,<sp/>(QSizePolicy::SizeType)7,<sp/>0,<sp/>0,<sp/><ref refid="classComposerWidget_179e322855325868e5b56c9c5667195f2" kindref="member">eda_view_2_2_3</ref>-&gt;sizePolicy().hasHeightForWidth()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_179e322855325868e5b56c9c5667195f2" kindref="member">eda_view_2_2_3</ref>-&gt;setPaletteBackgroundColor(<sp/>QColor(<sp/>0,<sp/>181,<sp/>130<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_179e322855325868e5b56c9c5667195f2" kindref="member">eda_view_2_2_3</ref>-&gt;setFrameShape(<sp/>QFrame::StyledPanel<sp/>);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_179e322855325868e5b56c9c5667195f2" kindref="member">eda_view_2_2_3</ref>-&gt;setFrameShadow(<sp/>QFrame::Sunken<sp/>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1ccd0a4006e9db31c4a3105b6b0b8fc12" kindref="member">TabPageLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_179e322855325868e5b56c9c5667195f2" kindref="member">eda_view_2_2_3</ref>,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_116ca38670abb008d24f3f2170d656335" kindref="member">TabPage</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1e529843722ff837c6ea2d1563aff9722" kindref="member">dimensionLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>,<sp/>1,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;insertTab(<sp/><ref refid="classComposerWidget_1c4cf4802b30127a6ae42a1a1798c51b3" kindref="member">dimension</ref>,<sp/>QString::fromLatin1(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1312ead4374d2ccea757ab960a9ed7246" kindref="member">ComposerWidgetLayout</ref>-&gt;addWidget(<sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_11182bf5637039731d24c9b1e622b4179" kindref="member">languageChange</ref>();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>resize(<sp/>QSize(445,<sp/>346).expandedTo(minimumSizeHint())<sp/>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>clearWState(<sp/>WState_Polished<sp/>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signals<sp/>and<sp/>slots<sp/>connections</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>,<sp/>SIGNAL(<sp/>activated(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classComposerView_1c9c3e0c0edd13829d6dd945b8a46bbe1" kindref="member">character_chosen</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/>*<sp/><sp/>Destroys<sp/>the<sp/>object<sp/>and<sp/>frees<sp/>any<sp/>allocated<sp/>resources</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><ref refid="classComposerWidget_1ad649b541fc78f8e51a4fb829c4e1f2b" kindref="member">ComposerWidget::~ComposerWidget</ref>()</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>need<sp/>to<sp/>delete<sp/>child<sp/>widgets,<sp/>Qt<sp/>does<sp/>it<sp/>all<sp/>for<sp/>us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/>*<sp/><sp/>Sets<sp/>the<sp/>strings<sp/>of<sp/>the<sp/>subwidgets<sp/>using<sp/>the<sp/>current</highlight></codeline>
+<codeline lineno="227"><highlight class="comment"><sp/>*<sp/><sp/>language.</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classComposerWidget_11182bf5637039731d24c9b1e622b4179" kindref="member">ComposerWidget::languageChange</ref>()</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>setCaption(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;ComposerWidget&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1bb9be264cdf3224abd3c1e60f4ac7580" kindref="member">textLabel1_5</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Part<sp/>name<sp/>:&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>QToolTip::add(<sp/><ref refid="classComposerWidget_1c42a6660463e31f5c186ce4a78642e78" kindref="member">kLineEdit1_2</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;&lt;p&gt;Shown<sp/>in<sp/>Keda&apos;s<sp/>popup<sp/>selection.&lt;/p&gt;&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Resistor&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Diode&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Transistor&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Logical<sp/>IC&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Linear<sp/>IC&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Other<sp/>IC&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Operation<sp/>amplifier&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Special<sp/>designed<sp/>IC&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Capacitor&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Coil&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Power<sp/>supply&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Heat<sp/>sink&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Case&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" kindref="member">comboBox1</ref>-&gt;insertItem(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Board&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" kindref="member">characteristics</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Cha&amp;racteristics&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_1365a4a972db646c76d115b3897f2d4de" kindref="member">positions</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Positions&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" kindref="member">eda_tab</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_1a8998c31a141924d06220074fcdc6925" kindref="member">names</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;&amp;Names&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1ca2990cb7563155ff8f78f6c6892dafd" kindref="member">textLabel3</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Image<sp/>:&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" kindref="member">eda</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;EDA&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_19a933d840b6653550bff9d90782885e8" kindref="member">positions_2</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Pi&amp;ns&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" kindref="member">eda_tab_2</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_13a18cdb54f0ad2117015a22df8a516e7" kindref="member">names_2</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;File<sp/>content&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_1d54358d4c86932bbc6c039667005d66a" kindref="member">textLabel3_2</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;New<sp/>pin<sp/>:&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" kindref="member">pcb</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;PCB&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_11face088464e99f9bc70402a48986e0a" kindref="member">textLabel3_3</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Image<sp/>:&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_1e7f8cbd87d347be881cba92dad128518" kindref="member">tab</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&amp;Top<sp/>view<sp/>(board<sp/>printed)&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_1936beb3789addd4616f024f2cd2caac8" kindref="member">tab_2</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Front<sp/>&amp;view&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" kindref="member">tabWidget6</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_116ca38670abb008d24f3f2170d656335" kindref="member">TabPage</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Side<sp/>vie&amp;w&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" kindref="member">Tabwidget</ref>-&gt;changeTab(<sp/><ref refid="classComposerWidget_1c4cf4802b30127a6ae42a1a1798c51b3" kindref="member">dimension</ref>,<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Dime&amp;nsions&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classComposerWidget_1c9c3e0c0edd13829d6dd945b8a46bbe1" kindref="member">ComposerWidget::character_chosen</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;ComposerWidget::character_chosen(int):<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="composerwidget_8moc" kindref="compound">composerwidget.moc</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/bastl/Kdevel/keda/composer/composerwidget.cpp"/>
+  </compounddef>
+</doxygen>

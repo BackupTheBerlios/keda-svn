@@ -1,0 +1,188 @@
+/****************************************************************************
+** ComposerView meta object code from reading C++ file 'composerview.h'
+**
+** Created: Fri May 18 17:03:13 2007
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.5   edited Sep 2 14:41 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "composerview.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *ComposerView::className() const
+{
+    return "ComposerView";
+}
+
+QMetaObject *ComposerView::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_ComposerView( "ComposerView", &ComposerView::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString ComposerView::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ComposerView", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString ComposerView::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ComposerView", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* ComposerView::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = ComposerWidget::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "url", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"openURL", 1, param_slot_0 };
+    static const QUParameter param_slot_1[] = {
+	{ "url", &static_QUType_ptr, "KURL", QUParameter::In }
+    };
+    static const QUMethod slot_1 = {"openURL", 1, param_slot_1 };
+    static const QUParameter param_slot_2[] = {
+	{ 0, &static_QUType_ptr, "QPainter", QUParameter::In },
+	{ "height", &static_QUType_int, 0, QUParameter::In },
+	{ "width", &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_2 = {"print", 3, param_slot_2 };
+    static const QUParameter param_slot_3[] = {
+	{ 0, &static_QUType_ptr, "QWidget", QUParameter::Out },
+	{ 0, &static_QUType_ptr, "QWidget", QUParameter::In },
+	{ 0, &static_QUType_ptr, "QWidget", QUParameter::In }
+    };
+    static const QUMethod slot_3 = {"w_show", 3, param_slot_3 };
+    static const QUParameter param_slot_4[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_4 = {"t_type_changed", 1, param_slot_4 };
+    static const QUParameter param_slot_5[] = {
+	{ "url", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_5 = {"slotOnURL", 1, param_slot_5 };
+    static const QUParameter param_slot_6[] = {
+	{ "title", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod slot_6 = {"slotSetTitle", 1, param_slot_6 };
+    static const QUParameter param_slot_7[] = {
+	{ 0, &static_QUType_int, 0, QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"character_chosen", 1, param_slot_7 };
+    static const QUParameter param_slot_8[] = {
+	{ 0, &static_QUType_ptr, "QResizeEvent", QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"resizeEvent", 1, param_slot_8 };
+    static const QMetaData slot_tbl[] = {
+	{ "openURL(QString)", &slot_0, QMetaData::Public },
+	{ "openURL(const KURL&)", &slot_1, QMetaData::Public },
+	{ "print(QPainter*,int,int)", &slot_2, QMetaData::Public },
+	{ "w_show(QWidget*,QWidget*)", &slot_3, QMetaData::Public },
+	{ "t_type_changed(int)", &slot_4, QMetaData::Public },
+	{ "slotOnURL(const QString&)", &slot_5, QMetaData::Private },
+	{ "slotSetTitle(const QString&)", &slot_6, QMetaData::Private },
+	{ "character_chosen(int)", &slot_7, QMetaData::Private },
+	{ "resizeEvent(QResizeEvent*)", &slot_8, QMetaData::Private }
+    };
+    static const QUParameter param_signal_0[] = {
+	{ "text", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_0 = {"signalChangeStatusbar", 1, param_signal_0 };
+    static const QUParameter param_signal_1[] = {
+	{ "text", &static_QUType_QString, 0, QUParameter::In }
+    };
+    static const QUMethod signal_1 = {"signalChangeCaption", 1, param_signal_1 };
+    static const QMetaData signal_tbl[] = {
+	{ "signalChangeStatusbar(const QString&)", &signal_0, QMetaData::Public },
+	{ "signalChangeCaption(const QString&)", &signal_1, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"ComposerView", parentObject,
+	slot_tbl, 9,
+	signal_tbl, 2,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_ComposerView.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* ComposerView::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "ComposerView" ) )
+	return this;
+    if ( !qstrcmp( clname, "ComposerIface" ) )
+	return (ComposerIface*)this;
+    return ComposerWidget::qt_cast( clname );
+}
+
+// SIGNAL signalChangeStatusbar
+void ComposerView::signalChangeStatusbar( const QString& t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 0, t0 );
+}
+
+// SIGNAL signalChangeCaption
+void ComposerView::signalChangeCaption( const QString& t0 )
+{
+    activate_signal( staticMetaObject()->signalOffset() + 1, t0 );
+}
+
+bool ComposerView::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: openURL((QString)static_QUType_QString.get(_o+1)); break;
+    case 1: openURL((const KURL&)*((const KURL*)static_QUType_ptr.get(_o+1))); break;
+    case 2: print((QPainter*)static_QUType_ptr.get(_o+1),(int)static_QUType_int.get(_o+2),(int)static_QUType_int.get(_o+3)); break;
+    case 3: static_QUType_ptr.set(_o,w_show((QWidget*)static_QUType_ptr.get(_o+1),(QWidget*)static_QUType_ptr.get(_o+2))); break;
+    case 4: t_type_changed((int)static_QUType_int.get(_o+1)); break;
+    case 5: slotOnURL((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 6: slotSetTitle((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 7: character_chosen((int)static_QUType_int.get(_o+1)); break;
+    case 8: resizeEvent((QResizeEvent*)static_QUType_ptr.get(_o+1)); break;
+    default:
+	return ComposerWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool ComposerView::qt_emit( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->signalOffset() ) {
+    case 0: signalChangeStatusbar((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 1: signalChangeCaption((const QString&)static_QUType_QString.get(_o+1)); break;
+    default:
+	return ComposerWidget::qt_emit(_id,_o);
+    }
+    return TRUE;
+}
+#ifndef QT_NO_PROPERTIES
+
+bool ComposerView::qt_property( int id, int f, QVariant* v)
+{
+    return ComposerWidget::qt_property( id, f, v);
+}
+
+bool ComposerView::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
