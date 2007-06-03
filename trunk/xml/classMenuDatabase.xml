@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="classMenuDatabase" kind="class" prot="public">
+    <compoundname>MenuDatabase</compoundname>
+    <includes refid="menudatabase_8h" local="no">menudatabase.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMenuDatabase_15c3bd10f85851497c83cb770f1b209b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuDatabase::MenuDatabase</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>MenuDatabase</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/menudatabase.h" line="32" bodyfile="/home/bastl/Kdevel/keda/src/menudatabase.cpp" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classMenuDatabase_1363aa6d7de6e2d140c4e17f89ad781a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MenuDatabase::~MenuDatabase</definition>
+        <argsstring>()</argsstring>
+        <name>~MenuDatabase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/menudatabase.h" line="34" bodyfile="/home/bastl/Kdevel/keda/src/menudatabase.cpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMenuDatabase_183878c91171338902e0fe0fb97a8c47a" prot="public" static="no" mutable="no">
+        <type>QPoint</type>
+        <definition>QPoint MenuDatabase::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/menudatabase.h" line="36" bodyfile="/home/bastl/Kdevel/keda/src/menudatabase.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classMenuDatabase_1466e13fd34a4781cd8dd864ab67df4da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MenuDatabase::popup</definition>
+        <argsstring>(QWidget *)</argsstring>
+        <name>popup</name>
+        <param>
+          <type>QWidget *</type>
+          <defname>rel</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/menudatabase.h" line="39" bodyfile="/home/bastl/Kdevel/keda/src/menudatabase.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sebastian &lt;<ulink url="mailto:sebastian.bw@freenet.de">sebastian.bw@freenet.de</ulink>&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/bastl/Kdevel/keda/src/menudatabase.h" line="30" bodyfile="/home/bastl/Kdevel/keda/src/menudatabase.h" bodystart="29" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classMenuDatabase_15c3bd10f85851497c83cb770f1b209b6" prot="public" virt="non-virtual"><scope>MenuDatabase</scope><name>MenuDatabase</name></member>
+      <member refid="classMenuDatabase_183878c91171338902e0fe0fb97a8c47a" prot="public" virt="non-virtual"><scope>MenuDatabase</scope><name>p</name></member>
+      <member refid="classMenuDatabase_1466e13fd34a4781cd8dd864ab67df4da" prot="public" virt="non-virtual"><scope>MenuDatabase</scope><name>popup</name></member>
+      <member refid="classMenuDatabase_1363aa6d7de6e2d140c4e17f89ad781a7" prot="public" virt="non-virtual"><scope>MenuDatabase</scope><name>~MenuDatabase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

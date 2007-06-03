@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="classComposerView" kind="class" prot="public">
+    <compoundname>ComposerView</compoundname>
+    <basecompoundref refid="classComposerWidget" prot="public" virt="non-virtual"></basecompoundref>
+    <basecompoundref refid="classComposerIface" prot="public" virt="non-virtual"></basecompoundref>
+    <includes refid="composerview_8h" local="no">composerview.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classComposerView_1d059e3c900af7e133d6804584f95316a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ComposerView::ComposerView</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>ComposerView</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="44" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="43" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classComposerView_12a810dff322ac5b0ccfdd666b79c9443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString ComposerView::currentURL</definition>
+        <argsstring>()</argsstring>
+        <name>currentURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="47" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classComposerView_1207b51aebba5131f90aa903795c98772" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>ComposerView::~ComposerView</definition>
+        <argsstring>()</argsstring>
+        <name>~ComposerView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="45" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="102" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classComposerView_18277e0910d750195b448797616e091ad" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget * ComposerView::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="48" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classComposerView_14b43b0aee35624cd95b910189b3dc231" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget * ComposerView::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="48" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classComposerView_1e358efa489f58062f10dd7316b65649e" prot="public" static="no" mutable="no">
+        <type><ref refid="classTransistor" kindref="compound">Transistor</ref> *</type>
+        <definition>Transistor* ComposerView::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="49" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classComposerView_1f1290186a5d0b1ceab27f4e77c0c5d68" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* ComposerView::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="48" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classComposerView_1bd29ea8da04eb211ed2f5617c6ce1efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComposerView::openURL</definition>
+        <argsstring>(const KURL &amp;url)</argsstring>
+        <name>openURL</name>
+        <param>
+          <type>const KURL &amp;</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="53" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="slot" id="classComposerView_11d669cfc5a2d59fafee1b0c99df3a957" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ComposerView::openURL</definition>
+        <argsstring>(QString url)</argsstring>
+        <name>openURL</name>
+        <reimplements refid="classComposerIface_13deb991ea51d92a58332714d156f1389">openURL</reimplements>
+        <param>
+          <type>QString</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="52" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="slot" id="classComposerView_1049cd1d13f85a362dcd3c318f3b4c5b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComposerView::print</definition>
+        <argsstring>(QPainter *, int height, int width)</argsstring>
+        <name>print</name>
+        <param>
+          <type>QPainter *</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="54" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="slot" id="classComposerView_15c482ee5ba4ea523a76dbc40fa91456e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComposerView::t_type_changed</definition>
+        <argsstring>(int)</argsstring>
+        <name>t_type_changed</name>
+        <param>
+          <type>int</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="56" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="190" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="slot" id="classComposerView_1d0d650902f9540d47a9dd405f6baed22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QWidget *</type>
+        <definition>QWidget * ComposerView::w_show</definition>
+        <argsstring>(QWidget *, QWidget *)</argsstring>
+        <name>w_show</name>
+        <param>
+          <type>QWidget *</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <defname>lastwidget</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="55" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="142" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="classComposerView_11640e1a8403c83b28da4a8c144e72a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComposerView::signalChangeCaption</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>signalChangeCaption</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="60" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.moc" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="signal" id="classComposerView_1a483002718991e728fbec2ad1de19bec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComposerView::signalChangeStatusbar</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>signalChangeStatusbar</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="59" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.moc" bodystart="141" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classComposerView_173aa6a5809b4d9db65099c4f54c9e4c8" prot="private" static="no" mutable="no">
+        <type>KParts::ReadOnlyPart *</type>
+        <definition>KParts::ReadOnlyPart* ComposerView::m_html</definition>
+        <argsstring></argsstring>
+        <name>m_html</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="69" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classComposerView_1c9c3e0c0edd13829d6dd945b8a46bbe1" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ComposerView::character_chosen</definition>
+        <argsstring>(int)</argsstring>
+        <name>character_chosen</name>
+        <reimplements refid="classComposerWidget_1c9c3e0c0edd13829d6dd945b8a46bbe1">character_chosen</reimplements>
+        <param>
+          <type>int</type>
+          <defname>group</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="65" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="161" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="slot" id="classComposerView_1566d9b8eed7e434eda4a730423f8416c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComposerView::resizeEvent</definition>
+        <argsstring>(QResizeEvent *)</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>QResizeEvent *</type>
+          <defname>e</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="66" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="slot" id="classComposerView_1503a57aeabd28ebad3fcdffb7dd30bcf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComposerView::slotOnURL</definition>
+        <argsstring>(const QString &amp;url)</argsstring>
+        <name>slotOnURL</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="63" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="slot" id="classComposerView_18ec7516cd95ae475094889b9a2ec4341" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComposerView::slotSetTitle</definition>
+        <argsstring>(const QString &amp;title)</argsstring>
+        <name>slotSetTitle</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="64" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main view. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sebastian &lt;<ulink url="mailto:sebastian.bw@freenet.de">sebastian.bw@freenet.de</ulink>&gt; </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>ComposerWidget</label>
+        <link refid="classComposerWidget"/>
+      </node>
+      <node id="19">
+        <label>ComposerView</label>
+        <link refid="classComposerView"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ComposerIface</label>
+        <link refid="classComposerIface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>ComposerWidget</label>
+        <link refid="classComposerWidget"/>
+      </node>
+      <node id="22">
+        <label>ComposerView</label>
+        <link refid="classComposerView"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>t</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>ComposerIface</label>
+        <link refid="classComposerIface"/>
+      </node>
+      <node id="25">
+        <label>Transistor</label>
+        <link refid="classTransistor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bastl/Kdevel/keda/composer/composerview.h" line="41" bodyfile="/home/bastl/Kdevel/keda/composer/composerview.h" bodystart="40" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classComposerView_1c9c3e0c0edd13829d6dd945b8a46bbe1" prot="private" virt="virtual"><scope>ComposerView</scope><name>character_chosen</name></member>
+      <member refid="classComposerWidget_127f04ac1c6c8fb16f7e712e754360971" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>characteristics</name></member>
+      <member refid="classComposerWidget_1d3429d05b1dd4b311be1d48957af0d1d" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>characteristicsLayout</name></member>
+      <member refid="classComposerWidget_128ff153f830f61c0cb63168d632cc861" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>comboBox1</name></member>
+      <member refid="classComposerView_1d059e3c900af7e133d6804584f95316a" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>ComposerView</name></member>
+      <member refid="classComposerWidget_13cb0fbb1aa2f045f4ea1c1060cfc7ca1" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>ComposerWidget</name></member>
+      <member refid="classComposerWidget_1312ead4374d2ccea757ab960a9ed7246" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>ComposerWidgetLayout</name></member>
+      <member refid="classComposerView_12a810dff322ac5b0ccfdd666b79c9443" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>currentURL</name></member>
+      <member refid="classComposerView_18277e0910d750195b448797616e091ad" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>d</name></member>
+      <member refid="classComposerWidget_1c4cf4802b30127a6ae42a1a1798c51b3" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>dimension</name></member>
+      <member refid="classComposerWidget_1e529843722ff837c6ea2d1563aff9722" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>dimensionLayout</name></member>
+      <member refid="classComposerWidget_1c1cf01e97872427ced3cc4d2b5410705" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>eda</name></member>
+      <member refid="classComposerWidget_14b3d445ea5e37f8b25dbf14827275ab9" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>eda_tab</name></member>
+      <member refid="classComposerWidget_17d61ac955e4a691c50e511a8266f20dd" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>eda_tab_2</name></member>
+      <member refid="classComposerWidget_17f5a8d1e14cfed47c4d14e4345db7f1b" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>eda_view</name></member>
+      <member refid="classComposerWidget_1c2354104385f73c1aa1e700a51b08b57" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>eda_view_2</name></member>
+      <member refid="classComposerWidget_1e05442480afe59d8e45f70b289685b75" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>eda_view_2_2</name></member>
+      <member refid="classComposerWidget_14cfddfb6e930b9e57cdb35a612d915e1" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>eda_view_2_2_2</name></member>
+      <member refid="classComposerWidget_179e322855325868e5b56c9c5667195f2" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>eda_view_2_2_3</name></member>
+      <member refid="classComposerWidget_1803572be04c7f21d87ebfe9d80b0507d" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>edaLayout</name></member>
+      <member refid="classComposerWidget_1d7e13ede2b112574ca61da3cea91d667" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>image_dim</name></member>
+      <member refid="classComposerWidget_111bd6ffdecfef5c3c8b6d777c453a56f" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>image_eda</name></member>
+      <member refid="classComposerWidget_1a435c600ffc64c20371eba15b9aaf82f" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>image_pin</name></member>
+      <member refid="classComposerWidget_1c42a6660463e31f5c186ce4a78642e78" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>kLineEdit1_2</name></member>
+      <member refid="classComposerWidget_11182bf5637039731d24c9b1e622b4179" prot="protected" virt="virtual"><scope>ComposerView</scope><name>languageChange</name></member>
+      <member refid="classComposerWidget_1af6da2d68e9e10f2381a5e50d5372908" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>layout1</name></member>
+      <member refid="classComposerWidget_15271f90e8c2f0a98857949635499a2af" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>layout1_2</name></member>
+      <member refid="classComposerWidget_1393c65c6086c42c77ac851f10172deb8" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>layout7</name></member>
+      <member refid="classComposerWidget_1b6dc6d14088f1635235ea18189924d6a" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>line8</name></member>
+      <member refid="classComposerView_173aa6a5809b4d9db65099c4f54c9e4c8" prot="private" virt="non-virtual"><scope>ComposerView</scope><name>m_html</name></member>
+      <member refid="classComposerWidget_1a8998c31a141924d06220074fcdc6925" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>names</name></member>
+      <member refid="classComposerWidget_13a18cdb54f0ad2117015a22df8a516e7" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>names_2</name></member>
+      <member refid="classComposerWidget_16621e77c91f0e6897d7dc9edf63ab7b3" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>namesLayout</name></member>
+      <member refid="classComposerView_11d669cfc5a2d59fafee1b0c99df3a957" prot="public" virt="virtual"><scope>ComposerView</scope><name>openURL</name></member>
+      <member refid="classComposerView_1bd29ea8da04eb211ed2f5617c6ce1efb" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>openURL</name></member>
+      <member refid="classComposerWidget_1f42a83f45934ad4e2e2628bec3dfede9" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>pcb</name></member>
+      <member refid="classComposerWidget_1ced42430e791ac2e495dcd080c0ef3b5" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>pcbLayout</name></member>
+      <member refid="classComposerWidget_1365a4a972db646c76d115b3897f2d4de" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>positions</name></member>
+      <member refid="classComposerWidget_19a933d840b6653550bff9d90782885e8" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>positions_2</name></member>
+      <member refid="classComposerWidget_188fa4e53210e375c44046f771c826db5" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>positionsLayout</name></member>
+      <member refid="classComposerView_1049cd1d13f85a362dcd3c318f3b4c5b0" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>print</name></member>
+      <member refid="classComposerView_14b43b0aee35624cd95b910189b3dc231" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>r</name></member>
+      <member refid="classComposerView_1566d9b8eed7e434eda4a730423f8416c" prot="private" virt="non-virtual"><scope>ComposerView</scope><name>resizeEvent</name></member>
+      <member refid="classComposerView_11640e1a8403c83b28da4a8c144e72a24" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>signalChangeCaption</name></member>
+      <member refid="classComposerView_1a483002718991e728fbec2ad1de19bec" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>signalChangeStatusbar</name></member>
+      <member refid="classComposerView_1503a57aeabd28ebad3fcdffb7dd30bcf" prot="private" virt="non-virtual"><scope>ComposerView</scope><name>slotOnURL</name></member>
+      <member refid="classComposerView_18ec7516cd95ae475094889b9a2ec4341" prot="private" virt="non-virtual"><scope>ComposerView</scope><name>slotSetTitle</name></member>
+      <member refid="classComposerWidget_1544930c9a6c374521d32aa8b9eeb1f1a" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>spacer2</name></member>
+      <member refid="classComposerView_1e358efa489f58062f10dd7316b65649e" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>t</name></member>
+      <member refid="classComposerView_15c482ee5ba4ea523a76dbc40fa91456e" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>t_type_changed</name></member>
+      <member refid="classComposerWidget_1e7f8cbd87d347be881cba92dad128518" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>tab</name></member>
+      <member refid="classComposerWidget_1936beb3789addd4616f024f2cd2caac8" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>tab_2</name></member>
+      <member refid="classComposerWidget_137ed5af681fab9c3e22bfd4f582d96bd" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>tabLayout</name></member>
+      <member refid="classComposerWidget_1d90b19861457e1cb706528a94e6e42ef" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>tabLayout_2</name></member>
+      <member refid="classComposerWidget_116ca38670abb008d24f3f2170d656335" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>TabPage</name></member>
+      <member refid="classComposerWidget_1ccd0a4006e9db31c4a3105b6b0b8fc12" prot="protected" virt="non-virtual"><scope>ComposerView</scope><name>TabPageLayout</name></member>
+      <member refid="classComposerWidget_108887130f0184ac2184bfdfe7c30e6a1" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>Tabwidget</name></member>
+      <member refid="classComposerWidget_12f1d8670c36c5b89f809063961d62a4f" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>tabWidget6</name></member>
+      <member refid="classComposerWidget_1e97b0fa4bb84049c8cf1e27a06a78eae" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>textEdit1</name></member>
+      <member refid="classComposerWidget_1bb9be264cdf3224abd3c1e60f4ac7580" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>textLabel1_5</name></member>
+      <member refid="classComposerWidget_1ca2990cb7563155ff8f78f6c6892dafd" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>textLabel3</name></member>
+      <member refid="classComposerWidget_1d54358d4c86932bbc6c039667005d66a" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>textLabel3_2</name></member>
+      <member refid="classComposerWidget_11face088464e99f9bc70402a48986e0a" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>textLabel3_3</name></member>
+      <member refid="classComposerView_1f1290186a5d0b1ceab27f4e77c0c5d68" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>w</name></member>
+      <member refid="classComposerView_1d0d650902f9540d47a9dd405f6baed22" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>w_show</name></member>
+      <member refid="classComposerView_1207b51aebba5131f90aa903795c98772" prot="public" virt="virtual"><scope>ComposerView</scope><name>~ComposerView</name></member>
+      <member refid="classComposerWidget_1ad649b541fc78f8e51a4fb829c4e1f2b" prot="public" virt="non-virtual"><scope>ComposerView</scope><name>~ComposerWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

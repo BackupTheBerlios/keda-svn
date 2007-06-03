@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="menudatabase_8cpp" kind="file">
+    <compoundname>menudatabase.cpp</compoundname>
+    <includes refid="menudatabase_8h" local="yes">menudatabase.h</includes>
+    <includes local="no">qpopupmenu.h</includes>
+    <includes local="no">qpoint.h</includes>
+    <includes refid="keda_8h" local="yes">keda.h</includes>
+    <incdepgraph>
+      <node id="523">
+        <label>kedaiface.h</label>
+        <link refid="kedaiface_8h-source"/>
+        <childnode refid="524" relation="include">
+        </childnode>
+      </node>
+      <node id="519">
+        <label>kmainwindow.h</label>
+      </node>
+      <node id="520">
+        <label>kedaview.h</label>
+        <link refid="kedaview_8h-source"/>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>keda.h</label>
+        <link refid="keda_8h-source"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>qpoint.h</label>
+      </node>
+      <node id="525">
+        <label>kedawidget.h</label>
+        <link refid="kedawidget_8h-source"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>kapplication.h</label>
+      </node>
+      <node id="513">
+        <label>/home/bastl/Kdevel/keda/src/menudatabase.cpp</label>
+        <link refid="menudatabase.cpp"/>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>qpopupmenu.h</label>
+      </node>
+      <node id="526">
+        <label>qvariant.h</label>
+      </node>
+      <node id="528">
+        <label>offerwidget.h</label>
+        <link refid="offerwidget_8h-source"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>qwidget.h</label>
+      </node>
+      <node id="527">
+        <label>kprocess.h</label>
+      </node>
+      <node id="522">
+        <label>kparts/part.h</label>
+      </node>
+      <node id="524">
+        <label>dcopobject.h</label>
+      </node>
+      <node id="514">
+        <label>menudatabase.h</label>
+        <link refid="menudatabase_8h-source"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2007<sp/>by<sp/>sebastian<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>sebastian.bw@freenet.de<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="menudatabase_8h" kindref="compound">menudatabase.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qpopupmenu.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qpoint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="keda_8h" kindref="compound">keda.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="classMenuDatabase_15c3bd10f85851497c83cb770f1b209b6" kindref="member">MenuDatabase::MenuDatabase</ref>(<sp/>QWidget<sp/>*parent<sp/>)<sp/>:<sp/>QPopupMenu(<sp/>parent<sp/>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertItem(<sp/></highlight><highlight class="stringliteral">&quot;Create<sp/>a<sp/>part&quot;</highlight><highlight class="normal">,<sp/>parent,<sp/>SLOT(<sp/>start_composer()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertItem(<sp/></highlight><highlight class="stringliteral">&quot;Edit<sp/>Database&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/>openDatabaseComposer()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertItem(<sp/></highlight><highlight class="stringliteral">&quot;Adjust<sp/>Database&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/>openDatabaseComposer()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertItem(<sp/></highlight><highlight class="stringliteral">&quot;Replace<sp/>local<sp/>Database&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/>openDatabaseComposer()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertItem(<sp/></highlight><highlight class="stringliteral">&quot;Search<sp/>a<sp/>part&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/>openDatabaseComposer()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="classMenuDatabase_1363aa6d7de6e2d140c4e17f89ad781a7" kindref="member">MenuDatabase::~MenuDatabase</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMenuDatabase_1466e13fd34a4781cd8dd864ab67df4da" kindref="member">MenuDatabase::popup</ref>(<sp/>QWidget<sp/>*rel<sp/>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPopupMenu::popup(<sp/>rel-&gt;mapToGlobal(<sp/>rel-&gt;pos()+QPoint(<sp/>0,<sp/>rel-&gt;height()<sp/>)<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/bastl/Kdevel/keda/src/menudatabase.cpp"/>
+  </compounddef>
+</doxygen>
