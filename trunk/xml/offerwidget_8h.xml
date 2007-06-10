@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="offerwidget_8h" kind="file">
+    <compoundname>offerwidget.h</compoundname>
+    <includes local="no">qvariant.h</includes>
+    <includes local="no">qwidget.h</includes>
+    <includedby refid="kedaview_8h" local="yes">/home/bastl/Kdevel/keda/src/kedaview.h</includedby>
+    <includedby refid="kedaview_8cpp" local="yes">/home/bastl/Kdevel/keda/src/kedaview.cpp</includedby>
+    <includedby refid="offerwidget_8cpp" local="yes">/home/bastl/Kdevel/keda/src/offerwidget.cpp</includedby>
+    <includedby refid="offerwidget_8moc" local="yes">/home/bastl/Kdevel/keda/src/offerwidget.moc</includedby>
+    <incdepgraph>
+      <node id="633">
+        <label>qvariant.h</label>
+      </node>
+      <node id="632">
+        <label>/home/bastl/Kdevel/keda/src/offerwidget.h</label>
+        <link refid="offerwidget.h"/>
+        <childnode refid="633" relation="include">
+        </childnode>
+        <childnode refid="634" relation="include">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>qwidget.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="636">
+        <label>/home/bastl/Kdevel/keda/src/kedaview.h</label>
+        <link refid="kedaview_8h-source"/>
+        <childnode refid="637" relation="include">
+        </childnode>
+      </node>
+      <node id="637">
+        <label>/home/bastl/Kdevel/keda/src/keda.h</label>
+        <link refid="keda_8h-source"/>
+      </node>
+      <node id="635">
+        <label>/home/bastl/Kdevel/keda/src/offerwidget.h</label>
+        <link refid="offerwidget.h"/>
+        <childnode refid="636" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOfferWidget">OfferWidget</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Form<sp/>interface<sp/>generated<sp/>from<sp/>reading<sp/>ui<sp/>file<sp/>&apos;/home/bastl/Kdevel/keda/src/offerwidget.ui&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created:<sp/>Di<sp/>Apr<sp/>24<sp/>15:19:28<sp/>2007</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>The<sp/>User<sp/>Interface<sp/>Compiler<sp/>($Id:<sp/>qt/main.cpp<sp/><sp/><sp/>3.3.5<sp/><sp/><sp/>edited<sp/>Aug<sp/>31<sp/>12:13<sp/>$)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OFFERWIDGET_H</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>OFFERWIDGET_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qvariant.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qwidget.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QVBoxLayout;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QHBoxLayout;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QGridLayout;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QSpacerItem;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KListBox;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QListBoxItem;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QToolButton;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classOfferWidget" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOfferWidget" kindref="compound">OfferWidget</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOfferWidget_12a2c4d3807f1a63bbe25777afb3c8f24" kindref="member">OfferWidget</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;t,<sp/>QWidget<sp/>*parent<sp/>=<sp/>0);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOfferWidget_12a2c4d3807f1a63bbe25777afb3c8f24" kindref="member">OfferWidget</ref>(<sp/>QWidget*<sp/>parent<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOfferWidget_1a30ce0857c3808fb826793538d1930bf" kindref="member">~OfferWidget</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classOfferWidget_172fe198c330c3a2e98f05b0c96a66417" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KListBox*<sp/><ref refid="classOfferWidget_172fe198c330c3a2e98f05b0c96a66417" kindref="member">kListBox2</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classOfferWidget_1ef983058688ff58732b0fe2b8779fc0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QToolButton*<sp/><ref refid="classOfferWidget_1ef983058688ff58732b0fe2b8779fc0a" kindref="member">headline</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOfferWidget_18366cb5cbeacfceea7deecfba74c050a" kindref="member">headline_clicked</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40" refid="classOfferWidget_1b2472c04e9f52a0aec4c3c318085fa45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/><ref refid="classOfferWidget_1b2472c04e9f52a0aec4c3c318085fa45" kindref="member">OfferWidgetLayout</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOfferWidget_11182bf5637039731d24c9b1e622b4179" kindref="member">languageChange</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>OFFERWIDGET_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/bastl/Kdevel/keda/src/offerwidget.h"/>
+  </compounddef>
+</doxygen>

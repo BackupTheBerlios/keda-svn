@@ -1,0 +1,368 @@
+transistor.o transistor.o: transistor.cpp \
+  /usr/local/kde/include/kdialog.h /usr/qt/include/qdialog.h \
+  /usr/qt/include/qwidget.h /usr/qt/include/qwindowdefs.h \
+  /usr/qt/include/qobjectdefs.h /usr/qt/include/qglobal.h \
+  /usr/qt/include/qconfig.h /usr/qt/include/qmodules.h \
+  /usr/qt/include/qfeatures.h /usr/qt/include/qstring.h \
+  /usr/qt/include/qcstring.h /usr/qt/include/qmemarray.h \
+  /usr/qt/include/qgarray.h /usr/qt/include/qshared.h \
+  /usr/qt/include/qwinexport.h /usr/include/string.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h \
+  /usr/lib/gcc/i686-pc-linux-gnu/3.4.4/include/stddef.h \
+  /usr/include/xlocale.h \
+  /usr/lib/gcc/i686-pc-linux-gnu/3.4.4/include/limits.h \
+  /usr/lib/gcc/i686-pc-linux-gnu/3.4.4/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/stdio_lim.h /usr/qt/include/qnamespace.h \
+  /usr/qt/include/qobject.h /usr/qt/include/qevent.h \
+  /usr/qt/include/qregion.h /usr/qt/include/qrect.h \
+  /usr/qt/include/qsize.h /usr/qt/include/qpoint.h \
+  /usr/qt/include/qmime.h /usr/qt/include/qmap.h \
+  /usr/qt/include/qdatastream.h /usr/qt/include/qiodevice.h \
+  /usr/qt/include/qpair.h /usr/qt/include/qvaluelist.h \
+  /usr/qt/include/qtl.h /usr/qt/include/qtextstream.h \
+  /usr/include/stdio.h /usr/include/bits/types.h \
+  /usr/include/bits/wordsize.h /usr/include/bits/typesizes.h \
+  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+  /usr/include/bits/wchar.h /usr/include/gconv.h \
+  /usr/lib/gcc/i686-pc-linux-gnu/3.4.4/include/stdarg.h \
+  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+  /usr/qt/include/qpaintdevice.h /usr/qt/include/qpalette.h \
+  /usr/qt/include/qcolor.h /usr/qt/include/qstringlist.h \
+  /usr/qt/include/qstrlist.h /usr/qt/include/qptrlist.h \
+  /usr/qt/include/qglist.h /usr/qt/include/qptrcollection.h \
+  /usr/qt/include/qbrush.h /usr/qt/include/qfont.h \
+  /usr/qt/include/qfontmetrics.h /usr/qt/include/qfontinfo.h \
+  /usr/qt/include/qsizepolicy.h /usr/local/kde/include/kdelibs_export.h \
+  /usr/local/kde/include/kdemacros.h /usr/qt/include/qglobal.h \
+  /usr/local/kde/include/klocale.h /usr/qt/include/qstring.h transistor.h \
+  /usr/qt/include/qvariant.h /usr/qt/include/qwidget.h \
+  /usr/qt/include/qcheckbox.h /usr/qt/include/qbutton.h \
+  /usr/qt/include/qkeysequence.h /usr/qt/include/qlabel.h \
+  /usr/qt/include/qframe.h /usr/local/kde/include/knuminput.h \
+  /usr/qt/include/qspinbox.h /usr/qt/include/qrangecontrol.h \
+  /usr/local/kde/include/kcombobox.h /usr/qt/include/qlineedit.h \
+  /usr/qt/include/qcombobox.h /usr/local/kde/include/kcompletion.h \
+  /usr/qt/include/qmap.h /usr/qt/include/qptrlist.h \
+  /usr/qt/include/qobject.h /usr/qt/include/qstringlist.h \
+  /usr/qt/include/qguardedptr.h /usr/local/kde/include/kdelibs_export.h \
+  /usr/local/kde/include/kglobalsettings.h /usr/qt/include/qcolor.h \
+  /usr/qt/include/qfont.h /usr/local/kde/include/ksortablevaluelist.h \
+  /usr/qt/include/qpair.h /usr/qt/include/qvaluelist.h \
+  /usr/local/kde/include/kshortcut.h /usr/qt/include/qkeysequence.h \
+  /usr/local/kde/include/kurlrequester.h /usr/qt/include/qhbox.h \
+  /usr/local/kde/include/keditlistbox.h /usr/qt/include/qgroupbox.h \
+  /usr/qt/include/qlistbox.h /usr/qt/include/qscrollview.h \
+  /usr/qt/include/qscrollbar.h /usr/qt/include/qpixmap.h \
+  /usr/local/kde/include/kfile.h /usr/qt/include/qdir.h \
+  /usr/qt/include/qfileinfo.h /usr/qt/include/qfile.h \
+  /usr/qt/include/qdatetime.h /usr/local/kde/include/kpushbutton.h \
+  /usr/qt/include/qpoint.h /usr/qt/include/qpushbutton.h \
+  /usr/qt/include/qiconset.h /usr/local/kde/include/kguiitem.h \
+  /usr/qt/include/qiconset.h /usr/qt/include/qpixmap.h \
+  /usr/local/kde/include/kicontheme.h /usr/local/kde/include/kglobal.h \
+  /usr/local/kde/include/kinstance.h /usr/local/kde/include/kstdguiitem.h \
+  /usr/local/kde/include/kurl.h /usr/qt/include/qframe.h \
+  /usr/qt/include/qlayout.h /usr/qt/include/qtooltip.h \
+  /usr/qt/include/qwhatsthis.h /usr/qt/include/qcursor.h \
+  /usr/local/kde/include/klineedit.h transistor.moc \
+  /usr/qt/include/qmetaobject.h /usr/qt/include/qconnection.h \
+  /usr/qt/include/qapplication.h /usr/qt/include/qdesktopwidget.h \
+  /usr/qt/include/qasciidict.h /usr/qt/include/qgdict.h \
+  /usr/qt/include/qtranslator.h /usr/qt/include/private/qucomextra_p.h \
+  /usr/qt/include/private/qucom_p.h /usr/qt/include/quuid.h
+
+/usr/local/kde/include/kdialog.h:
+
+/usr/qt/include/qdialog.h:
+
+/usr/qt/include/qwidget.h:
+
+/usr/qt/include/qwindowdefs.h:
+
+/usr/qt/include/qobjectdefs.h:
+
+/usr/qt/include/qglobal.h:
+
+/usr/qt/include/qconfig.h:
+
+/usr/qt/include/qmodules.h:
+
+/usr/qt/include/qfeatures.h:
+
+/usr/qt/include/qstring.h:
+
+/usr/qt/include/qcstring.h:
+
+/usr/qt/include/qmemarray.h:
+
+/usr/qt/include/qgarray.h:
+
+/usr/qt/include/qshared.h:
+
+/usr/qt/include/qwinexport.h:
+
+/usr/include/string.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/3.4.4/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/3.4.4/include/limits.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/3.4.4/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/qt/include/qnamespace.h:
+
+/usr/qt/include/qobject.h:
+
+/usr/qt/include/qevent.h:
+
+/usr/qt/include/qregion.h:
+
+/usr/qt/include/qrect.h:
+
+/usr/qt/include/qsize.h:
+
+/usr/qt/include/qpoint.h:
+
+/usr/qt/include/qmime.h:
+
+/usr/qt/include/qmap.h:
+
+/usr/qt/include/qdatastream.h:
+
+/usr/qt/include/qiodevice.h:
+
+/usr/qt/include/qpair.h:
+
+/usr/qt/include/qvaluelist.h:
+
+/usr/qt/include/qtl.h:
+
+/usr/qt/include/qtextstream.h:
+
+/usr/include/stdio.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/gconv.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/3.4.4/include/stdarg.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/qt/include/qpaintdevice.h:
+
+/usr/qt/include/qpalette.h:
+
+/usr/qt/include/qcolor.h:
+
+/usr/qt/include/qstringlist.h:
+
+/usr/qt/include/qstrlist.h:
+
+/usr/qt/include/qptrlist.h:
+
+/usr/qt/include/qglist.h:
+
+/usr/qt/include/qptrcollection.h:
+
+/usr/qt/include/qbrush.h:
+
+/usr/qt/include/qfont.h:
+
+/usr/qt/include/qfontmetrics.h:
+
+/usr/qt/include/qfontinfo.h:
+
+/usr/qt/include/qsizepolicy.h:
+
+/usr/local/kde/include/kdelibs_export.h:
+
+/usr/local/kde/include/kdemacros.h:
+
+/usr/qt/include/qglobal.h:
+
+/usr/local/kde/include/klocale.h:
+
+/usr/qt/include/qstring.h:
+
+transistor.h:
+
+/usr/qt/include/qvariant.h:
+
+/usr/qt/include/qwidget.h:
+
+/usr/qt/include/qcheckbox.h:
+
+/usr/qt/include/qbutton.h:
+
+/usr/qt/include/qkeysequence.h:
+
+/usr/qt/include/qlabel.h:
+
+/usr/qt/include/qframe.h:
+
+/usr/local/kde/include/knuminput.h:
+
+/usr/qt/include/qspinbox.h:
+
+/usr/qt/include/qrangecontrol.h:
+
+/usr/local/kde/include/kcombobox.h:
+
+/usr/qt/include/qlineedit.h:
+
+/usr/qt/include/qcombobox.h:
+
+/usr/local/kde/include/kcompletion.h:
+
+/usr/qt/include/qmap.h:
+
+/usr/qt/include/qptrlist.h:
+
+/usr/qt/include/qobject.h:
+
+/usr/qt/include/qstringlist.h:
+
+/usr/qt/include/qguardedptr.h:
+
+/usr/local/kde/include/kdelibs_export.h:
+
+/usr/local/kde/include/kglobalsettings.h:
+
+/usr/qt/include/qcolor.h:
+
+/usr/qt/include/qfont.h:
+
+/usr/local/kde/include/ksortablevaluelist.h:
+
+/usr/qt/include/qpair.h:
+
+/usr/qt/include/qvaluelist.h:
+
+/usr/local/kde/include/kshortcut.h:
+
+/usr/qt/include/qkeysequence.h:
+
+/usr/local/kde/include/kurlrequester.h:
+
+/usr/qt/include/qhbox.h:
+
+/usr/local/kde/include/keditlistbox.h:
+
+/usr/qt/include/qgroupbox.h:
+
+/usr/qt/include/qlistbox.h:
+
+/usr/qt/include/qscrollview.h:
+
+/usr/qt/include/qscrollbar.h:
+
+/usr/qt/include/qpixmap.h:
+
+/usr/local/kde/include/kfile.h:
+
+/usr/qt/include/qdir.h:
+
+/usr/qt/include/qfileinfo.h:
+
+/usr/qt/include/qfile.h:
+
+/usr/qt/include/qdatetime.h:
+
+/usr/local/kde/include/kpushbutton.h:
+
+/usr/qt/include/qpoint.h:
+
+/usr/qt/include/qpushbutton.h:
+
+/usr/qt/include/qiconset.h:
+
+/usr/local/kde/include/kguiitem.h:
+
+/usr/qt/include/qiconset.h:
+
+/usr/qt/include/qpixmap.h:
+
+/usr/local/kde/include/kicontheme.h:
+
+/usr/local/kde/include/kglobal.h:
+
+/usr/local/kde/include/kinstance.h:
+
+/usr/local/kde/include/kstdguiitem.h:
+
+/usr/local/kde/include/kurl.h:
+
+/usr/qt/include/qframe.h:
+
+/usr/qt/include/qlayout.h:
+
+/usr/qt/include/qtooltip.h:
+
+/usr/qt/include/qwhatsthis.h:
+
+/usr/qt/include/qcursor.h:
+
+/usr/local/kde/include/klineedit.h:
+
+transistor.moc:
+
+/usr/qt/include/qmetaobject.h:
+
+/usr/qt/include/qconnection.h:
+
+/usr/qt/include/qapplication.h:
+
+/usr/qt/include/qdesktopwidget.h:
+
+/usr/qt/include/qasciidict.h:
+
+/usr/qt/include/qgdict.h:
+
+/usr/qt/include/qtranslator.h:
+
+/usr/qt/include/private/qucomextra_p.h:
+
+/usr/qt/include/private/qucom_p.h:
+
+/usr/qt/include/quuid.h:

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="classComposerPreferences" kind="class" prot="public">
+    <compoundname>ComposerPreferences</compoundname>
+    <includes refid="composer_2pref_8h" local="no">pref.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classComposerPreferences_1a1190481f99e7f8b6ef20be7b007399f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ComposerPreferences::ComposerPreferences</definition>
+        <argsstring>()</argsstring>
+        <name>ComposerPreferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/pref.h" line="35" bodyfile="/home/bastl/Kdevel/keda/composer/pref.cpp" bodystart="29" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classComposerPreferences_1c9bb9ddb693a045dec0166632154deca" prot="private" static="no" mutable="no">
+        <type><ref refid="classComposerPrefPageOne" kindref="compound">ComposerPrefPageOne</ref> *</type>
+        <definition>ComposerPrefPageOne* ComposerPreferences::m_pageOne</definition>
+        <argsstring></argsstring>
+        <name>m_pageOne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/pref.h" line="38" bodyfile="/home/bastl/Kdevel/keda/composer/pref.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classComposerPreferences_1e415a6a2699c0a2f7a450bc0d877b64c" prot="private" static="no" mutable="no">
+        <type><ref refid="classComposerPrefPageTwo" kindref="compound">ComposerPrefPageTwo</ref> *</type>
+        <definition>ComposerPrefPageTwo* ComposerPreferences::m_pageTwo</definition>
+        <argsstring></argsstring>
+        <name>m_pageTwo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/pref.h" line="39" bodyfile="/home/bastl/Kdevel/keda/composer/pref.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="17">
+        <label>ComposerPreferences</label>
+        <link refid="classComposerPreferences"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>m_pageTwo</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_pageOne</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ComposerPrefPageOne</label>
+        <link refid="classComposerPrefPageOne"/>
+      </node>
+      <node id="18">
+        <label>ComposerPrefPageTwo</label>
+        <link refid="classComposerPrefPageTwo"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bastl/Kdevel/keda/composer/pref.h" line="32" bodyfile="/home/bastl/Kdevel/keda/composer/pref.h" bodystart="31" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classComposerPreferences_1a1190481f99e7f8b6ef20be7b007399f" prot="public" virt="non-virtual"><scope>ComposerPreferences</scope><name>ComposerPreferences</name></member>
+      <member refid="classComposerPreferences_1c9bb9ddb693a045dec0166632154deca" prot="private" virt="non-virtual"><scope>ComposerPreferences</scope><name>m_pageOne</name></member>
+      <member refid="classComposerPreferences_1e415a6a2699c0a2f7a450bc0d877b64c" prot="private" virt="non-virtual"><scope>ComposerPreferences</scope><name>m_pageTwo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

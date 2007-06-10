@@ -1,0 +1,29 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="keda" version="1">
+<MenuBar>
+	<Menu name="Project"><text>&amp;Project</text>
+		<Action name="new_action" />
+		<Action name="open_action" />
+		<Action name="openresent_action" />
+		<Separator/>
+		<Action name="save_action" />
+		<Action name="saveas_action" />
+		<Separator/>
+		<Action name="quit_action" />
+	</Menu>
+	<Menu name="Work_Mode"><text>&amp;Work Mode</text>
+		<Action name="EDA_action" />
+		<Action name="PCB_action" />
+		<Action name="Print_action" />
+		<Action name="CNC_action" />
+		<Action name="prototype_action" />
+	</Menu>
+	<Menu name="Tools"><text>&amp;Tools</text>
+		<Action name="part_action" />
+		<Action name="am_action" />
+		<Action name="simulation_action" />
+		<Action name="osci_action" />
+		<Action name="meter_action" />
+	</Menu>
+</MenuBar>
+</kpartgui>

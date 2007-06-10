@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="kedawidget_8cpp" kind="file">
+    <compoundname>kedawidget.cpp</compoundname>
+    <includes local="no">kdialog.h</includes>
+    <includes local="no">klocale.h</includes>
+    <includes refid="kedawidget_8h" local="yes">kedawidget.h</includes>
+    <includes local="no">qvariant.h</includes>
+    <includes local="no">qframe.h</includes>
+    <includes local="no">qtoolbutton.h</includes>
+    <includes local="no">qlayout.h</includes>
+    <includes local="no">qtooltip.h</includes>
+    <includes local="no">qwhatsthis.h</includes>
+    <includes refid="kedawidget_8moc" local="yes">kedawidget.moc</includes>
+    <incdepgraph>
+      <node id="551">
+        <label>/home/bastl/Kdevel/keda/src/kedawidget.cpp</label>
+        <link refid="kedawidget.cpp"/>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>qwhatsthis.h</label>
+      </node>
+      <node id="557">
+        <label>qframe.h</label>
+      </node>
+      <node id="554">
+        <label>kedawidget.h</label>
+        <link refid="kedawidget_8h-source"/>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>qlayout.h</label>
+      </node>
+      <node id="553">
+        <label>klocale.h</label>
+      </node>
+      <node id="560">
+        <label>qtooltip.h</label>
+      </node>
+      <node id="555">
+        <label>qvariant.h</label>
+      </node>
+      <node id="556">
+        <label>qwidget.h</label>
+      </node>
+      <node id="552">
+        <label>kdialog.h</label>
+      </node>
+      <node id="558">
+        <label>qtoolbutton.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;kdialog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;klocale.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Form<sp/>implementation<sp/>generated<sp/>from<sp/>reading<sp/>ui<sp/>file<sp/>&apos;/home/bastl/Kdevel/keda/src/kedawidget.ui&apos;</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/>Created:<sp/>Sa<sp/>Jun<sp/>9<sp/>09:34:12<sp/>2007</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>The<sp/>User<sp/>Interface<sp/>Compiler<sp/>($Id:<sp/>qt/main.cpp<sp/><sp/><sp/>3.3.5<sp/><sp/><sp/>edited<sp/>Aug<sp/>31<sp/>12:13<sp/>$)</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kedawidget_8h" kindref="compound">kedawidget.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qvariant.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qframe.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qtoolbutton.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qlayout.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qtooltip.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qwhatsthis.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>Constructs<sp/>a<sp/>KedaWidget<sp/>as<sp/>a<sp/>child<sp/>of<sp/>&apos;parent&apos;,<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>name<sp/>&apos;name&apos;<sp/>and<sp/>widget<sp/>flags<sp/>set<sp/>to<sp/>&apos;f&apos;.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="classKedaWidget_15963117a5dddd034302ac8d6f682f0b4" kindref="member">KedaWidget::KedaWidget</ref>(<sp/>QWidget*<sp/>parent,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/>WFlags<sp/>fl<sp/>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>QWidget(<sp/>parent,<sp/>name,<sp/>fl<sp/>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!name<sp/>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setName(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_14a392a8df0606d397059f251c3f915ae" kindref="member">KedaWidgetLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QGridLayout(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>1,<sp/>1,<sp/>1,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;KedaWidgetLayout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1ebd9bec4d70abc789d439c1f136b0538" kindref="member">Layout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFrame(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Layout&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1ebd9bec4d70abc789d439c1f136b0538" kindref="member">Layout</ref>-&gt;setPaletteBackgroundColor(<sp/>QColor(<sp/>253,<sp/>247,<sp/>210<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1ebd9bec4d70abc789d439c1f136b0538" kindref="member">Layout</ref>-&gt;setFrameShape(<sp/>QFrame::StyledPanel<sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1ebd9bec4d70abc789d439c1f136b0538" kindref="member">Layout</ref>-&gt;setFrameShadow(<sp/>QFrame::Sunken<sp/>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_14a392a8df0606d397059f251c3f915ae" kindref="member">KedaWidgetLayout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1ebd9bec4d70abc789d439c1f136b0538" kindref="member">Layout</ref>,<sp/>0,<sp/>1<sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QFrame(<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;frame3&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>125,<sp/>0<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>125,<sp/>32767<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>-&gt;setFrameShape(<sp/>QFrame::StyledPanel<sp/>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>-&gt;setFrameShadow(<sp/>QFrame::Raised<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QVBoxLayout(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/>0,<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;frame3Layout&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_11145f263256c923716d2b8eade2f6689" kindref="member">board</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;board&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_11145f263256c923716d2b8eade2f6689" kindref="member">board</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_11145f263256c923716d2b8eade2f6689" kindref="member">board</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_11145f263256c923716d2b8eade2f6689" kindref="member">board</ref><sp/>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1cbaf1b48dbb8b94f2b0f51c98fe5e521" kindref="member">part_group</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;part_group&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1cbaf1b48dbb8b94f2b0f51c98fe5e521" kindref="member">part_group</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1cbaf1b48dbb8b94f2b0f51c98fe5e521" kindref="member">part_group</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1cbaf1b48dbb8b94f2b0f51c98fe5e521" kindref="member">part_group</ref><sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_178ae2000a3964dd5a903ab9fc5f460f8" kindref="member">logical</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;logical&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_178ae2000a3964dd5a903ab9fc5f460f8" kindref="member">logical</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_178ae2000a3964dd5a903ab9fc5f460f8" kindref="member">logical</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_178ae2000a3964dd5a903ab9fc5f460f8" kindref="member">logical</ref><sp/>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_14e6a6189d2efbf406efc3889f43246e1" kindref="member">board_11_2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;board_11_2&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_14e6a6189d2efbf406efc3889f43246e1" kindref="member">board_11_2</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_14e6a6189d2efbf406efc3889f43246e1" kindref="member">board_11_2</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_14e6a6189d2efbf406efc3889f43246e1" kindref="member">board_11_2</ref><sp/>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_15e2bab0ecb94c4ea40777733195abe1b" kindref="member">others</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;others&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_15e2bab0ecb94c4ea40777733195abe1b" kindref="member">others</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_15e2bab0ecb94c4ea40777733195abe1b" kindref="member">others</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaView_15e2bab0ecb94c4ea40777733195abe1b" kindref="member">others</ref><sp/>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_111d8c28a64490a987612f2332502467f" kindref="member">op</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;op&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_111d8c28a64490a987612f2332502467f" kindref="member">op</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_111d8c28a64490a987612f2332502467f" kindref="member">op</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_111d8c28a64490a987612f2332502467f" kindref="member">op</ref><sp/>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1a6637a40d736ac245a95b0aaf87205bf" kindref="member">resistor</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;resistor&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1a6637a40d736ac245a95b0aaf87205bf" kindref="member">resistor</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1a6637a40d736ac245a95b0aaf87205bf" kindref="member">resistor</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1a6637a40d736ac245a95b0aaf87205bf" kindref="member">resistor</ref><sp/>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_19ea142fd678fe35d29fa01a37fe4194d" kindref="member">diod</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;diod&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_19ea142fd678fe35d29fa01a37fe4194d" kindref="member">diod</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_19ea142fd678fe35d29fa01a37fe4194d" kindref="member">diod</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_19ea142fd678fe35d29fa01a37fe4194d" kindref="member">diod</ref><sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_10b98f7bc56c6af56799347f69c1cc770" kindref="member">led</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;led&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_10b98f7bc56c6af56799347f69c1cc770" kindref="member">led</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_10b98f7bc56c6af56799347f69c1cc770" kindref="member">led</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_10b98f7bc56c6af56799347f69c1cc770" kindref="member">led</ref><sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_135cdca9677f0e7f85c475d4677c42657" kindref="member">diac</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;diac&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_135cdca9677f0e7f85c475d4677c42657" kindref="member">diac</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_135cdca9677f0e7f85c475d4677c42657" kindref="member">diac</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_135cdca9677f0e7f85c475d4677c42657" kindref="member">diac</ref><sp/>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1f44f9787dfed918901c6e1847f94dea4" kindref="member">triac</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;triac&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1f44f9787dfed918901c6e1847f94dea4" kindref="member">triac</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1f44f9787dfed918901c6e1847f94dea4" kindref="member">triac</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1f44f9787dfed918901c6e1847f94dea4" kindref="member">triac</ref><sp/>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1aaa0d78af49a2fbc2f7ad8fbb11de1aa" kindref="member">transistor</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;transistor&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1aaa0d78af49a2fbc2f7ad8fbb11de1aa" kindref="member">transistor</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1aaa0d78af49a2fbc2f7ad8fbb11de1aa" kindref="member">transistor</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1aaa0d78af49a2fbc2f7ad8fbb11de1aa" kindref="member">transistor</ref><sp/>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_108b4291dfeb4cc1168b02fe54f4525b2" kindref="member">tyristor</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;tyristor&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_108b4291dfeb4cc1168b02fe54f4525b2" kindref="member">tyristor</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_108b4291dfeb4cc1168b02fe54f4525b2" kindref="member">tyristor</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_108b4291dfeb4cc1168b02fe54f4525b2" kindref="member">tyristor</ref><sp/>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1e271ca9ab18dc3f3b1a2140b3b292738" kindref="member">capacitor</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;capacitor&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1e271ca9ab18dc3f3b1a2140b3b292738" kindref="member">capacitor</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1e271ca9ab18dc3f3b1a2140b3b292738" kindref="member">capacitor</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1e271ca9ab18dc3f3b1a2140b3b292738" kindref="member">capacitor</ref><sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1af4b8646811218eef2cd8319c1089bc2" kindref="member">coil</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;coil&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1af4b8646811218eef2cd8319c1089bc2" kindref="member">coil</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1af4b8646811218eef2cd8319c1089bc2" kindref="member">coil</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1af4b8646811218eef2cd8319c1089bc2" kindref="member">coil</ref><sp/>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1faac6c146a3ea5d40c136f7d685bbd34" kindref="member">connectors</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;connectors&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1faac6c146a3ea5d40c136f7d685bbd34" kindref="member">connectors</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1faac6c146a3ea5d40c136f7d685bbd34" kindref="member">connectors</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1faac6c146a3ea5d40c136f7d685bbd34" kindref="member">connectors</ref><sp/>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_17129ca3c268292bff3fa9258d53cd72a" kindref="member">switches</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;switches&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_17129ca3c268292bff3fa9258d53cd72a" kindref="member">switches</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_17129ca3c268292bff3fa9258d53cd72a" kindref="member">switches</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaView_17129ca3c268292bff3fa9258d53cd72a" kindref="member">switches</ref><sp/>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_1cc50694e7f83c0ae0893748ea6da5f59" kindref="member">trafos</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;trafos&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_1cc50694e7f83c0ae0893748ea6da5f59" kindref="member">trafos</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_1cc50694e7f83c0ae0893748ea6da5f59" kindref="member">trafos</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaView_1cc50694e7f83c0ae0893748ea6da5f59" kindref="member">trafos</ref><sp/>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_138721e73889d2e151ce99d732331247d" kindref="member">heatsinks</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;heatsinks&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_138721e73889d2e151ce99d732331247d" kindref="member">heatsinks</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_138721e73889d2e151ce99d732331247d" kindref="member">heatsinks</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaView_138721e73889d2e151ce99d732331247d" kindref="member">heatsinks</ref><sp/>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_1c78bd47f6af6291187ad968471d5c943" kindref="member">cases</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;cases&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_1c78bd47f6af6291187ad968471d5c943" kindref="member">cases</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_1c78bd47f6af6291187ad968471d5c943" kindref="member">cases</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaView_1c78bd47f6af6291187ad968471d5c943" kindref="member">cases</ref><sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_18b9035807842a4e4dbe009f3f1478127" kindref="member">custom</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QToolButton(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/></highlight><highlight class="stringliteral">&quot;custom&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_18b9035807842a4e4dbe009f3f1478127" kindref="member">custom</ref>-&gt;setMinimumSize(<sp/>QSize(<sp/>0,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaView_18b9035807842a4e4dbe009f3f1478127" kindref="member">custom</ref>-&gt;setMaximumSize(<sp/>QSize(<sp/>32767,<sp/>25<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addWidget(<sp/><ref refid="classKedaView_18b9035807842a4e4dbe009f3f1478127" kindref="member">custom</ref><sp/>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1e03c4c0fa63ca587a74b625d0fb7528b" kindref="member">spacer1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QSpacerItem(<sp/>120,<sp/>90,<sp/>QSizePolicy::Minimum,<sp/>QSizePolicy::Expanding<sp/>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17776a701c271ef6286841c10bc5e6d56" kindref="member">frame3Layout</ref>-&gt;addItem(<sp/><ref refid="classKedaWidget_1e03c4c0fa63ca587a74b625d0fb7528b" kindref="member">spacer1</ref><sp/>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_14a392a8df0606d397059f251c3f915ae" kindref="member">KedaWidgetLayout</ref>-&gt;addWidget(<sp/><ref refid="classKedaWidget_1527b1395d43f7a479a98f9acd8dc4fca" kindref="member">frame3</ref>,<sp/>0,<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_11182bf5637039731d24c9b1e622b4179" kindref="member">languageChange</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>resize(<sp/>QSize(677,<sp/>626).expandedTo(minimumSizeHint())<sp/>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>clearWState(<sp/>WState_Polished<sp/>);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signals<sp/>and<sp/>slots<sp/>connections</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_11145f263256c923716d2b8eade2f6689" kindref="member">board</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_11c2bd79a14355c76b2234b50471542e1" kindref="member">boards_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_1cbaf1b48dbb8b94f2b0f51c98fe5e521" kindref="member">part_group</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_1cddd3db58b35c85df11cd5c7f98a6994" kindref="member">part_group_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_178ae2000a3964dd5a903ab9fc5f460f8" kindref="member">logical</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_13f77fa324bf367e751679cda8a8367db" kindref="member">logicals_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_14e6a6189d2efbf406efc3889f43246e1" kindref="member">board_11_2</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_127a772b8b32f712a4b741941174d5208" kindref="member">linears_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_111d8c28a64490a987612f2332502467f" kindref="member">op</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_1aa3cc0f14b4974e79fbef69e0909408b" kindref="member">ops_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_1a6637a40d736ac245a95b0aaf87205bf" kindref="member">resistor</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_104192481274926e08d1f2e632022eb4d" kindref="member">resistors_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_19ea142fd678fe35d29fa01a37fe4194d" kindref="member">diod</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_171437847e33414710fd4745ce73c715e" kindref="member">diodes_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_10b98f7bc56c6af56799347f69c1cc770" kindref="member">led</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_1d18c177368f25e874e529bdb16cd4b0c" kindref="member">leds_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_1f44f9787dfed918901c6e1847f94dea4" kindref="member">triac</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_1196f7462e8789265bf20583c5b1b094f" kindref="member">triacs_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_1aaa0d78af49a2fbc2f7ad8fbb11de1aa" kindref="member">transistor</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_1435cffd197ed75c20c1319263cff2989" kindref="member">transistors_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_108b4291dfeb4cc1168b02fe54f4525b2" kindref="member">tyristor</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_171f4420cc68d00a0f2004276bf14db90" kindref="member">tyristors_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_1e271ca9ab18dc3f3b1a2140b3b292738" kindref="member">capacitor</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_14cf2ce911169acb0f4c64903c59102d2" kindref="member">capacitor_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_1af4b8646811218eef2cd8319c1089bc2" kindref="member">coil</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_12888f95b055b05670b2d4e549b022f61" kindref="member">coil_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_1faac6c146a3ea5d40c136f7d685bbd34" kindref="member">connectors</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_13e42161e60573ad555857596cfa937be" kindref="member">conectors_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaView_17129ca3c268292bff3fa9258d53cd72a" kindref="member">switches</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_17324d10eabc1db1701b1ffb56c916dcc" kindref="member">switches_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaView_1cc50694e7f83c0ae0893748ea6da5f59" kindref="member">trafos</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_16f85e90009f5007355f9994983f1c56d" kindref="member">trafos_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaView_138721e73889d2e151ce99d732331247d" kindref="member">heatsinks</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_1141909bf5eb6fa869f7d3e1879ac7117" kindref="member">heatsinks_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaView_1c78bd47f6af6291187ad968471d5c943" kindref="member">cases</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_10bfe24ffa85bfd7bedf9571854644846" kindref="member">cases_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaView_18b9035807842a4e4dbe009f3f1478127" kindref="member">custom</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_1c05cd17dce4b99b998fa9f44182ab4e5" kindref="member">custom_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaWidget_135cdca9677f0e7f85c475d4677c42657" kindref="member">diac</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_1f45960f181b134b7ad3f9487f9d9ff54" kindref="member">diacs_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(<sp/><ref refid="classKedaView_15e2bab0ecb94c4ea40777733195abe1b" kindref="member">others</ref>,<sp/>SIGNAL(<sp/>clicked()<sp/>),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<sp/><ref refid="classKedaView_17dc5bfb70b7714e6dc7467e68b0531e7" kindref="member">others_clicked</ref>()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/><sp/>Destroys<sp/>the<sp/>object<sp/>and<sp/>frees<sp/>any<sp/>allocated<sp/>resources</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><ref refid="classKedaWidget_113d1dd4c1ddef5897cfc06ab12031d85" kindref="member">KedaWidget::~KedaWidget</ref>()</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>need<sp/>to<sp/>delete<sp/>child<sp/>widgets,<sp/>Qt<sp/>does<sp/>it<sp/>all<sp/>for<sp/>us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/>*<sp/><sp/>Sets<sp/>the<sp/>strings<sp/>of<sp/>the<sp/>subwidgets<sp/>using<sp/>the<sp/>current</highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/>*<sp/><sp/>language.</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_11182bf5637039731d24c9b1e622b4179" kindref="member">KedaWidget::languageChange</ref>()</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>setCaption(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_11145f263256c923716d2b8eade2f6689" kindref="member">board</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Boards&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1cbaf1b48dbb8b94f2b0f51c98fe5e521" kindref="member">part_group</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Part<sp/>groups&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_178ae2000a3964dd5a903ab9fc5f460f8" kindref="member">logical</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Logical<sp/>ICs&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_14e6a6189d2efbf406efc3889f43246e1" kindref="member">board_11_2</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Linear<sp/>ICs&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_15e2bab0ecb94c4ea40777733195abe1b" kindref="member">others</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Other<sp/>ICs&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_111d8c28a64490a987612f2332502467f" kindref="member">op</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;OPs&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1a6637a40d736ac245a95b0aaf87205bf" kindref="member">resistor</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Resistors&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_19ea142fd678fe35d29fa01a37fe4194d" kindref="member">diod</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Diodes&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_10b98f7bc56c6af56799347f69c1cc770" kindref="member">led</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;LEDs&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_135cdca9677f0e7f85c475d4677c42657" kindref="member">diac</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Diacs&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1f44f9787dfed918901c6e1847f94dea4" kindref="member">triac</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Triacs&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1aaa0d78af49a2fbc2f7ad8fbb11de1aa" kindref="member">transistor</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Transistors&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_108b4291dfeb4cc1168b02fe54f4525b2" kindref="member">tyristor</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Tyristors&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1e271ca9ab18dc3f3b1a2140b3b292738" kindref="member">capacitor</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Capacitors&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1af4b8646811218eef2cd8319c1089bc2" kindref="member">coil</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Coils&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1faac6c146a3ea5d40c136f7d685bbd34" kindref="member">connectors</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Connectors&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_17129ca3c268292bff3fa9258d53cd72a" kindref="member">switches</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Switches&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1cc50694e7f83c0ae0893748ea6da5f59" kindref="member">trafos</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Power<sp/>supplys&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_138721e73889d2e151ce99d732331247d" kindref="member">heatsinks</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Heat<sp/>sinks&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_138721e73889d2e151ce99d732331247d" kindref="member">heatsinks</ref>-&gt;setAccel(<sp/>QKeySequence(<sp/>QString::null<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1c78bd47f6af6291187ad968471d5c943" kindref="member">cases</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Cases&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_1c78bd47f6af6291187ad968471d5c943" kindref="member">cases</ref>-&gt;setAccel(<sp/>QKeySequence(<sp/>QString::null<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_18b9035807842a4e4dbe009f3f1478127" kindref="member">custom</ref>-&gt;setText(<sp/>tr2i18n(<sp/></highlight><highlight class="stringliteral">&quot;Custom&quot;</highlight><highlight class="normal"><sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classKedaWidget_18b9035807842a4e4dbe009f3f1478127" kindref="member">custom</ref>-&gt;setAccel(<sp/>QKeySequence(<sp/>QString::null<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_11c2bd79a14355c76b2234b50471542e1" kindref="member">KedaWidget::boards_clicked</ref>()</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::boards_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_13f77fa324bf367e751679cda8a8367db" kindref="member">KedaWidget::logicals_clicked</ref>()</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::logicals_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_127a772b8b32f712a4b741941174d5208" kindref="member">KedaWidget::linears_clicked</ref>()</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::linears_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_1aa3cc0f14b4974e79fbef69e0909408b" kindref="member">KedaWidget::ops_clicked</ref>()</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::ops_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_104192481274926e08d1f2e632022eb4d" kindref="member">KedaWidget::resistors_clicked</ref>()</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::resistors_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_171437847e33414710fd4745ce73c715e" kindref="member">KedaWidget::diodes_clicked</ref>()</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::diodes_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_1d18c177368f25e874e529bdb16cd4b0c" kindref="member">KedaWidget::leds_clicked</ref>()</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::leds_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_1f45960f181b134b7ad3f9487f9d9ff54" kindref="member">KedaWidget::diacs_clicked</ref>()</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::diacs_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_1196f7462e8789265bf20583c5b1b094f" kindref="member">KedaWidget::triacs_clicked</ref>()</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::triacs_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_1435cffd197ed75c20c1319263cff2989" kindref="member">KedaWidget::transistors_clicked</ref>()</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::transistors_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_171f4420cc68d00a0f2004276bf14db90" kindref="member">KedaWidget::tyristors_clicked</ref>()</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::tyristors_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_13e42161e60573ad555857596cfa937be" kindref="member">KedaWidget::conectors_clicked</ref>()</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::conectors_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_17324d10eabc1db1701b1ffb56c916dcc" kindref="member">KedaWidget::switches_clicked</ref>()</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::switches_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_16f85e90009f5007355f9994983f1c56d" kindref="member">KedaWidget::trafos_clicked</ref>()</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::trafos_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_1141909bf5eb6fa869f7d3e1879ac7117" kindref="member">KedaWidget::heatsinks_clicked</ref>()</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::heatsinks_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_10bfe24ffa85bfd7bedf9571854644846" kindref="member">KedaWidget::cases_clicked</ref>()</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::cases_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_1c05cd17dce4b99b998fa9f44182ab4e5" kindref="member">KedaWidget::custom_clicked</ref>()</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::custom_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_1cddd3db58b35c85df11cd5c7f98a6994" kindref="member">KedaWidget::part_group_clicked</ref>()</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::part_group_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_14cf2ce911169acb0f4c64903c59102d2" kindref="member">KedaWidget::capacitor_clicked</ref>()</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::capacitor_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_12888f95b055b05670b2d4e549b022f61" kindref="member">KedaWidget::coil_clicked</ref>()</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::coil_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classKedaWidget_17dc5bfb70b7714e6dc7467e68b0531e7" kindref="member">KedaWidget::others_clicked</ref>()</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>qWarning(<sp/></highlight><highlight class="stringliteral">&quot;KedaWidget::others_clicked():<sp/>Not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="kedawidget_8moc" kindref="compound">kedawidget.moc</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/bastl/Kdevel/keda/src/kedawidget.cpp"/>
+  </compounddef>
+</doxygen>

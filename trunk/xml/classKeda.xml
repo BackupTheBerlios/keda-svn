@@ -1,0 +1,529 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="classKeda" kind="class" prot="public">
+    <compoundname>Keda</compoundname>
+    <includes refid="keda_8h" local="no">keda.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classKeda_1bdcde5bd2edacf1aabd359bcb83de9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Keda::Keda</definition>
+        <argsstring>()</argsstring>
+        <name>Keda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="48" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="48" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classKeda_129492221c9b967fa0983a48503b2e371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Keda::~Keda</definition>
+        <argsstring>()</argsstring>
+        <name>~Keda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="49" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classKeda_1c04cd38aeb30f3ad1f8ab4e64a0ded7b" prot="public" static="no" mutable="no">
+        <type><ref refid="classAutoManager" kindref="compound">AutoManager</ref> *</type>
+        <definition>AutoManager* Keda::am</definition>
+        <argsstring></argsstring>
+        <name>am</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="53" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classKeda_1c1cf01e97872427ced3cc4d2b5410705" prot="public" static="no" mutable="no">
+        <type><ref refid="classKedaView" kindref="compound">KedaView</ref> *</type>
+        <definition>KedaView* Keda::eda</definition>
+        <argsstring></argsstring>
+        <name>eda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="51" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classKeda_1ff4a008470319a22d9cf3d14af485977" prot="public" static="no" mutable="no">
+        <type>KAction *</type>
+        <definition>KAction * Keda::grid</definition>
+        <argsstring></argsstring>
+        <name>grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="54" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classKeda_1558ddfdd3620c111fe112b4671b77c6d" prot="public" static="no" mutable="no">
+        <type>KAction *</type>
+        <definition>KAction * Keda::meter</definition>
+        <argsstring></argsstring>
+        <name>meter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="54" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classKeda_1ed0dd5f2fba480b6ede27b82bb692337" prot="public" static="no" mutable="no">
+        <type>KAction *</type>
+        <definition>KAction * Keda::osci</definition>
+        <argsstring></argsstring>
+        <name>osci</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="54" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classKeda_1f42a83f45934ad4e2e2628bec3dfede9" prot="public" static="no" mutable="no">
+        <type><ref refid="classKedaPCBView" kindref="compound">KedaPCBView</ref> *</type>
+        <definition>KedaPCBView* Keda::pcb</definition>
+        <argsstring></argsstring>
+        <name>pcb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="52" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classKeda_1e9064b74d28acc053231170bb8c858b3" prot="public" static="no" mutable="no">
+        <type>KAction *</type>
+        <definition>KAction* Keda::sim</definition>
+        <argsstring></argsstring>
+        <name>sim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="54" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classKeda_171748e5aac2faece63af8155fa738a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::load</definition>
+        <argsstring>(const KURL &amp;url)</argsstring>
+        <name>load</name>
+        <param>
+          <type>const KURL &amp;</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="57" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="79" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classKeda_1dba09a7801d36df546c0f3e9dac3ec02" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Keda::dragEnterEvent</definition>
+        <argsstring>(QDragEnterEvent *event)</argsstring>
+        <name>dragEnterEvent</name>
+        <param>
+          <type>QDragEnterEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="75" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classKeda_1ccd73598789b64c97d431c5630cd93d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Keda::dropEvent</definition>
+        <argsstring>(QDropEvent *event)</argsstring>
+        <name>dropEvent</name>
+        <param>
+          <type>QDropEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="76" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="167" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classKeda_1bf0df7468919a89fdb30295452012ce8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::readProperties</definition>
+        <argsstring>(KConfig *)</argsstring>
+        <name>readProperties</name>
+        <param>
+          <type>KConfig *</type>
+          <defname>config</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="79" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="148" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classKeda_1593f2a414b74c536bab317ddbc4ddb80" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::saveProperties</definition>
+        <argsstring>(KConfig *)</argsstring>
+        <name>saveProperties</name>
+        <param>
+          <type>KConfig *</type>
+          <defname>config</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="78" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="133" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classKeda_10c5ff0cf39e2b82d94558c19d0488a58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::setupAccel</definition>
+        <argsstring>()</argsstring>
+        <name>setupAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classKeda_1335f9f5dc82b43c02ca759b38cab1028" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::setupActions</definition>
+        <argsstring>()</argsstring>
+        <name>setupActions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="83" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="105" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classKeda_18e823f6da24fcb64ec267d4c03581b26" prot="private" static="no" mutable="no">
+        <type>KPrinter *</type>
+        <definition>KPrinter* Keda::m_printer</definition>
+        <argsstring></argsstring>
+        <name>m_printer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="85" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classKeda_152961c3165b7817bdd6bec5a017670a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::changeCaption</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>changeCaption</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="72" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="268" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_1d8f40236954797adc7686383a2ebf1cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::changeStatusbar</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>changeStatusbar</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="71" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="262" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_179dbe03b8b8a3ec215c89880f4b0a1bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::optionsPreferences</definition>
+        <argsstring>()</argsstring>
+        <name>optionsPreferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="66" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="252" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_1f7b5d294c0b974f37abf088f39ee0d21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::projectNew</definition>
+        <argsstring>()</argsstring>
+        <name>projectNew</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="61" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="185" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_1c88702d06a628e80fe7451bebdfdf9ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::projectOpen</definition>
+        <argsstring>()</argsstring>
+        <name>projectOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="62" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="195" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_132466d5e7ef96bfa4ac122630197f15e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::projectPrint</definition>
+        <argsstring>()</argsstring>
+        <name>projectPrint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="65" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="229" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_184a060476c6c833c03105e94a896024a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::projectSave</definition>
+        <argsstring>()</argsstring>
+        <name>projectSave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="63" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="210" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_158a2782da0bf12d0357df069d26d6fa8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::projectSaveAs</definition>
+        <argsstring>()</argsstring>
+        <name>projectSaveAs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="64" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="219" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_11d6f34d64964b1f82b652c5620c665ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::setEDAMode</definition>
+        <argsstring>()</argsstring>
+        <name>setEDAMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="68" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="284" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_1e35704f7579cfb755ff9197293a42608" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::setPCBMode</definition>
+        <argsstring>()</argsstring>
+        <name>setPCBMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="67" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="274" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="slot" id="classKeda_13031f89e937abcf95a588db812d95566" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Keda::startAutoManager</definition>
+        <argsstring>()</argsstring>
+        <name>startAutoManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/keda.h" line="69" bodyfile="/home/bastl/Kdevel/keda/src/keda.cpp" bodystart="294" bodyend="297"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main window class. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sebastian &lt;<ulink url="mailto:sebastian.bw@freenet.de">sebastian.bw@freenet.de</ulink>&gt; </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="42">
+        <label>KedaWidget</label>
+        <link refid="classKedaWidget"/>
+      </node>
+      <node id="43">
+        <label>KedaIface</label>
+        <link refid="classKedaIface"/>
+      </node>
+      <node id="39">
+        <label>AMView</label>
+        <link refid="classAMView"/>
+      </node>
+      <node id="40">
+        <label>KedaPCBView</label>
+        <link refid="classKedaPCBView"/>
+      </node>
+      <node id="38">
+        <label>AutoManager</label>
+        <link refid="classAutoManager"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>KedaView</label>
+        <link refid="classKedaView"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>databasemenu</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>custom
+heatsinks
+capacitors
+resistors
+logicals
+groups
+others
+switches
+transistors
+triacs
+diacs
+trafos
+conectors
+leds
+diodes
+tyristors
+linears
+boards
+cases
+ops
+coils</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Keda</label>
+        <link refid="classKeda"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>am</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>pcb</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>eda</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>OfferWidget</label>
+        <link refid="classOfferWidget"/>
+      </node>
+      <node id="44">
+        <label>MenuDatabase</label>
+        <link refid="classMenuDatabase"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bastl/Kdevel/keda/src/keda.h" line="45" bodyfile="/home/bastl/Kdevel/keda/src/keda.h" bodystart="44" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classKeda_1c04cd38aeb30f3ad1f8ab4e64a0ded7b" prot="public" virt="non-virtual"><scope>Keda</scope><name>am</name></member>
+      <member refid="classKeda_152961c3165b7817bdd6bec5a017670a5" prot="private" virt="non-virtual"><scope>Keda</scope><name>changeCaption</name></member>
+      <member refid="classKeda_1d8f40236954797adc7686383a2ebf1cd" prot="private" virt="non-virtual"><scope>Keda</scope><name>changeStatusbar</name></member>
+      <member refid="classKeda_1dba09a7801d36df546c0f3e9dac3ec02" prot="protected" virt="virtual"><scope>Keda</scope><name>dragEnterEvent</name></member>
+      <member refid="classKeda_1ccd73598789b64c97d431c5630cd93d0" prot="protected" virt="virtual"><scope>Keda</scope><name>dropEvent</name></member>
+      <member refid="classKeda_1c1cf01e97872427ced3cc4d2b5410705" prot="public" virt="non-virtual"><scope>Keda</scope><name>eda</name></member>
+      <member refid="classKeda_1ff4a008470319a22d9cf3d14af485977" prot="public" virt="non-virtual"><scope>Keda</scope><name>grid</name></member>
+      <member refid="classKeda_1bdcde5bd2edacf1aabd359bcb83de9a2" prot="public" virt="non-virtual"><scope>Keda</scope><name>Keda</name></member>
+      <member refid="classKeda_171748e5aac2faece63af8155fa738a4c" prot="public" virt="non-virtual"><scope>Keda</scope><name>load</name></member>
+      <member refid="classKeda_18e823f6da24fcb64ec267d4c03581b26" prot="private" virt="non-virtual"><scope>Keda</scope><name>m_printer</name></member>
+      <member refid="classKeda_1558ddfdd3620c111fe112b4671b77c6d" prot="public" virt="non-virtual"><scope>Keda</scope><name>meter</name></member>
+      <member refid="classKeda_179dbe03b8b8a3ec215c89880f4b0a1bb" prot="private" virt="non-virtual"><scope>Keda</scope><name>optionsPreferences</name></member>
+      <member refid="classKeda_1ed0dd5f2fba480b6ede27b82bb692337" prot="public" virt="non-virtual"><scope>Keda</scope><name>osci</name></member>
+      <member refid="classKeda_1f42a83f45934ad4e2e2628bec3dfede9" prot="public" virt="non-virtual"><scope>Keda</scope><name>pcb</name></member>
+      <member refid="classKeda_1f7b5d294c0b974f37abf088f39ee0d21" prot="private" virt="non-virtual"><scope>Keda</scope><name>projectNew</name></member>
+      <member refid="classKeda_1c88702d06a628e80fe7451bebdfdf9ad" prot="private" virt="non-virtual"><scope>Keda</scope><name>projectOpen</name></member>
+      <member refid="classKeda_132466d5e7ef96bfa4ac122630197f15e" prot="private" virt="non-virtual"><scope>Keda</scope><name>projectPrint</name></member>
+      <member refid="classKeda_184a060476c6c833c03105e94a896024a" prot="private" virt="non-virtual"><scope>Keda</scope><name>projectSave</name></member>
+      <member refid="classKeda_158a2782da0bf12d0357df069d26d6fa8" prot="private" virt="non-virtual"><scope>Keda</scope><name>projectSaveAs</name></member>
+      <member refid="classKeda_1bf0df7468919a89fdb30295452012ce8" prot="protected" virt="non-virtual"><scope>Keda</scope><name>readProperties</name></member>
+      <member refid="classKeda_1593f2a414b74c536bab317ddbc4ddb80" prot="protected" virt="non-virtual"><scope>Keda</scope><name>saveProperties</name></member>
+      <member refid="classKeda_11d6f34d64964b1f82b652c5620c665ce" prot="private" virt="non-virtual"><scope>Keda</scope><name>setEDAMode</name></member>
+      <member refid="classKeda_1e35704f7579cfb755ff9197293a42608" prot="private" virt="non-virtual"><scope>Keda</scope><name>setPCBMode</name></member>
+      <member refid="classKeda_10c5ff0cf39e2b82d94558c19d0488a58" prot="private" virt="non-virtual"><scope>Keda</scope><name>setupAccel</name></member>
+      <member refid="classKeda_1335f9f5dc82b43c02ca759b38cab1028" prot="private" virt="non-virtual"><scope>Keda</scope><name>setupActions</name></member>
+      <member refid="classKeda_1e9064b74d28acc053231170bb8c858b3" prot="public" virt="non-virtual"><scope>Keda</scope><name>sim</name></member>
+      <member refid="classKeda_13031f89e937abcf95a588db812d95566" prot="private" virt="non-virtual"><scope>Keda</scope><name>startAutoManager</name></member>
+      <member refid="classKeda_129492221c9b967fa0983a48503b2e371" prot="public" virt="non-virtual"><scope>Keda</scope><name>~Keda</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="amview_8h" kind="file">
+    <compoundname>amview.h</compoundname>
+    <includes local="no">qvariant.h</includes>
+    <includes local="no">qwidget.h</includes>
+    <includedby refid="amview_8cpp" local="yes">/home/bastl/Kdevel/keda/src/amview.cpp</includedby>
+    <includedby refid="amview_8moc" local="yes">/home/bastl/Kdevel/keda/src/amview.moc</includedby>
+    <includedby refid="automanager_8h" local="no">/home/bastl/Kdevel/keda/src/automanager.h</includedby>
+    <incdepgraph>
+      <node id="351">
+        <label>/home/bastl/Kdevel/keda/src/amview.h</label>
+        <link refid="amview.h"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>qvariant.h</label>
+      </node>
+      <node id="353">
+        <label>qwidget.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="354">
+        <label>/home/bastl/Kdevel/keda/src/amview.h</label>
+        <link refid="amview.h"/>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>/home/bastl/Kdevel/keda/src/keda.h</label>
+        <link refid="keda_8h-source"/>
+      </node>
+      <node id="355">
+        <label>/home/bastl/Kdevel/keda/src/automanager.h</label>
+        <link refid="automanager_8h-source"/>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAMView">AMView</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Form<sp/>interface<sp/>generated<sp/>from<sp/>reading<sp/>ui<sp/>file<sp/>&apos;/home/bastl/Kdevel/keda/src/amview.ui&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created:<sp/>Sa<sp/>Jun<sp/>9<sp/>09:33:30<sp/>2007</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>The<sp/>User<sp/>Interface<sp/>Compiler<sp/>($Id:<sp/>qt/main.cpp<sp/><sp/><sp/>3.3.5<sp/><sp/><sp/>edited<sp/>Aug<sp/>31<sp/>12:13<sp/>$)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>AMVIEW_H</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AMVIEW_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qvariant.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;qwidget.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QVBoxLayout;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QHBoxLayout;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QGridLayout;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QSpacerItem;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QTabWidget;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">QTable;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">KPushButton;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classAMView" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAMView" kindref="compound">AMView</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAMView_1418eaebe213e84b5a1acd0588afcc418" kindref="member">AMView</ref>(<sp/>QWidget*<sp/>parent<sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name<sp/>=<sp/>0,<sp/>WFlags<sp/>fl<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAMView_1a6c5f1081d126b4b61b299366facec42" kindref="member">~AMView</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classAMView_17de1b935ec5fed0b8922e3137f9d1187" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTabWidget*<sp/><ref refid="classAMView_17de1b935ec5fed0b8922e3137f9d1187" kindref="member">tabWidget2</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classAMView_1e7f8cbd87d347be881cba92dad128518" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classAMView_1e7f8cbd87d347be881cba92dad128518" kindref="member">tab</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classAMView_1270e33da79c5156c1ba3b42cbc190c6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTable*<sp/><ref refid="classAMView_1270e33da79c5156c1ba3b42cbc190c6c" kindref="member">table1</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classAMView_116ca38670abb008d24f3f2170d656335" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classAMView_116ca38670abb008d24f3f2170d656335" kindref="member">TabPage</ref>;</highlight></codeline>
+<codeline lineno="36" refid="classAMView_13d37817d1132b50cb1b9b985e61c842a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTable*<sp/><ref refid="classAMView_13d37817d1132b50cb1b9b985e61c842a" kindref="member">table1_3</ref>;</highlight></codeline>
+<codeline lineno="37" refid="classAMView_178f5490b792a865fcbc2262f3cc94142" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classAMView_178f5490b792a865fcbc2262f3cc94142" kindref="member">TabPage_2</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classAMView_1efcc752e035784830d9163193fc62f88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTable*<sp/><ref refid="classAMView_1efcc752e035784830d9163193fc62f88" kindref="member">table1_3_2</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classAMView_1936beb3789addd4616f024f2cd2caac8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classAMView_1936beb3789addd4616f024f2cd2caac8" kindref="member">tab_2</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classAMView_1e419e32065a233e570d1629779ad69da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTable*<sp/><ref refid="classAMView_1e419e32065a233e570d1629779ad69da" kindref="member">table1_2</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classAMView_1f03d368e27e7bab3382d4f43e824b708" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classAMView_1f03d368e27e7bab3382d4f43e824b708" kindref="member">TabPage_3</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classAMView_111b2dff7e908b8d05fc742fd690fc646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QTable*<sp/><ref refid="classAMView_111b2dff7e908b8d05fc742fd690fc646" kindref="member">table1_2_3</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classAMView_186f80f26e4afa8224ff8b9b7c2b08e3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KPushButton*<sp/><ref refid="classAMView_186f80f26e4afa8224ff8b9b7c2b08e3d" kindref="member">kPushButton9_2</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classAMView_1c4727efe59649786e87c484d42a44e70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>KPushButton*<sp/><ref refid="classAMView_1c4727efe59649786e87c484d42a44e70" kindref="member">kPushButton9</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47" refid="classAMView_15fdb4cbda8116f962538f2554605ae51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/><ref refid="classAMView_15fdb4cbda8116f962538f2554605ae51" kindref="member">AMViewLayout</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classAMView_137ed5af681fab9c3e22bfd4f582d96bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/><ref refid="classAMView_137ed5af681fab9c3e22bfd4f582d96bd" kindref="member">tabLayout</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classAMView_1ccd0a4006e9db31c4a3105b6b0b8fc12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/><ref refid="classAMView_1ccd0a4006e9db31c4a3105b6b0b8fc12" kindref="member">TabPageLayout</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classAMView_1e5a89160c3de487b3e28d4b8a88c3e17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/><ref refid="classAMView_1e5a89160c3de487b3e28d4b8a88c3e17" kindref="member">TabPageLayout_2</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classAMView_1d90b19861457e1cb706528a94e6e42ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/><ref refid="classAMView_1d90b19861457e1cb706528a94e6e42ef" kindref="member">tabLayout_2</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classAMView_1c8277cbce4e05fc431b4b58b198b3c9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QGridLayout*<sp/><ref refid="classAMView_1c8277cbce4e05fc431b4b58b198b3c9c" kindref="member">TabPageLayout_3</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAMView_11182bf5637039731d24c9b1e622b4179" kindref="member">languageChange</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>AMVIEW_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/bastl/Kdevel/keda/src/amview.h"/>
+  </compounddef>
+</doxygen>

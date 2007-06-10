@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="classAutoManager" kind="class" prot="public">
+    <compoundname>AutoManager</compoundname>
+    <basecompoundref refid="classAMView" prot="public" virt="non-virtual"></basecompoundref>
+    <includes refid="automanager_8h" local="no">automanager.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAutoManager_17d148ced4de66fa2a22c828aee4288d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AutoManager::AutoManager</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>AutoManager</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/automanager.h" line="31" bodyfile="/home/bastl/Kdevel/keda/src/automanager.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classAutoManager_15acb268a0f8ec0d881ec716793c79e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AutoManager::~AutoManager</definition>
+        <argsstring>()</argsstring>
+        <name>~AutoManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/automanager.h" line="33" bodyfile="/home/bastl/Kdevel/keda/src/automanager.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sebastian &lt;<ulink url="mailto:sebastian.bw@freenet.de">sebastian.bw@freenet.de</ulink>&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AMView</label>
+        <link refid="classAMView"/>
+      </node>
+      <node id="3">
+        <label>AutoManager</label>
+        <link refid="classAutoManager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>AMView</label>
+        <link refid="classAMView"/>
+      </node>
+      <node id="5">
+        <label>AutoManager</label>
+        <link refid="classAutoManager"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bastl/Kdevel/keda/src/automanager.h" line="29" bodyfile="/home/bastl/Kdevel/keda/src/automanager.h" bodystart="28" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classAMView_1418eaebe213e84b5a1acd0588afcc418" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>AMView</name></member>
+      <member refid="classAMView_15fdb4cbda8116f962538f2554605ae51" prot="protected" virt="non-virtual"><scope>AutoManager</scope><name>AMViewLayout</name></member>
+      <member refid="classAutoManager_17d148ced4de66fa2a22c828aee4288d0" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>AutoManager</name></member>
+      <member refid="classAMView_1c4727efe59649786e87c484d42a44e70" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>kPushButton9</name></member>
+      <member refid="classAMView_186f80f26e4afa8224ff8b9b7c2b08e3d" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>kPushButton9_2</name></member>
+      <member refid="classAMView_11182bf5637039731d24c9b1e622b4179" prot="protected" virt="virtual"><scope>AutoManager</scope><name>languageChange</name></member>
+      <member refid="classAMView_1e7f8cbd87d347be881cba92dad128518" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>tab</name></member>
+      <member refid="classAMView_1936beb3789addd4616f024f2cd2caac8" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>tab_2</name></member>
+      <member refid="classAMView_137ed5af681fab9c3e22bfd4f582d96bd" prot="protected" virt="non-virtual"><scope>AutoManager</scope><name>tabLayout</name></member>
+      <member refid="classAMView_1d90b19861457e1cb706528a94e6e42ef" prot="protected" virt="non-virtual"><scope>AutoManager</scope><name>tabLayout_2</name></member>
+      <member refid="classAMView_1270e33da79c5156c1ba3b42cbc190c6c" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>table1</name></member>
+      <member refid="classAMView_1e419e32065a233e570d1629779ad69da" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>table1_2</name></member>
+      <member refid="classAMView_111b2dff7e908b8d05fc742fd690fc646" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>table1_2_3</name></member>
+      <member refid="classAMView_13d37817d1132b50cb1b9b985e61c842a" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>table1_3</name></member>
+      <member refid="classAMView_1efcc752e035784830d9163193fc62f88" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>table1_3_2</name></member>
+      <member refid="classAMView_116ca38670abb008d24f3f2170d656335" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>TabPage</name></member>
+      <member refid="classAMView_178f5490b792a865fcbc2262f3cc94142" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>TabPage_2</name></member>
+      <member refid="classAMView_1f03d368e27e7bab3382d4f43e824b708" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>TabPage_3</name></member>
+      <member refid="classAMView_1ccd0a4006e9db31c4a3105b6b0b8fc12" prot="protected" virt="non-virtual"><scope>AutoManager</scope><name>TabPageLayout</name></member>
+      <member refid="classAMView_1e5a89160c3de487b3e28d4b8a88c3e17" prot="protected" virt="non-virtual"><scope>AutoManager</scope><name>TabPageLayout_2</name></member>
+      <member refid="classAMView_1c8277cbce4e05fc431b4b58b198b3c9c" prot="protected" virt="non-virtual"><scope>AutoManager</scope><name>TabPageLayout_3</name></member>
+      <member refid="classAMView_17de1b935ec5fed0b8922e3137f9d1187" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>tabWidget2</name></member>
+      <member refid="classAMView_1a6c5f1081d126b4b61b299366facec42" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>~AMView</name></member>
+      <member refid="classAutoManager_15acb268a0f8ec0d881ec716793c79e9c" prot="public" virt="non-virtual"><scope>AutoManager</scope><name>~AutoManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

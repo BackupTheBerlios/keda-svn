@@ -1,0 +1,238 @@
+/****************************************************************************
+** ComposerPreferences meta object code from reading C++ file 'pref.h'
+**
+** Created: Sat Jun 9 09:32:27 2007
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.5   edited Sep 2 14:41 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "pref.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *ComposerPreferences::className() const
+{
+    return "ComposerPreferences";
+}
+
+QMetaObject *ComposerPreferences::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_ComposerPreferences( "ComposerPreferences", &ComposerPreferences::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString ComposerPreferences::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ComposerPreferences", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString ComposerPreferences::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ComposerPreferences", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* ComposerPreferences::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KDialogBase::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"ComposerPreferences", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_ComposerPreferences.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* ComposerPreferences::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "ComposerPreferences" ) )
+	return this;
+    return KDialogBase::qt_cast( clname );
+}
+
+bool ComposerPreferences::qt_invoke( int _id, QUObject* _o )
+{
+    return KDialogBase::qt_invoke(_id,_o);
+}
+
+bool ComposerPreferences::qt_emit( int _id, QUObject* _o )
+{
+    return KDialogBase::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool ComposerPreferences::qt_property( int id, int f, QVariant* v)
+{
+    return KDialogBase::qt_property( id, f, v);
+}
+
+bool ComposerPreferences::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *ComposerPrefPageOne::className() const
+{
+    return "ComposerPrefPageOne";
+}
+
+QMetaObject *ComposerPrefPageOne::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_ComposerPrefPageOne( "ComposerPrefPageOne", &ComposerPrefPageOne::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString ComposerPrefPageOne::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ComposerPrefPageOne", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString ComposerPrefPageOne::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ComposerPrefPageOne", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* ComposerPrefPageOne::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QFrame::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"ComposerPrefPageOne", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_ComposerPrefPageOne.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* ComposerPrefPageOne::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "ComposerPrefPageOne" ) )
+	return this;
+    return QFrame::qt_cast( clname );
+}
+
+bool ComposerPrefPageOne::qt_invoke( int _id, QUObject* _o )
+{
+    return QFrame::qt_invoke(_id,_o);
+}
+
+bool ComposerPrefPageOne::qt_emit( int _id, QUObject* _o )
+{
+    return QFrame::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool ComposerPrefPageOne::qt_property( int id, int f, QVariant* v)
+{
+    return QFrame::qt_property( id, f, v);
+}
+
+bool ComposerPrefPageOne::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *ComposerPrefPageTwo::className() const
+{
+    return "ComposerPrefPageTwo";
+}
+
+QMetaObject *ComposerPrefPageTwo::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_ComposerPrefPageTwo( "ComposerPrefPageTwo", &ComposerPrefPageTwo::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString ComposerPrefPageTwo::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ComposerPrefPageTwo", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString ComposerPrefPageTwo::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "ComposerPrefPageTwo", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* ComposerPrefPageTwo::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QFrame::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"ComposerPrefPageTwo", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_ComposerPrefPageTwo.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* ComposerPrefPageTwo::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "ComposerPrefPageTwo" ) )
+	return this;
+    return QFrame::qt_cast( clname );
+}
+
+bool ComposerPrefPageTwo::qt_invoke( int _id, QUObject* _o )
+{
+    return QFrame::qt_invoke(_id,_o);
+}
+
+bool ComposerPrefPageTwo::qt_emit( int _id, QUObject* _o )
+{
+    return QFrame::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool ComposerPrefPageTwo::qt_property( int id, int f, QVariant* v)
+{
+    return QFrame::qt_property( id, f, v);
+}
+
+bool ComposerPrefPageTwo::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

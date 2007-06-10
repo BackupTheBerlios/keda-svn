@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="composeriface__skel_8cpp" kind="file">
+    <compoundname>composeriface_skel.cpp</compoundname>
+    <includes refid="composeriface_8h" local="yes">/home/bastl/Kdevel/keda/composer/composeriface.h</includes>
+    <includes local="no">kdatastream.h</includes>
+    <incdepgraph>
+      <node id="78">
+        <label>/home/bastl/Kdevel/keda/composer/composeriface.h</label>
+        <link refid="composeriface_8h-source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>/home/bastl/Kdevel/keda/composer/composeriface_skel.cpp</label>
+        <link refid="composeriface_skel.cpp"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>kdatastream.h</label>
+      </node>
+      <node id="79">
+        <label>dcopobject.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="composeriface__skel_8cpp_1a173badd16c220f1cc35dd79a467f642" prot="public" static="yes" mutable="no">
+        <type>const char *const</type>
+        <definition>const char* const ComposerIface_ftable[2][3]</definition>
+        <argsstring>[2][3]</argsstring>
+        <name>ComposerIface_ftable</name>
+        <initializer> {
+    { &quot;void&quot;, &quot;openURL(QString)&quot;, &quot;openURL(QString url)&quot; },
+    { 0, 0, 0 }
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composeriface_skel.cpp" line="17" bodyfile="/home/bastl/Kdevel/keda/composer/composeriface_skel.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="composeriface__skel_8cpp_1e4db04dceb4090801a0284525a0372a9" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int ComposerIface_ftable_hiddens[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>ComposerIface_ftable_hiddens</name>
+        <initializer> {
+    0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/composer/composeriface_skel.cpp" line="20" bodyfile="/home/bastl/Kdevel/keda/composer/composeriface_skel.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/>DCOP<sp/>Skeleton<sp/>generated<sp/>by<sp/>dcopidl2cpp<sp/>from<sp/>composeriface.kidl</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="composeriface_8h" kindref="compound">/home/bastl/Kdevel/keda/composer/composeriface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;kdatastream.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="composeriface__skel_8cpp_1a173badd16c220f1cc35dd79a467f642" kindref="member">ComposerIface_ftable</ref>[2][3]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="stringliteral">&quot;void&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;openURL(QString)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;openURL(QString<sp/>url)&quot;</highlight><highlight class="normal"><sp/>},</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>0,<sp/>0,<sp/>0<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="composeriface__skel_8cpp_1e4db04dceb4090801a0284525a0372a9" kindref="member">ComposerIface_ftable_hiddens</ref>[1]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>0,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ComposerIface::process(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QCString<sp/>&amp;fun,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QByteArray<sp/>&amp;data,<sp/>QCString&amp;<sp/>replyType,<sp/>QByteArray<sp/>&amp;replyData)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fun<sp/>==<sp/><ref refid="composeriface__skel_8cpp_1a173badd16c220f1cc35dd79a467f642" kindref="member">ComposerIface_ftable</ref>[0][1]<sp/>)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>void<sp/>openURL(QString)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>arg0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QDataStream<sp/>arg(<sp/>data,<sp/>IO_ReadOnly<sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(arg.atEnd())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arg<sp/>&gt;&gt;<sp/>arg0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>replyType<sp/>=<sp/><ref refid="composeriface__skel_8cpp_1a173badd16c220f1cc35dd79a467f642" kindref="member">ComposerIface_ftable</ref>[0][0];<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classComposerIface_13deb991ea51d92a58332714d156f1389" kindref="member">openURL</ref>(arg0<sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DCOPObject::process(<sp/>fun,<sp/>data,<sp/>replyType,<sp/>replyData<sp/>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">QCStringList<sp/>ComposerIface::interfaces()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>QCStringList<sp/>ifaces<sp/>=<sp/>DCOPObject::interfaces();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>ifaces<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;ComposerIface&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ifaces;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">QCStringList<sp/>ComposerIface::functions()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>QCStringList<sp/>funcs<sp/>=<sp/>DCOPObject::functions();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/><ref refid="composeriface__skel_8cpp_1a173badd16c220f1cc35dd79a467f642" kindref="member">ComposerIface_ftable</ref>[i][2];<sp/>i++<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="composeriface__skel_8cpp_1e4db04dceb4090801a0284525a0372a9" kindref="member">ComposerIface_ftable_hiddens</ref>[i])</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QCString<sp/>func<sp/>=<sp/><ref refid="composeriface__skel_8cpp_1a173badd16c220f1cc35dd79a467f642" kindref="member">ComposerIface_ftable</ref>[i][0];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func<sp/>+=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>func<sp/>+=<sp/><ref refid="composeriface__skel_8cpp_1a173badd16c220f1cc35dd79a467f642" kindref="member">ComposerIface_ftable</ref>[i][2];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>funcs<sp/>&lt;&lt;<sp/>func;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>funcs;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/bastl/Kdevel/keda/composer/composeriface_skel.cpp"/>
+  </compounddef>
+</doxygen>

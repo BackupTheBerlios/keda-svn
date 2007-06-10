@@ -1,0 +1,238 @@
+/****************************************************************************
+** KedaPreferences meta object code from reading C++ file 'pref.h'
+**
+** Created: Sat Jun 9 09:33:51 2007
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.5   edited Sep 2 14:41 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "pref.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *KedaPreferences::className() const
+{
+    return "KedaPreferences";
+}
+
+QMetaObject *KedaPreferences::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KedaPreferences( "KedaPreferences", &KedaPreferences::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KedaPreferences::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KedaPreferences", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KedaPreferences::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KedaPreferences", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KedaPreferences::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = KDialogBase::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"KedaPreferences", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KedaPreferences.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KedaPreferences::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KedaPreferences" ) )
+	return this;
+    return KDialogBase::qt_cast( clname );
+}
+
+bool KedaPreferences::qt_invoke( int _id, QUObject* _o )
+{
+    return KDialogBase::qt_invoke(_id,_o);
+}
+
+bool KedaPreferences::qt_emit( int _id, QUObject* _o )
+{
+    return KDialogBase::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KedaPreferences::qt_property( int id, int f, QVariant* v)
+{
+    return KDialogBase::qt_property( id, f, v);
+}
+
+bool KedaPreferences::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *KedaPrefPageOne::className() const
+{
+    return "KedaPrefPageOne";
+}
+
+QMetaObject *KedaPrefPageOne::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KedaPrefPageOne( "KedaPrefPageOne", &KedaPrefPageOne::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KedaPrefPageOne::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KedaPrefPageOne", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KedaPrefPageOne::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KedaPrefPageOne", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KedaPrefPageOne::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QFrame::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"KedaPrefPageOne", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KedaPrefPageOne.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KedaPrefPageOne::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KedaPrefPageOne" ) )
+	return this;
+    return QFrame::qt_cast( clname );
+}
+
+bool KedaPrefPageOne::qt_invoke( int _id, QUObject* _o )
+{
+    return QFrame::qt_invoke(_id,_o);
+}
+
+bool KedaPrefPageOne::qt_emit( int _id, QUObject* _o )
+{
+    return QFrame::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KedaPrefPageOne::qt_property( int id, int f, QVariant* v)
+{
+    return QFrame::qt_property( id, f, v);
+}
+
+bool KedaPrefPageOne::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES
+
+
+const char *KedaPrefPageTwo::className() const
+{
+    return "KedaPrefPageTwo";
+}
+
+QMetaObject *KedaPrefPageTwo::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_KedaPrefPageTwo( "KedaPrefPageTwo", &KedaPrefPageTwo::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString KedaPrefPageTwo::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KedaPrefPageTwo", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString KedaPrefPageTwo::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "KedaPrefPageTwo", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* KedaPrefPageTwo::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QFrame::staticMetaObject();
+    metaObj = QMetaObject::new_metaobject(
+	"KedaPrefPageTwo", parentObject,
+	0, 0,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_KedaPrefPageTwo.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* KedaPrefPageTwo::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "KedaPrefPageTwo" ) )
+	return this;
+    return QFrame::qt_cast( clname );
+}
+
+bool KedaPrefPageTwo::qt_invoke( int _id, QUObject* _o )
+{
+    return QFrame::qt_invoke(_id,_o);
+}
+
+bool KedaPrefPageTwo::qt_emit( int _id, QUObject* _o )
+{
+    return QFrame::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool KedaPrefPageTwo::qt_property( int id, int f, QVariant* v)
+{
+    return QFrame::qt_property( id, f, v);
+}
+
+bool KedaPrefPageTwo::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

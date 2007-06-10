@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.5">
+  <compounddef id="classKedaPCBView" kind="class" prot="public">
+    <compoundname>KedaPCBView</compoundname>
+    <includes refid="kedapcbview_8h" local="no">kedapcbview.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classKedaPCBView_1958912152aada28d0b56d97bac066f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>KedaPCBView::KedaPCBView</definition>
+        <argsstring>(QWidget *parent)</argsstring>
+        <name>KedaPCBView</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/kedapcbview.h" line="38" bodyfile="/home/bastl/Kdevel/keda/src/kedapcbview.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classKedaPCBView_1bb1a9395b3c7b47cda4658a55d6d903e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>virtual</type>
+        <definition>KedaPCBView::~KedaPCBView</definition>
+        <argsstring>()</argsstring>
+        <name>~KedaPCBView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bastl/Kdevel/keda/src/kedapcbview.h" line="40" bodyfile="/home/bastl/Kdevel/keda/src/kedapcbview.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the main view of PCB mode. The whole PCB editing is done here. Evaluation of Auto Manager as well. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sebastian &lt;<ulink url="mailto:sebastian.bw@freenet.de">sebastian.bw@freenet.de</ulink>&gt; </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/bastl/Kdevel/keda/src/kedapcbview.h" line="35" bodyfile="/home/bastl/Kdevel/keda/src/kedapcbview.h" bodystart="34" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classKedaPCBView_1958912152aada28d0b56d97bac066f2c" prot="public" virt="non-virtual"><scope>KedaPCBView</scope><name>KedaPCBView</name></member>
+      <member refid="classKedaPCBView_1bb1a9395b3c7b47cda4658a55d6d903e" prot="public" virt="virtual"><scope>KedaPCBView</scope><name>~KedaPCBView</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

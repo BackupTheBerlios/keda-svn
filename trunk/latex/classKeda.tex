@@ -1,0 +1,250 @@
+\section{Keda Class Reference}
+\label{classKeda}\index{Keda@{Keda}}
+Main window class.  
+
+
+{\tt \#include $<$keda.h$>$}
+
+\subsection*{Public Slots}
+\begin{CompactItemize}
+\item 
+void {\bf load} (const KURL \&url)
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Keda} ()
+\item 
+{\bf $\sim$Keda} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf Auto\-Manager} $\ast$ {\bf am}
+\item 
+{\bf Keda\-View} $\ast$ {\bf eda}
+\item 
+KAction $\ast$ {\bf grid}
+\item 
+KAction $\ast$ {\bf meter}
+\item 
+KAction $\ast$ {\bf osci}
+\item 
+{\bf Keda\-PCBView} $\ast$ {\bf pcb}
+\item 
+KAction $\ast$ {\bf sim}
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void {\bf drag\-Enter\-Event} (QDrag\-Enter\-Event $\ast$event)
+\item 
+virtual void {\bf drop\-Event} (QDrop\-Event $\ast$event)
+\item 
+void {\bf read\-Properties} (KConfig $\ast$)
+\item 
+void {\bf save\-Properties} (KConfig $\ast$)
+\end{CompactItemize}
+\subsection*{Private Slots}
+\begin{CompactItemize}
+\item 
+void {\bf change\-Caption} (const QString \&text)
+\item 
+void {\bf change\-Statusbar} (const QString \&text)
+\item 
+void {\bf options\-Preferences} ()
+\item 
+void {\bf project\-New} ()
+\item 
+void {\bf project\-Open} ()
+\item 
+void {\bf project\-Print} ()
+\item 
+void {\bf project\-Save} ()
+\item 
+void {\bf project\-Save\-As} ()
+\item 
+void {\bf set\-EDAMode} ()
+\item 
+void {\bf set\-PCBMode} ()
+\item 
+void {\bf start\-Auto\-Manager} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf setup\-Accel} ()
+\item 
+void {\bf setup\-Actions} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+KPrinter $\ast$ {\bf m\_\-printer}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Main window class. 
+
+\begin{Desc}
+\item[Author:]sebastian $<${\tt sebastian.bw@freenet.de}$>$ \end{Desc}
+\begin{Desc}
+\item[Version:]0.1 \end{Desc}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Keda@{Keda}!Keda@{Keda}}
+\index{Keda@{Keda}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Keda::Keda ()}\label{classKeda_bdcde5bd2edacf1aabd359bcb83de9a2}
+
+
+\index{Keda@{Keda}!~Keda@{$\sim$Keda}}
+\index{~Keda@{$\sim$Keda}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Keda::$\sim$Keda ()}\label{classKeda_29492221c9b967fa0983a48503b2e371}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Keda@{Keda}!changeCaption@{changeCaption}}
+\index{changeCaption@{changeCaption}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::change\-Caption (const QString \& {\em text})\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_52961c3165b7817bdd6bec5a017670a5}
+
+
+\index{Keda@{Keda}!changeStatusbar@{changeStatusbar}}
+\index{changeStatusbar@{changeStatusbar}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::change\-Statusbar (const QString \& {\em text})\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_d8f40236954797adc7686383a2ebf1cd}
+
+
+\index{Keda@{Keda}!dragEnterEvent@{dragEnterEvent}}
+\index{dragEnterEvent@{dragEnterEvent}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::drag\-Enter\-Event (QDrag\-Enter\-Event $\ast$ {\em event})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classKeda_dba09a7801d36df546c0f3e9dac3ec02}
+
+
+\index{Keda@{Keda}!dropEvent@{dropEvent}}
+\index{dropEvent@{dropEvent}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::drop\-Event (QDrop\-Event $\ast$ {\em event})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classKeda_ccd73598789b64c97d431c5630cd93d0}
+
+
+\index{Keda@{Keda}!load@{load}}
+\index{load@{load}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::load (const KURL \& {\em url})\hspace{0.3cm}{\tt  [slot]}}\label{classKeda_71748e5aac2faece63af8155fa738a4c}
+
+
+\index{Keda@{Keda}!optionsPreferences@{optionsPreferences}}
+\index{optionsPreferences@{optionsPreferences}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::options\-Preferences ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_79dbe03b8b8a3ec215c89880f4b0a1bb}
+
+
+\index{Keda@{Keda}!projectNew@{projectNew}}
+\index{projectNew@{projectNew}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::project\-New ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_f7b5d294c0b974f37abf088f39ee0d21}
+
+
+\index{Keda@{Keda}!projectOpen@{projectOpen}}
+\index{projectOpen@{projectOpen}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::project\-Open ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_c88702d06a628e80fe7451bebdfdf9ad}
+
+
+\index{Keda@{Keda}!projectPrint@{projectPrint}}
+\index{projectPrint@{projectPrint}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::project\-Print ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_32466d5e7ef96bfa4ac122630197f15e}
+
+
+\index{Keda@{Keda}!projectSave@{projectSave}}
+\index{projectSave@{projectSave}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::project\-Save ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_84a060476c6c833c03105e94a896024a}
+
+
+\index{Keda@{Keda}!projectSaveAs@{projectSaveAs}}
+\index{projectSaveAs@{projectSaveAs}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::project\-Save\-As ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_58a2782da0bf12d0357df069d26d6fa8}
+
+
+\index{Keda@{Keda}!readProperties@{readProperties}}
+\index{readProperties@{readProperties}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::read\-Properties (KConfig $\ast$)\hspace{0.3cm}{\tt  [protected]}}\label{classKeda_bf0df7468919a89fdb30295452012ce8}
+
+
+\index{Keda@{Keda}!saveProperties@{saveProperties}}
+\index{saveProperties@{saveProperties}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::save\-Properties (KConfig $\ast$)\hspace{0.3cm}{\tt  [protected]}}\label{classKeda_593f2a414b74c536bab317ddbc4ddb80}
+
+
+\index{Keda@{Keda}!setEDAMode@{setEDAMode}}
+\index{setEDAMode@{setEDAMode}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::set\-EDAMode ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_1d6f34d64964b1f82b652c5620c665ce}
+
+
+\index{Keda@{Keda}!setPCBMode@{setPCBMode}}
+\index{setPCBMode@{setPCBMode}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::set\-PCBMode ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_e35704f7579cfb755ff9197293a42608}
+
+
+\index{Keda@{Keda}!setupAccel@{setupAccel}}
+\index{setupAccel@{setupAccel}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::setup\-Accel ()\hspace{0.3cm}{\tt  [private]}}\label{classKeda_0c5ff0cf39e2b82d94558c19d0488a58}
+
+
+\index{Keda@{Keda}!setupActions@{setupActions}}
+\index{setupActions@{setupActions}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::setup\-Actions ()\hspace{0.3cm}{\tt  [private]}}\label{classKeda_335f9f5dc82b43c02ca759b38cab1028}
+
+
+\index{Keda@{Keda}!startAutoManager@{startAutoManager}}
+\index{startAutoManager@{startAutoManager}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Keda::start\-Auto\-Manager ()\hspace{0.3cm}{\tt  [private, slot]}}\label{classKeda_3031f89e937abcf95a588db812d95566}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Keda@{Keda}!am@{am}}
+\index{am@{am}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Auto\-Manager}$\ast$ {\bf Keda::am}}\label{classKeda_c04cd38aeb30f3ad1f8ab4e64a0ded7b}
+
+
+\index{Keda@{Keda}!eda@{eda}}
+\index{eda@{eda}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Keda\-View}$\ast$ {\bf Keda::eda}}\label{classKeda_c1cf01e97872427ced3cc4d2b5410705}
+
+
+\index{Keda@{Keda}!grid@{grid}}
+\index{grid@{grid}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}KAction $\ast$ {\bf Keda::grid}}\label{classKeda_ff4a008470319a22d9cf3d14af485977}
+
+
+\index{Keda@{Keda}!m_printer@{m\_\-printer}}
+\index{m_printer@{m\_\-printer}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}KPrinter$\ast$ {\bf Keda::m\_\-printer}\hspace{0.3cm}{\tt  [private]}}\label{classKeda_8e823f6da24fcb64ec267d4c03581b26}
+
+
+\index{Keda@{Keda}!meter@{meter}}
+\index{meter@{meter}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}KAction $\ast$ {\bf Keda::meter}}\label{classKeda_558ddfdd3620c111fe112b4671b77c6d}
+
+
+\index{Keda@{Keda}!osci@{osci}}
+\index{osci@{osci}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}KAction $\ast$ {\bf Keda::osci}}\label{classKeda_ed0dd5f2fba480b6ede27b82bb692337}
+
+
+\index{Keda@{Keda}!pcb@{pcb}}
+\index{pcb@{pcb}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Keda\-PCBView}$\ast$ {\bf Keda::pcb}}\label{classKeda_f42a83f45934ad4e2e2628bec3dfede9}
+
+
+\index{Keda@{Keda}!sim@{sim}}
+\index{sim@{sim}!Keda@{Keda}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}KAction$\ast$ {\bf Keda::sim}}\label{classKeda_e9064b74d28acc053231170bb8c858b3}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/home/bastl/Kdevel/keda/src/{\bf keda.h}\item 
+/home/bastl/Kdevel/keda/src/{\bf keda.cpp}\end{CompactItemize}

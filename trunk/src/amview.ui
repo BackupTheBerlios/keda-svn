@@ -1,0 +1,356 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>AMView</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>AMView</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>631</width>
+            <height>436</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Auto Manager</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTabWidget" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>tabWidget2</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>B&amp;oard</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTable" row="0" column="0">
+                        <column>
+                            <property name="text">
+                                <string>Designation</string>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Dimension</string>
+                            </property>
+                        </column>
+                        <property name="name">
+                            <cstring>table1</cstring>
+                        </property>
+                        <property name="numRows">
+                            <number>1</number>
+                        </property>
+                        <property name="numCols">
+                            <number>2</number>
+                        </property>
+                        <property name="showGrid">
+                            <bool>true</bool>
+                        </property>
+                        <property name="selectionMode">
+                            <enum>NoSelection</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;Recesses</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTable" row="0" column="0">
+                        <column>
+                            <property name="text">
+                                <string>Designation</string>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Position</string>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Dimension</string>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Shape</string>
+                            </property>
+                        </column>
+                        <property name="name">
+                            <cstring>table1_3</cstring>
+                        </property>
+                        <property name="numRows">
+                            <number>1</number>
+                        </property>
+                        <property name="numCols">
+                            <number>4</number>
+                        </property>
+                        <property name="showGrid">
+                            <bool>true</bool>
+                        </property>
+                        <property name="selectionMode">
+                            <enum>NoSelection</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Res&amp;tricted areas</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTable" row="0" column="0">
+                        <column>
+                            <property name="text">
+                                <string>Designation</string>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Position</string>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Dimension</string>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Shape</string>
+                            </property>
+                        </column>
+                        <property name="name">
+                            <cstring>table1_3_2</cstring>
+                        </property>
+                        <property name="numRows">
+                            <number>1</number>
+                        </property>
+                        <property name="numCols">
+                            <number>4</number>
+                        </property>
+                        <property name="showGrid">
+                            <bool>true</bool>
+                        </property>
+                        <property name="selectionMode">
+                            <enum>NoSelection</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>De&amp;vices</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTable" row="0" column="0">
+                        <column>
+                            <property name="text">
+                                <string>Designation</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Position</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Use lead's spaceing</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Turn</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <row>
+                            <property name="text">
+                                <string>1</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </row>
+                        <property name="name">
+                            <cstring>table1_2</cstring>
+                        </property>
+                        <property name="numRows">
+                            <number>1</number>
+                        </property>
+                        <property name="numCols">
+                            <number>4</number>
+                        </property>
+                        <property name="showGrid">
+                            <bool>true</bool>
+                        </property>
+                        <property name="selectionMode">
+                            <enum>NoSelection</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>TabPage</cstring>
+                </property>
+                <attribute name="title">
+                    <string>&amp;Wires</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTable" row="0" column="0">
+                        <column>
+                            <property name="text">
+                                <string>Designation</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Lead1</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Lead2</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Group</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Max. current</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Max. length</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Spacing</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <row>
+                            <property name="text">
+                                <string>1</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </row>
+                        <property name="name">
+                            <cstring>table1_2_3</cstring>
+                        </property>
+                        <property name="numRows">
+                            <number>1</number>
+                        </property>
+                        <property name="numCols">
+                            <number>7</number>
+                        </property>
+                        <property name="showGrid">
+                            <bool>true</bool>
+                        </property>
+                        <property name="selectionMode">
+                            <enum>Single</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+        <widget class="KPushButton" row="1" column="0">
+            <property name="name">
+                <cstring>kPushButton9_2</cstring>
+            </property>
+            <property name="text">
+                <string>&amp;Make</string>
+            </property>
+        </widget>
+        <widget class="KPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>kPushButton9</cstring>
+            </property>
+            <property name="text">
+                <string>Canc&amp;le</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kpushbutton.h</includehint>
+    <includehint>kpushbutton.h</includehint>
+</includehints>
+</UI>
