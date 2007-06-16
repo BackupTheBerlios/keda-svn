@@ -1,7 +1,7 @@
 /****************************************************************************
-** Form interface generated from reading ui file '/home/bastl/Kdevel/keda/src/kedawidget.ui'
+** Form interface generated from reading ui file '/home/bastl/Kdevel/Keda/trunk/src/kedawidget.ui'
 **
-** Created: Sa Jun 9 09:33:30 2007
+** Created: Di Jun 12 21:34:48 2007
 **      by: The User Interface Compiler ($Id: qt/main.cpp   3.3.5   edited Aug 31 12:13 $)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -28,7 +28,6 @@ public:
     KedaWidget( QWidget* parent = 0, const char* name = 0, WFlags fl = 0 );
     ~KedaWidget();
 
-    QFrame* Layout;
     QFrame* frame3;
     QToolButton* board;
     QToolButton* part_group;
@@ -51,6 +50,7 @@ public:
     QToolButton* heatsinks;
     QToolButton* cases;
     QToolButton* custom;
+    QFrame* Layout;
 
 public slots:
     virtual void boards_clicked();

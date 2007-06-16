@@ -811,7 +811,7 @@ dist-hook:
 .NOEXPORT:
 
 #>+ 2
-KDE_DIST=stamp-h.in subdirs Makefile.in keda.kdevelop configure.files config.h.in keda.kdevelop.pcs keda.tag configure.in Makefile.cvs aclocal.m4 Doxyfile acinclude.m4 configure Makefile.am keda.kdevses 
+KDE_DIST=stamp-h.in subdirs Makefile.in keda.kdevelop configure.files keda.kdevelop.spec config.h.in keda.kdevelop.pcs keda.tag configure.in Makefile.cvs aclocal.m4 Doxyfile acinclude.m4 configure Makefile.am keda.kdevses 
 
 #>+ 2
 docs-am:

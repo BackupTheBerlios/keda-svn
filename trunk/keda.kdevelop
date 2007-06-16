@@ -17,6 +17,8 @@
     <description/>
     <ignoreparts/>
     <versioncontrol>kdevsubversion</versioncontrol>
+    <projectname>keda</projectname>
+    <defaultencoding/>
   </general>
   <kdevautoproject>
     <general>
@@ -86,6 +88,7 @@
     <tree>
       <hidenonprojectfiles>false</hidenonprojectfiles>
       <hidepatterns>*.o,*.lo,CVS</hidepatterns>
+      <showvcsfields>false</showvcsfields>
     </tree>
   </kdevfileview>
   <kdevdoctreeview>
@@ -201,6 +204,11 @@
       <used>false</used>
       <version>3</version>
       <root>/usr/qt</root>
+      <includestyle>3</includestyle>
+      <designerintegration>EmbeddedKDevDesigner</designerintegration>
+      <qmake>/usr/qt/bin/qmake</qmake>
+      <designer>/usr/qt/bin/designer</designer>
+      <designerpluginpaths/>
     </qt>
     <codecompletion>
       <includeGlobalFunctions>true</includeGlobalFunctions>
@@ -213,6 +221,21 @@
       <codeCompletionDelay>250</codeCompletionDelay>
       <argumentsHintDelay>400</argumentsHintDelay>
       <headerCompletionDelay>250</headerCompletionDelay>
+      <showOnlyAccessibleItems>false</showOnlyAccessibleItems>
+      <completionBoxItemOrder>0</completionBoxItemOrder>
+      <howEvaluationContextMenu>true</howEvaluationContextMenu>
+      <showCommentWithArgumentHint>true</showCommentWithArgumentHint>
+      <statusBarTypeEvaluation>false</statusBarTypeEvaluation>
+      <namespaceAliases>std=_GLIBCXX_STD;__gnu_cxx=std</namespaceAliases>
+      <processPrimaryTypes>true</processPrimaryTypes>
+      <processFunctionArguments>false</processFunctionArguments>
+      <preProcessAllHeaders>false</preProcessAllHeaders>
+      <parseMissingHeadersExperimental>false</parseMissingHeadersExperimental>
+      <resolveIncludePathsUsingMakeExperimental>false</resolveIncludePathsUsingMakeExperimental>
+      <alwaysParseInBackground>true</alwaysParseInBackground>
+      <usePermanentCaching>true</usePermanentCaching>
+      <alwaysIncludeNamespaces>false</alwaysIncludeNamespaces>
+      <includePaths>.;</includePaths>
     </codecompletion>
     <creategettersetter>
       <prefixGet/>
@@ -229,6 +252,11 @@
         <implementation class="KedaView" path="src/kedawidget.ui" implementationpath="src/kedaview.h" />
       </qtdesigner>
     </designerintegration>
+    <splitheadersource>
+      <enabled>false</enabled>
+      <synchronize>true</synchronize>
+      <orientation>Vertical</orientation>
+    </splitheadersource>
   </kdevcppsupport>
   <dist>
     <custom>true</custom>

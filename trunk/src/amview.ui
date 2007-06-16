@@ -39,12 +39,34 @@
                             <property name="text">
                                 <string>Designation</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Dimension</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
+                        <column>
+                            <property name="text">
+                                <string>Design</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </column>
+                        <row>
+                            <property name="text">
+                                <string>1</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </row>
                         <property name="name">
                             <cstring>table1</cstring>
                         </property>
@@ -52,7 +74,7 @@
                             <number>1</number>
                         </property>
                         <property name="numCols">
-                            <number>2</number>
+                            <number>3</number>
                         </property>
                         <property name="showGrid">
                             <bool>true</bool>
@@ -95,6 +117,11 @@
                                 <string>Shape</string>
                             </property>
                         </column>
+                        <column>
+                            <property name="text">
+                                <string>Turn</string>
+                            </property>
+                        </column>
                         <property name="name">
                             <cstring>table1_3</cstring>
                         </property>
@@ -102,7 +129,7 @@
                             <number>1</number>
                         </property>
                         <property name="numCols">
-                            <number>4</number>
+                            <number>5</number>
                         </property>
                         <property name="showGrid">
                             <bool>true</bool>
@@ -145,6 +172,11 @@
                                 <string>Shape</string>
                             </property>
                         </column>
+                        <column>
+                            <property name="text">
+                                <string>Turn</string>
+                            </property>
+                        </column>
                         <property name="name">
                             <cstring>table1_3_2</cstring>
                         </property>
@@ -152,7 +184,7 @@
                             <number>1</number>
                         </property>
                         <property name="numCols">
-                            <number>4</number>
+                            <number>5</number>
                         </property>
                         <property name="showGrid">
                             <bool>true</bool>
@@ -179,42 +211,22 @@
                             <property name="text">
                                 <string>Designation</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Position</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
                         </column>
                         <column>
                             <property name="text">
-                                <string>Use lead's spaceing</string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
+                                <string>Spaceing</string>
                             </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Turn</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
                         </column>
-                        <row>
-                            <property name="text">
-                                <string>1</string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
-                        </row>
                         <property name="name">
                             <cstring>table1_2</cstring>
                         </property>
@@ -229,6 +241,9 @@
                         </property>
                         <property name="selectionMode">
                             <enum>NoSelection</enum>
+                        </property>
+                        <property name="toolTip" stdset="0">
+                            <string>dfsdfsdf</string>
                         </property>
                     </widget>
                 </grid>
@@ -249,66 +264,42 @@
                             <property name="text">
                                 <string>Designation</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Lead1</string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
                             </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Lead2</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Group</string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
                             </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Max. current</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Max. length</string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
                             </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Spacing</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Design</string>
                             </property>
                         </column>
-                        <row>
-                            <property name="text">
-                                <string>1</string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
-                        </row>
                         <property name="name">
                             <cstring>table1_2_3</cstring>
                         </property>
@@ -316,7 +307,7 @@
                             <number>1</number>
                         </property>
                         <property name="numCols">
-                            <number>7</number>
+                            <number>8</number>
                         </property>
                         <property name="showGrid">
                             <bool>true</bool>
@@ -341,7 +332,7 @@
                 <cstring>kPushButton9</cstring>
             </property>
             <property name="text">
-                <string>Canc&amp;le</string>
+                <string>&amp;Cancle</string>
             </property>
         </widget>
     </grid>

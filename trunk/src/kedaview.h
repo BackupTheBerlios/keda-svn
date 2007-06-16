@@ -18,7 +18,8 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-
+ //hallo
+  
 #ifndef _KEDAVIEW_H_
 #define _KEDAVIEW_H_
 

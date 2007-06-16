@@ -1,9 +1,9 @@
 #include <kdialog.h>
 #include <klocale.h>
 /****************************************************************************
-** Form implementation generated from reading ui file '/home/bastl/Kdevel/keda/src/kedawidget.ui'
+** Form implementation generated from reading ui file '/home/bastl/Kdevel/Keda/trunk/src/kedawidget.ui'
 **
-** Created: Sa Jun 9 09:34:12 2007
+** Created: Di Jun 12 21:35:20 2007
 **      by: The User Interface Compiler ($Id: qt/main.cpp   3.3.5   edited Aug 31 12:13 $)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -28,13 +28,6 @@ KedaWidget::KedaWidget( QWidget* parent, const char* name, WFlags fl )
     if ( !name )
 	setName( "KedaWidget" );
     KedaWidgetLayout = new QGridLayout( this, 1, 1, 1, 0, "KedaWidgetLayout"); 
-
-    Layout = new QFrame( this, "Layout" );
-    Layout->setPaletteBackgroundColor( QColor( 253, 247, 210 ) );
-    Layout->setFrameShape( QFrame::StyledPanel );
-    Layout->setFrameShadow( QFrame::Sunken );
-
-    KedaWidgetLayout->addWidget( Layout, 0, 1 );
 
     frame3 = new QFrame( this, "frame3" );
     frame3->setMinimumSize( QSize( 125, 0 ) );
@@ -151,6 +144,13 @@ KedaWidget::KedaWidget( QWidget* parent, const char* name, WFlags fl )
     frame3Layout->addItem( spacer1 );
 
     KedaWidgetLayout->addWidget( frame3, 0, 0 );
+
+    Layout = new QFrame( this, "Layout" );
+    Layout->setPaletteBackgroundColor( QColor( 253, 247, 210 ) );
+    Layout->setFrameShape( QFrame::StyledPanel );
+    Layout->setFrameShadow( QFrame::Sunken );
+
+    KedaWidgetLayout->addWidget( Layout, 0, 1 );
     languageChange();
     resize( QSize(677, 626).expandedTo(minimumSizeHint()) );
     clearWState( WState_Polished );

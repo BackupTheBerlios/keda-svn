@@ -1,7 +1,7 @@
 /****************************************************************************
-** Form interface generated from reading ui file '/home/bastl/Kdevel/keda/src/amview.ui'
+** Form interface generated from reading ui file '/home/bastl/Kdevel/Keda/trunk/src/amview.ui'
 **
-** Created: Sa Jun 9 18:11:04 2007
+** Created: Do Jun 14 21:09:58 2007
 **      by: The User Interface Compiler ($Id: qt/main.cpp   3.3.5   edited Aug 31 12:13 $)
 **
 ** WARNING! All changes made in this file will be lost!

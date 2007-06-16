@@ -1,9 +1,9 @@
 #include <kdialog.h>
 #include <klocale.h>
 /****************************************************************************
-** Form implementation generated from reading ui file '/home/bastl/Kdevel/keda/src/amview.ui'
+** Form implementation generated from reading ui file '/home/bastl/Kdevel/Keda/trunk/src/amview.ui'
 **
-** Created: Sa Jun 9 18:11:25 2007
+** Created: Do Jun 14 21:10:19 2007
 **      by: The User Interface Compiler ($Id: qt/main.cpp   3.3.5   edited Aug 31 12:13 $)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -45,8 +45,12 @@ AMView::AMView( QWidget* parent, const char* name, WFlags fl )
     table1->horizontalHeader()->setLabel( table1->numCols() - 1, tr2i18n( "Designation" ) );
     table1->setNumCols( table1->numCols() + 1 );
     table1->horizontalHeader()->setLabel( table1->numCols() - 1, tr2i18n( "Dimension" ) );
+    table1->setNumCols( table1->numCols() + 1 );
+    table1->horizontalHeader()->setLabel( table1->numCols() - 1, tr2i18n( "Design" ) );
+    table1->setNumRows( table1->numRows() + 1 );
+    table1->verticalHeader()->setLabel( table1->numRows() - 1, tr2i18n( "1" ) );
     table1->setNumRows( 1 );
-    table1->setNumCols( 2 );
+    table1->setNumCols( 3 );
     table1->setShowGrid( TRUE );
     table1->setSelectionMode( QTable::NoSelection );
 
@@ -65,8 +69,10 @@ AMView::AMView( QWidget* parent, const char* name, WFlags fl )
     table1_3->horizontalHeader()->setLabel( table1_3->numCols() - 1, tr2i18n( "Dimension" ) );
     table1_3->setNumCols( table1_3->numCols() + 1 );
     table1_3->horizontalHeader()->setLabel( table1_3->numCols() - 1, tr2i18n( "Shape" ) );
+    table1_3->setNumCols( table1_3->numCols() + 1 );
+    table1_3->horizontalHeader()->setLabel( table1_3->numCols() - 1, tr2i18n( "Turn" ) );
     table1_3->setNumRows( 1 );
-    table1_3->setNumCols( 4 );
+    table1_3->setNumCols( 5 );
     table1_3->setShowGrid( TRUE );
     table1_3->setSelectionMode( QTable::NoSelection );
 
@@ -85,10 +91,10 @@ AMView::AMView( QWidget* parent, const char* name, WFlags fl )
     table1_3_2->horizontalHeader()->setLabel( table1_3_2->numCols() - 1, tr2i18n( "Dimension" ) );
     table1_3_2->setNumCols( table1_3_2->numCols() + 1 );
     table1_3_2->horizontalHeader()->setLabel( table1_3_2->numCols() - 1, tr2i18n( "Shape" ) );
-    table1_3_2->setNumRows( table1_3_2->numRows() + 1 );
-    table1_3_2->verticalHeader()->setLabel( table1_3_2->numRows() - 1, tr2i18n( "1" ) );
+    table1_3_2->setNumCols( table1_3_2->numCols() + 1 );
+    table1_3_2->horizontalHeader()->setLabel( table1_3_2->numCols() - 1, tr2i18n( "Turn" ) );
     table1_3_2->setNumRows( 1 );
-    table1_3_2->setNumCols( 4 );
+    table1_3_2->setNumCols( 5 );
     table1_3_2->setShowGrid( TRUE );
     table1_3_2->setSelectionMode( QTable::NoSelection );
 
@@ -104,9 +110,11 @@ AMView::AMView( QWidget* parent, const char* name, WFlags fl )
     table1_2->setNumCols( table1_2->numCols() + 1 );
     table1_2->horizontalHeader()->setLabel( table1_2->numCols() - 1, tr2i18n( "Position" ) );
     table1_2->setNumCols( table1_2->numCols() + 1 );
-    table1_2->horizontalHeader()->setLabel( table1_2->numCols() - 1, tr2i18n( "Use lead's space" ) );
+    table1_2->horizontalHeader()->setLabel( table1_2->numCols() - 1, tr2i18n( "Spaceing" ) );
+    table1_2->setNumCols( table1_2->numCols() + 1 );
+    table1_2->horizontalHeader()->setLabel( table1_2->numCols() - 1, tr2i18n( "Turn" ) );
     table1_2->setNumRows( 1 );
-    table1_2->setNumCols( 3 );
+    table1_2->setNumCols( 4 );
     table1_2->setShowGrid( TRUE );
     table1_2->setSelectionMode( QTable::NoSelection );
 
@@ -128,9 +136,13 @@ AMView::AMView( QWidget* parent, const char* name, WFlags fl )
     table1_2_3->setNumCols( table1_2_3->numCols() + 1 );
     table1_2_3->horizontalHeader()->setLabel( table1_2_3->numCols() - 1, tr2i18n( "Max. current" ) );
     table1_2_3->setNumCols( table1_2_3->numCols() + 1 );
+    table1_2_3->horizontalHeader()->setLabel( table1_2_3->numCols() - 1, tr2i18n( "Max. length" ) );
+    table1_2_3->setNumCols( table1_2_3->numCols() + 1 );
     table1_2_3->horizontalHeader()->setLabel( table1_2_3->numCols() - 1, tr2i18n( "Spacing" ) );
+    table1_2_3->setNumCols( table1_2_3->numCols() + 1 );
+    table1_2_3->horizontalHeader()->setLabel( table1_2_3->numCols() - 1, tr2i18n( "Design" ) );
     table1_2_3->setNumRows( 1 );
-    table1_2_3->setNumCols( 6 );
+    table1_2_3->setNumCols( 8 );
     table1_2_3->setShowGrid( TRUE );
     table1_2_3->setSelectionMode( QTable::Single );
 
@@ -147,7 +159,7 @@ AMView::AMView( QWidget* parent, const char* name, WFlags fl )
 
     AMViewLayout->addWidget( kPushButton9, 1, 1 );
     languageChange();
-    resize( QSize(641, 433).expandedTo(minimumSizeHint()) );
+    resize( QSize(631, 436).expandedTo(minimumSizeHint()) );
     clearWState( WState_Polished );
 }
 
@@ -168,31 +180,38 @@ void AMView::languageChange()
     setCaption( tr2i18n( "Auto Manager" ) );
     table1->horizontalHeader()->setLabel( 0, tr2i18n( "Designation" ) );
     table1->horizontalHeader()->setLabel( 1, tr2i18n( "Dimension" ) );
+    table1->horizontalHeader()->setLabel( 2, tr2i18n( "Design" ) );
+    table1->verticalHeader()->setLabel( 0, tr2i18n( "1" ) );
     tabWidget2->changeTab( tab, tr2i18n( "B&oard" ) );
     table1_3->horizontalHeader()->setLabel( 0, tr2i18n( "Designation" ) );
     table1_3->horizontalHeader()->setLabel( 1, tr2i18n( "Position" ) );
     table1_3->horizontalHeader()->setLabel( 2, tr2i18n( "Dimension" ) );
     table1_3->horizontalHeader()->setLabel( 3, tr2i18n( "Shape" ) );
+    table1_3->horizontalHeader()->setLabel( 4, tr2i18n( "Turn" ) );
     tabWidget2->changeTab( TabPage, tr2i18n( "&Recesses" ) );
     table1_3_2->horizontalHeader()->setLabel( 0, tr2i18n( "Designation" ) );
     table1_3_2->horizontalHeader()->setLabel( 1, tr2i18n( "Position" ) );
     table1_3_2->horizontalHeader()->setLabel( 2, tr2i18n( "Dimension" ) );
     table1_3_2->horizontalHeader()->setLabel( 3, tr2i18n( "Shape" ) );
-    table1_3_2->verticalHeader()->setLabel( 0, tr2i18n( "1" ) );
+    table1_3_2->horizontalHeader()->setLabel( 4, tr2i18n( "Turn" ) );
     tabWidget2->changeTab( TabPage_2, tr2i18n( "Res&tricted areas" ) );
     table1_2->horizontalHeader()->setLabel( 0, tr2i18n( "Designation" ) );
     table1_2->horizontalHeader()->setLabel( 1, tr2i18n( "Position" ) );
-    table1_2->horizontalHeader()->setLabel( 2, tr2i18n( "Use lead's space" ) );
+    table1_2->horizontalHeader()->setLabel( 2, tr2i18n( "Spaceing" ) );
+    table1_2->horizontalHeader()->setLabel( 3, tr2i18n( "Turn" ) );
+    QToolTip::add( table1_2, tr2i18n( "dfsdfsdf" ) );
     tabWidget2->changeTab( tab_2, tr2i18n( "De&vices" ) );
     table1_2_3->horizontalHeader()->setLabel( 0, tr2i18n( "Designation" ) );
     table1_2_3->horizontalHeader()->setLabel( 1, tr2i18n( "Lead1" ) );
     table1_2_3->horizontalHeader()->setLabel( 2, tr2i18n( "Lead2" ) );
     table1_2_3->horizontalHeader()->setLabel( 3, tr2i18n( "Group" ) );
     table1_2_3->horizontalHeader()->setLabel( 4, tr2i18n( "Max. current" ) );
-    table1_2_3->horizontalHeader()->setLabel( 5, tr2i18n( "Spacing" ) );
+    table1_2_3->horizontalHeader()->setLabel( 5, tr2i18n( "Max. length" ) );
+    table1_2_3->horizontalHeader()->setLabel( 6, tr2i18n( "Spacing" ) );
+    table1_2_3->horizontalHeader()->setLabel( 7, tr2i18n( "Design" ) );
     tabWidget2->changeTab( TabPage_3, tr2i18n( "&Wires" ) );
     kPushButton9_2->setText( tr2i18n( "&Make" ) );
-    kPushButton9->setText( tr2i18n( "Canc&le" ) );
+    kPushButton9->setText( tr2i18n( "&Cancle" ) );
 }
 
 #include "amview.moc"

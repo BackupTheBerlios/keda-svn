@@ -14,9 +14,9 @@
 # PARTICULAR PURPOSE.
 
 
-srcdir = /home/bastl/Kdevel/keda/doc/en
-top_srcdir = /home/bastl/Kdevel/keda
-VPATH = /home/bastl/Kdevel/keda/doc/en
+srcdir = /home/bastl/Kdevel/Keda/trunk/doc/en
+top_srcdir = /home/bastl/Kdevel/Keda/trunk
+VPATH = /home/bastl/Kdevel/Keda/trunk/doc/en
 pkgdatadir = $(datadir)/keda
 pkglibdir = $(libdir)/keda
 pkgincludedir = $(includedir)/keda
@@ -52,16 +52,16 @@ DIST_SOURCES =
 #>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 #>+ 1
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
-ACLOCAL = ${SHELL} /home/bastl/Kdevel/keda/admin/missing --run aclocal-1.9
+ACLOCAL = ${SHELL} /home/bastl/Kdevel/Keda/trunk/admin/missing --run aclocal-1.9
 AMDEP_FALSE = #
 AMDEP_TRUE = 
-AMTAR = ${SHELL} /home/bastl/Kdevel/keda/admin/missing --run tar
+AMTAR = ${SHELL} /home/bastl/Kdevel/Keda/trunk/admin/missing --run tar
 AR = ar
 ARTSCCONFIG = /usr/local/kde/bin/artsc-config
 AUTOCONF = $(SHELL) $(top_srcdir)/admin/cvs.sh configure || touch configure
 AUTODIRS = 
-AUTOHEADER = ${SHELL} /home/bastl/Kdevel/keda/admin/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/bastl/Kdevel/keda/admin/missing --run automake-1.9
+AUTOHEADER = ${SHELL} /home/bastl/Kdevel/Keda/trunk/admin/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/bastl/Kdevel/Keda/trunk/admin/missing --run automake-1.9
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -164,7 +164,7 @@ LIB_XEXT = -lXext
 LIB_XRENDER = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/bastl/Kdevel/keda/admin/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/bastl/Kdevel/Keda/trunk/admin/missing --run makeinfo
 MAKEKDEWIDGETS = 
 MCOPIDL = /usr/local/kde/bin/mcopidl
 MEINPROC = /usr/local/kde/bin/meinproc
@@ -241,7 +241,7 @@ include_x11_FALSE = #
 include_x11_TRUE = 
 includedir = ${prefix}/include
 infodir = ${prefix}/info
-install_sh = /home/bastl/Kdevel/keda/admin/install-sh
+install_sh = /home/bastl/Kdevel/Keda/trunk/admin/install-sh
 kde_appsdir = ${datadir}/applnk
 kde_bindir = ${exec_prefix}/bin
 kde_confdir = ${datadir}/config
