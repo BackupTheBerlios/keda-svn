@@ -40,8 +40,8 @@ static KCmdLineOptions options[] =
 int main(int argc, char **argv)
 	{
 	KAboutData about("keda", I18N_NOOP("Keda"), version, description,
-					KAboutData::License_GPL, "(C) 2007 sebastian", 0, 0, "sebastian.bw@freenet.de");
-	about.addAuthor( "sebastian", 0, "sebastian.bw@freenet.de" );
+					KAboutData::License_GPL, "(C) 2007 Sebastian Beck", 0, 0, "sebastian.bw@freenet.de");
+	about.addAuthor( "Sebastian Beck", 0, "sebastian.bw@freenet.de" );
 	KCmdLineArgs::init(argc, argv, &about);
 	KCmdLineArgs::addCmdLineOptions(options);
 	KApplication app;

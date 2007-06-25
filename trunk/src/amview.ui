@@ -8,7 +8,7 @@
         <rect>
             <x>0</x>
             <y>0</y>
-            <width>631</width>
+            <width>632</width>
             <height>436</height>
         </rect>
     </property>
@@ -39,34 +39,17 @@
                             <property name="text">
                                 <string>Designation</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Dimension</string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
                             </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Design</string>
                             </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
                         </column>
-                        <row>
-                            <property name="text">
-                                <string>1</string>
-                            </property>
-                            <property name="pixmap">
-                                <pixmap></pixmap>
-                            </property>
-                        </row>
                         <property name="name">
                             <cstring>table1</cstring>
                         </property>
@@ -101,27 +84,50 @@
                             <property name="text">
                                 <string>Designation</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Position</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
                             </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Dimension</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Shape</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
-                                <string>Turn</string>
+                                <string>Rotate</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
                             </property>
                         </column>
+                        <row>
+                            <property name="text">
+                                <string>1</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </row>
                         <property name="name">
                             <cstring>table1_3</cstring>
                         </property>
@@ -156,27 +162,50 @@
                             <property name="text">
                                 <string>Designation</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Position</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
                             </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Dimension</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Shape</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
-                                <string>Turn</string>
+                                <string>Rotate</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
                             </property>
                         </column>
+                        <row>
+                            <property name="text">
+                                <string>1</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </row>
                         <property name="name">
                             <cstring>table1_3_2</cstring>
                         </property>
@@ -211,22 +240,42 @@
                             <property name="text">
                                 <string>Designation</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Position</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
                             </property>
                         </column>
                         <column>
                             <property name="text">
                                 <string>Spaceing</string>
                             </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
                         </column>
                         <column>
                             <property name="text">
-                                <string>Turn</string>
+                                <string>Rotate</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
                             </property>
                         </column>
+                        <row>
+                            <property name="text">
+                                <string>1</string>
+                            </property>
+                            <property name="pixmap">
+                                <pixmap></pixmap>
+                            </property>
+                        </row>
                         <property name="name">
                             <cstring>table1_2</cstring>
                         </property>
