@@ -56,17 +56,17 @@ am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(kdelnkdir)" \
 	"$(DESTDIR)$(rcdir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
-am_keda_OBJECTS = main.$(OBJEXT) keda.$(OBJEXT) kedaview.$(OBJEXT) \
-	pref.$(OBJEXT) menudatabase.$(OBJEXT) offerwidget.$(OBJEXT) \
-	kedapcbview.$(OBJEXT) automanager.$(OBJEXT) \
-	offerselection.$(OBJEXT)
+am_keda_OBJECTS = automanager.$(OBJEXT) keda.$(OBJEXT) \
+	kedapcbview.$(OBJEXT) kedaview.$(OBJEXT) main.$(OBJEXT) \
+	menudatabase.$(OBJEXT) offerselection.$(OBJEXT) \
+	offerwidget.$(OBJEXT) pref.$(OBJEXT)
 #>- keda_OBJECTS = $(am_keda_OBJECTS)
 #>+ 8
 keda_final_OBJECTS = keda.all_cpp.o 
-keda_nofinal_OBJECTS = main.$(OBJEXT) keda.$(OBJEXT) kedaview.$(OBJEXT) \
-	pref.$(OBJEXT) menudatabase.$(OBJEXT) offerwidget.$(OBJEXT) \
-	kedapcbview.$(OBJEXT) automanager.$(OBJEXT) \
-	offerselection.$(OBJEXT) kedaiface_skel.$(OBJEXT) kedawidget.$(OBJEXT) amview.$(OBJEXT)\
+keda_nofinal_OBJECTS = automanager.$(OBJEXT) keda.$(OBJEXT) \
+	kedapcbview.$(OBJEXT) kedaview.$(OBJEXT) main.$(OBJEXT) \
+	menudatabase.$(OBJEXT) offerselection.$(OBJEXT) \
+	offerwidget.$(OBJEXT) pref.$(OBJEXT) kedaiface_skel.$(OBJEXT) amview.$(OBJEXT) kedawidget.$(OBJEXT) simulation.$(OBJEXT)\
 kedapcbview.moc.o 
 @KDE_USE_FINAL_FALSE@keda_OBJECTS = $(keda_nofinal_OBJECTS)
 @KDE_USE_FINAL_TRUE@keda_OBJECTS = $(keda_final_OBJECTS)
@@ -364,13 +364,13 @@ keda_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 keda_LDADD = $(LIB_KFILE) $(LIB_KDEPRINT)
 
 # which sources should be compiled for keda
-#>- keda_SOURCES = main.cpp keda.cpp kedaview.cpp pref.cpp kedaiface.skel \
-#>- 			menudatabase.cpp offerwidget.cpp kedawidget.ui kedapcbview.cpp amview.ui automanager.cpp \
-#>- 	offerselection.cpp
+#>- keda_SOURCES = amview.ui automanager.cpp keda.cpp kedaiface.skel \
+#>- 	kedapcbview.cpp kedaview.cpp kedawidget.ui main.cpp menudatabase.cpp offerselection.cpp \
+#>- 	offerwidget.cpp pref.cpp simulation.ui
 #>+ 3
-keda_SOURCES=main.cpp keda.cpp kedaview.cpp pref.cpp  \
-			menudatabase.cpp offerwidget.cpp  kedapcbview.cpp  automanager.cpp \
-	offerselection.cpp kedaiface_skel.cpp kedawidget.cpp amview.cpp
+keda_SOURCES= automanager.cpp keda.cpp  \
+	kedapcbview.cpp kedaview.cpp  main.cpp menudatabase.cpp offerselection.cpp \
+	offerwidget.cpp pref.cpp  kedaiface_skel.cpp amview.cpp kedawidget.cpp simulation.cpp
 
 
 # these are the headers for your project
@@ -797,18 +797,19 @@ clean-metasources:
 	-rm -f  keda.moc kedaview.moc kedapcbview.moc.cpp offerwidget.moc pref.moc offerselection.moc
 
 #>+ 2
-KDE_DIST=offerselection.h keda keda.tag kedapcbview.h amview.h keda.lsm amview.ui keda_client Makefile.in hi32-app-keda.png kedaui.rc kedawidget.h kedaiface.kidl kedaiface.h kedawidget.ui Makefile.am keda.desktop offerwidget.h hi16-app-keda.png 
+KDE_DIST=offerselection.h keda keda.tag kedapcbview.h amview.h simulation.ui keda.lsm amview.ui keda_client Makefile.in kedaui.rc hi32-app-keda.png kedawidget.h kedaiface.kidl kedaiface.h kedawidget.ui keda.desktop Makefile.am offerwidget.h hi16-app-keda.png 
 
 #>+ 4
 clean-idl:
 	-rm -f \
 	kedaiface_skel.cpp kedaiface_skel.h kedaiface.kidl 
 
-#>+ 5
+#>+ 6
 clean-ui:
 	-rm -f \
+	amview.cpp amview.h amview.moc \
 	kedawidget.cpp kedawidget.h kedawidget.moc \
-	amview.cpp amview.h amview.moc 
+	simulation.cpp simulation.h simulation.moc 
 
 #>+ 2
 docs-am:
@@ -863,11 +864,11 @@ bcheck-am:
 
 
 #>+ 11
-keda.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/main.cpp $(srcdir)/keda.cpp $(srcdir)/kedaview.cpp $(srcdir)/pref.cpp $(srcdir)/menudatabase.cpp $(srcdir)/offerwidget.cpp $(srcdir)/kedapcbview.cpp $(srcdir)/automanager.cpp $(srcdir)/offerselection.cpp $(srcdir)/kedaiface_skel.cpp $(srcdir)/kedawidget.cpp $(srcdir)/amview.cpp $(srcdir)/kedapcbview.moc.cpp  keda.moc pref.moc amview.moc kedaview.moc kedawidget.moc offerwidget.moc offerselection.moc
+keda.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/automanager.cpp $(srcdir)/keda.cpp $(srcdir)/kedapcbview.cpp $(srcdir)/kedaview.cpp $(srcdir)/main.cpp $(srcdir)/menudatabase.cpp $(srcdir)/offerselection.cpp $(srcdir)/offerwidget.cpp $(srcdir)/pref.cpp $(srcdir)/kedaiface_skel.cpp $(srcdir)/amview.cpp $(srcdir)/kedawidget.cpp simulation.cpp $(srcdir)/kedapcbview.moc.cpp  keda.moc pref.moc simulation.moc amview.moc kedaview.moc kedawidget.moc offerwidget.moc offerselection.moc
 	@echo 'creating keda.all_cpp.cpp ...'; \
 	rm -f keda.all_cpp.files keda.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> keda.all_cpp.final; \
-	for file in main.cpp keda.cpp kedaview.cpp pref.cpp menudatabase.cpp offerwidget.cpp kedapcbview.cpp automanager.cpp offerselection.cpp kedaiface_skel.cpp kedawidget.cpp amview.cpp kedapcbview.moc.cpp ; do \
+	for file in automanager.cpp keda.cpp kedapcbview.cpp kedaview.cpp main.cpp menudatabase.cpp offerselection.cpp offerwidget.cpp pref.cpp kedaiface_skel.cpp amview.cpp kedawidget.cpp simulation.cpp kedapcbview.moc.cpp ; do \
 	  echo "#include \"$$file\"" >> keda.all_cpp.files; \
 	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> keda.all_cpp.final; \
 	done; \
@@ -912,28 +913,43 @@ kde-rpo-clean:
 
 #>+ 22
 kedaview.o: kedaview.moc 
-$(srcdir)/main.cpp: kedawidget.h amview.h 
+$(srcdir)/main.cpp: amview.h kedawidget.h simulation.h 
 kedaview.lo: kedaview.moc 
 offerselection.lo: offerselection.moc 
 offerwidget.lo: offerwidget.moc 
 nmcheck: 
-$(srcdir)/offerwidget.cpp: kedawidget.h amview.h 
-$(srcdir)/kedapcbview.cpp: kedawidget.h amview.h 
+$(srcdir)/offerwidget.cpp: amview.h kedawidget.h simulation.h 
+$(srcdir)/kedapcbview.cpp: amview.h kedawidget.h simulation.h 
 offerselection.o: offerselection.moc 
-$(srcdir)/pref.cpp: kedawidget.h amview.h 
+$(srcdir)/pref.cpp: amview.h kedawidget.h simulation.h 
 offerwidget.o: offerwidget.moc 
 nmcheck-am: nmcheck
-$(srcdir)/offerselection.cpp: kedawidget.h amview.h 
+$(srcdir)/offerselection.cpp: amview.h kedawidget.h simulation.h 
 pref.lo: pref.moc 
-$(srcdir)/automanager.cpp: kedawidget.h amview.h 
-$(srcdir)/menudatabase.cpp: kedawidget.h amview.h 
+$(srcdir)/automanager.cpp: amview.h kedawidget.h simulation.h 
+$(srcdir)/menudatabase.cpp: amview.h kedawidget.h simulation.h 
 pref.o: pref.moc 
-$(srcdir)/keda.cpp: kedawidget.h amview.h 
-$(srcdir)/kedaview.cpp: kedawidget.h amview.h 
+$(srcdir)/keda.cpp: amview.h kedawidget.h simulation.h 
+$(srcdir)/kedaview.cpp: amview.h kedawidget.h simulation.h 
 keda.lo: keda.moc 
 keda.o: keda.moc 
 
-#>+ 30
+#>+ 45
+simulation.cpp: $(srcdir)/simulation.ui simulation.h simulation.moc
+	rm -f simulation.cpp
+	echo '#include <kdialog.h>' > simulation.cpp
+	echo '#include <klocale.h>' >> simulation.cpp
+	$(UIC) -tr ${UIC_TR} -i simulation.h $(srcdir)/simulation.ui > simulation.cpp.temp ; ret=$$?; \
+	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" simulation.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_simulation,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> simulation.cpp ;\
+	rm -f simulation.cpp.temp ;\
+	if test "$$ret" = 0; then echo '#include "simulation.moc"' >> simulation.cpp; else rm -f simulation.cpp ; exit $$ret ; fi
+
+simulation.h: $(srcdir)/simulation.ui
+	rm -rf simulation.h;
+	$(UIC) $(srcdir)/simulation.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> simulation.h ;
+simulation.moc: simulation.h
+	$(MOC) simulation.h -o simulation.moc
+
 amview.cpp: $(srcdir)/amview.ui amview.h amview.moc
 	rm -f amview.cpp
 	echo '#include <kdialog.h>' > amview.cpp
