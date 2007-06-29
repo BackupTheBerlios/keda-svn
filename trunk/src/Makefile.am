@@ -14,9 +14,9 @@ keda_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 keda_LDADD   = $(LIB_KFILE) $(LIB_KDEPRINT)
 
 # which sources should be compiled for keda
-keda_SOURCES = main.cpp keda.cpp kedaview.cpp pref.cpp kedaiface.skel \
-			menudatabase.cpp offerwidget.cpp kedawidget.ui kedapcbview.cpp amview.ui automanager.cpp \
-	offerselection.cpp
+keda_SOURCES = amview.ui automanager.cpp keda.cpp kedaiface.skel \
+	kedapcbview.cpp kedaview.cpp kedawidget.ui main.cpp menudatabase.cpp offerselection.cpp \
+	offerwidget.cpp pref.cpp simulation.ui
 
 # these are the headers for your project
 noinst_HEADERS = keda.h kedaview.h pref.h menudatabase.h automanager.h
