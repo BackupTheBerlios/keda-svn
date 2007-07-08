@@ -1,0 +1,146 @@
+/****************************************************************************
+** Simulationwidget meta object code from reading C++ file 'simulationwidget.h'
+**
+** Created: Sun Jul 8 14:57:37 2007
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.5   edited Sep 2 14:41 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "simulationwidget.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *Simulationwidget::className() const
+{
+    return "Simulationwidget";
+}
+
+QMetaObject *Simulationwidget::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_Simulationwidget( "Simulationwidget", &Simulationwidget::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString Simulationwidget::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Simulationwidget", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString Simulationwidget::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "Simulationwidget", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* Simulationwidget::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QWidget::staticMetaObject();
+    static const QUMethod slot_0 = {"pressure_popup_clicked", 0, 0 };
+    static const QUMethod slot_1 = {"save_clicked", 0, 0 };
+    static const QUMethod slot_2 = {"vibration_popup_clicked", 0, 0 };
+    static const QUMethod slot_3 = {"new_clicked", 0, 0 };
+    static const QUMethod slot_4 = {"magnetism_popup_clicked", 0, 0 };
+    static const QUMethod slot_5 = {"load_clicked", 0, 0 };
+    static const QUMethod slot_6 = {"light_popup_clicked", 0, 0 };
+    static const QUMethod slot_7 = {"humidity_popup_clicked", 0, 0 };
+    static const QUMethod slot_8 = {"acceleration_popup_clicked", 0, 0 };
+    static const QUMethod slot_9 = {"next_page_clicked", 0, 0 };
+    static const QUMethod slot_10 = {"sensor_popup_clicked", 0, 0 };
+    static const QUMethod slot_11 = {"page_back_clicked", 0, 0 };
+    static const QUMethod slot_12 = {"play_clicked", 0, 0 };
+    static const QUMethod slot_13 = {"stop_clicked", 0, 0 };
+    static const QUMethod slot_14 = {"pause_clicked", 0, 0 };
+    static const QUMethod slot_15 = {"languageChange", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "pressure_popup_clicked()", &slot_0, QMetaData::Public },
+	{ "save_clicked()", &slot_1, QMetaData::Public },
+	{ "vibration_popup_clicked()", &slot_2, QMetaData::Public },
+	{ "new_clicked()", &slot_3, QMetaData::Public },
+	{ "magnetism_popup_clicked()", &slot_4, QMetaData::Public },
+	{ "load_clicked()", &slot_5, QMetaData::Public },
+	{ "light_popup_clicked()", &slot_6, QMetaData::Public },
+	{ "humidity_popup_clicked()", &slot_7, QMetaData::Public },
+	{ "acceleration_popup_clicked()", &slot_8, QMetaData::Public },
+	{ "next_page_clicked()", &slot_9, QMetaData::Public },
+	{ "sensor_popup_clicked()", &slot_10, QMetaData::Public },
+	{ "page_back_clicked()", &slot_11, QMetaData::Public },
+	{ "play_clicked()", &slot_12, QMetaData::Public },
+	{ "stop_clicked()", &slot_13, QMetaData::Public },
+	{ "pause_clicked()", &slot_14, QMetaData::Public },
+	{ "languageChange()", &slot_15, QMetaData::Protected }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"Simulationwidget", parentObject,
+	slot_tbl, 16,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_Simulationwidget.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* Simulationwidget::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "Simulationwidget" ) )
+	return this;
+    return QWidget::qt_cast( clname );
+}
+
+bool Simulationwidget::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: pressure_popup_clicked(); break;
+    case 1: save_clicked(); break;
+    case 2: vibration_popup_clicked(); break;
+    case 3: new_clicked(); break;
+    case 4: magnetism_popup_clicked(); break;
+    case 5: load_clicked(); break;
+    case 6: light_popup_clicked(); break;
+    case 7: humidity_popup_clicked(); break;
+    case 8: acceleration_popup_clicked(); break;
+    case 9: next_page_clicked(); break;
+    case 10: sensor_popup_clicked(); break;
+    case 11: page_back_clicked(); break;
+    case 12: play_clicked(); break;
+    case 13: stop_clicked(); break;
+    case 14: pause_clicked(); break;
+    case 15: languageChange(); break;
+    default:
+	return QWidget::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool Simulationwidget::qt_emit( int _id, QUObject* _o )
+{
+    return QWidget::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool Simulationwidget::qt_property( int id, int f, QVariant* v)
+{
+    return QWidget::qt_property( id, f, v);
+}
+
+bool Simulationwidget::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

@@ -74,6 +74,7 @@
         <envvars/>
       </default>
     </configurations>
+    <subclassing/>
   </kdevautoproject>
   <kdevfileview>
     <groups>
@@ -250,6 +251,9 @@
       <qtdesigner>
         <implementation class="KedaView" path="src/boards.ui" implementationpath="src/kedaview.h" />
         <implementation class="KedaView" path="src/kedawidget.ui" implementationpath="src/kedaview.h" />
+        <implementation class="SensorView" path="src/sensoraddwidget.ui" implementationpath="src/sensorview.h" />
+        <implementation class="SensorView" path="src/sensorwidget.ui" implementationpath="src/sensorview.h" />
+        <implementation class="SimulationView" path="src/simulationwidget.ui" implementationpath="src/simulationview.h" />
       </qtdesigner>
     </designerintegration>
     <splitheadersource>
@@ -260,18 +264,18 @@
   </kdevcppsupport>
   <dist>
     <custom>true</custom>
-    <bzip>false</bzip>
-    <archname/>
-    <appname>keda.kdevelop.src</appname>
-    <version>0.1.1</version>
+    <bzip>true</bzip>
+    <archname>keda.src-0.1.2</archname>
+    <appname>keda.src</appname>
+    <version>0.1.2</version>
     <release>alpha</release>
-    <vendor/>
+    <vendor></vendor>
     <licence>GPL v2</licence>
-    <summary/>
+    <summary></summary>
     <group>Keda</group>
     <packager>admin</packager>
-    <description/>
-    <changelog/>
+    <description></description>
+    <changelog></changelog>
     <devpackage>false</devpackage>
     <docspackage>false</docspackage>
     <appicon>false</appicon>

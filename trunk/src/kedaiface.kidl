@@ -1,5 +1,5 @@
 <!DOCTYPE DCOP-IDL><DCOP-IDL>
-<SOURCE>/home/bastl/Kdevel/keda/src/kedaiface.h</SOURCE>
+<SOURCE>/home/bastl/Kdevel/Keda/trunk/src/kedaiface.h</SOURCE>
 <INCLUDE>dcopobject.h</INCLUDE>
 <CLASS>
     <NAME>KedaIface</NAME>

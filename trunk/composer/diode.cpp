@@ -1,9 +1,9 @@
 #include <kdialog.h>
 #include <klocale.h>
 /****************************************************************************
-** Form implementation generated from reading ui file '/home/bastl/Kdevel/keda/composer/diode.ui'
+** Form implementation generated from reading ui file '/home/bastl/Kdevel/Keda/trunk/composer/diode.ui'
 **
-** Created: Mo Jun 11 20:33:11 2007
+** Created: So Jul 8 14:55:28 2007
 **      by: The User Interface Compiler ($Id: qt/main.cpp   3.3.5   edited Aug 31 12:13 $)
 **
 ** WARNING! All changes made in this file will be lost!

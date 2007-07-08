@@ -59,15 +59,17 @@ PROGRAMS = $(bin_PROGRAMS)
 am_keda_OBJECTS = automanager.$(OBJEXT) keda.$(OBJEXT) \
 	kedapcbview.$(OBJEXT) kedaview.$(OBJEXT) main.$(OBJEXT) \
 	menudatabase.$(OBJEXT) offerselection.$(OBJEXT) \
-	offerwidget.$(OBJEXT) pref.$(OBJEXT)
+	offerwidget.$(OBJEXT) pref.$(OBJEXT) sensoraddwidget.$(OBJEXT) \
+	sensorview.$(OBJEXT) simulationview.$(OBJEXT)
 #>- keda_OBJECTS = $(am_keda_OBJECTS)
-#>+ 8
+#>+ 9
 keda_final_OBJECTS = keda.all_cpp.o 
 keda_nofinal_OBJECTS = automanager.$(OBJEXT) keda.$(OBJEXT) \
 	kedapcbview.$(OBJEXT) kedaview.$(OBJEXT) main.$(OBJEXT) \
 	menudatabase.$(OBJEXT) offerselection.$(OBJEXT) \
-	offerwidget.$(OBJEXT) pref.$(OBJEXT) kedaiface_skel.$(OBJEXT) amview.$(OBJEXT) kedawidget.$(OBJEXT) simulation.$(OBJEXT)\
-kedapcbview.moc.o 
+	offerwidget.$(OBJEXT) pref.$(OBJEXT) sensoraddwidget.$(OBJEXT) \
+	sensorview.$(OBJEXT) simulationview.$(OBJEXT) kedaiface_skel.$(OBJEXT) amview.$(OBJEXT) humiditywidget.$(OBJEXT) kedawidget.$(OBJEXT) lightwidget.$(OBJEXT) magnetismwidget.$(OBJEXT) sensorwidget.$(OBJEXT) simulationwidget.$(OBJEXT)\
+kedapcbview.moc.o simulationview.moc.o sensorview.moc.o 
 keda_OBJECTS = $(keda_nofinal_OBJECTS)
 #keda_OBJECTS = $(keda_final_OBJECTS)
 am__DEPENDENCIES_1 =
@@ -364,17 +366,22 @@ keda_LDFLAGS = $(KDE_RPATH) $(all_libraries)
 keda_LDADD = $(LIB_KFILE) $(LIB_KDEPRINT)
 
 # which sources should be compiled for keda
-#>- keda_SOURCES = amview.ui automanager.cpp keda.cpp kedaiface.skel \
-#>- 	kedapcbview.cpp kedaview.cpp kedawidget.ui main.cpp menudatabase.cpp offerselection.cpp \
-#>- 	offerwidget.cpp pref.cpp simulation.ui
-#>+ 3
-keda_SOURCES= automanager.cpp keda.cpp  \
-	kedapcbview.cpp kedaview.cpp  main.cpp menudatabase.cpp offerselection.cpp \
-	offerwidget.cpp pref.cpp  kedaiface_skel.cpp amview.cpp kedawidget.cpp simulation.cpp
+#>- keda_SOURCES = amview.ui automanager.cpp humiditywidget.ui keda.cpp \
+#>- 	kedaiface.skel kedapcbview.cpp kedaview.cpp kedawidget.ui lightwidget.ui \
+#>- 	magnetismwidget.ui main.cpp menudatabase.cpp offerselection.cpp offerwidget.cpp pref.cpp \
+#>- 	sensoraddwidget.cpp sensorview.cpp sensorwidget.ui simulationview.cpp simulationwidget.ui
+#>+ 4
+keda_SOURCES= automanager.cpp  keda.cpp \
+	 kedapcbview.cpp kedaview.cpp   \
+	 main.cpp menudatabase.cpp offerselection.cpp offerwidget.cpp pref.cpp \
+	sensoraddwidget.cpp sensorview.cpp  simulationview.cpp  kedaiface_skel.cpp amview.cpp humiditywidget.cpp kedawidget.cpp lightwidget.cpp magnetismwidget.cpp sensorwidget.cpp simulationwidget.cpp
 
 
 # these are the headers for your project
-noinst_HEADERS = keda.h kedaview.h pref.h menudatabase.h automanager.h
+noinst_HEADERS = automanager.h humiditywidget.h keda.h kedaview.h lightwidget.h \
+	magnetismwidget.h menudatabase.h pref.h sensorview.h sensorwidget.h simulationview.h \
+	simulationwidget.h
+
 
 # client stuff
 keda_client_LDFLAGS = $(KDE_RPATH) $(all_libraries)
@@ -491,6 +498,9 @@ include ./$(DEPDIR)/menudatabase.Po
 include ./$(DEPDIR)/offerselection.Po
 include ./$(DEPDIR)/offerwidget.Po
 include ./$(DEPDIR)/pref.Po
+include ./$(DEPDIR)/sensoraddwidget.Po
+include ./$(DEPDIR)/sensorview.Po
+include ./$(DEPDIR)/simulationview.Po
 
 .cpp.o:
 	if $(CXXCOMPILE) -MT $@ -MD -MP -MF "$(DEPDIR)/$*.Tpo" -c -o $@ $<; \
@@ -751,6 +761,13 @@ kedaiface_skel.cpp: kedaiface.kidl
 	$(DCOPIDL2CPP) --c++-suffix cpp --no-signals --no-stub kedaiface.kidl
 
 #>+ 3
+sensoraddwidget.moc: $(srcdir)/sensoraddwidget.h
+	$(MOC) $(srcdir)/sensoraddwidget.h -o sensoraddwidget.moc
+
+#>+ 2
+mocs: sensoraddwidget.moc
+
+#>+ 3
 keda.moc: $(srcdir)/keda.h
 	$(MOC) $(srcdir)/keda.h -o keda.moc
 
@@ -793,23 +810,48 @@ offerselection.moc: $(srcdir)/offerselection.h
 mocs: offerselection.moc
 
 #>+ 3
-clean-metasources:
-	-rm -f  keda.moc kedaview.moc kedapcbview.moc.cpp offerwidget.moc pref.moc offerselection.moc
+simulationview.moc.cpp: $(srcdir)/simulationview.h
+	$(MOC) $(srcdir)/simulationview.h -o simulationview.moc.cpp
 
 #>+ 2
-KDE_DIST=offerselection.h keda keda.tag kedapcbview.h amview.h simulation.ui keda.lsm amview.ui keda_client Makefile.in kedaui.rc hi32-app-keda.png kedawidget.h kedaiface.kidl kedaiface.h kedawidget.ui keda.desktop Makefile.am offerwidget.h hi16-app-keda.png 
+mocs: simulationview.moc.cpp
+
+#>+ 3
+sensorview.moc.cpp: $(srcdir)/sensorview.h
+	$(MOC) $(srcdir)/sensorview.h -o sensorview.moc.cpp
+
+#>+ 2
+mocs: sensorview.moc.cpp
+
+#>+ 3
+humidity.moc: $(srcdir)/humidity.h
+	$(MOC) $(srcdir)/humidity.h -o humidity.moc
+
+#>+ 2
+mocs: humidity.moc
+
+#>+ 3
+clean-metasources:
+	-rm -f  sensoraddwidget.moc keda.moc kedaview.moc kedapcbview.moc.cpp offerwidget.moc pref.moc offerselection.moc simulationview.moc.cpp sensorview.moc.cpp humidity.moc
+
+#>+ 2
+KDE_DIST=humidity.cpp magnetismwidget.ui offerselection.h simulationwidget.ui sensorwidget.ui keda keda.tag kedapcbview.h amview.h sensoraddwidget.h keda.lsm amview.ui keda_client Makefile.in lightwidget.ui humidity.h humiditywidget.ui kedaui.rc hi32-app-keda.png kedawidget.h kedaiface.kidl kedaiface.h kedawidget.ui keda.desktop Makefile.am offerwidget.h hi16-app-keda.png 
 
 #>+ 4
 clean-idl:
 	-rm -f \
 	kedaiface_skel.cpp kedaiface_skel.h kedaiface.kidl 
 
-#>+ 6
+#>+ 10
 clean-ui:
 	-rm -f \
 	amview.cpp amview.h amview.moc \
+	humiditywidget.cpp humiditywidget.h humiditywidget.moc \
 	kedawidget.cpp kedawidget.h kedawidget.moc \
-	simulation.cpp simulation.h simulation.moc 
+	lightwidget.cpp lightwidget.h lightwidget.moc \
+	magnetismwidget.cpp magnetismwidget.h magnetismwidget.moc \
+	sensorwidget.cpp sensorwidget.h sensorwidget.moc \
+	simulationwidget.cpp simulationwidget.h simulationwidget.moc 
 
 #>+ 2
 docs-am:
@@ -864,11 +906,11 @@ bcheck-am:
 
 
 #>+ 11
-keda.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/automanager.cpp $(srcdir)/keda.cpp $(srcdir)/kedapcbview.cpp $(srcdir)/kedaview.cpp $(srcdir)/main.cpp $(srcdir)/menudatabase.cpp $(srcdir)/offerselection.cpp $(srcdir)/offerwidget.cpp $(srcdir)/pref.cpp $(srcdir)/kedaiface_skel.cpp $(srcdir)/amview.cpp $(srcdir)/kedawidget.cpp simulation.cpp $(srcdir)/kedapcbview.moc.cpp  keda.moc pref.moc simulation.moc amview.moc kedaview.moc kedawidget.moc offerwidget.moc offerselection.moc
+keda.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/automanager.cpp $(srcdir)/keda.cpp $(srcdir)/kedapcbview.cpp $(srcdir)/kedaview.cpp $(srcdir)/main.cpp $(srcdir)/menudatabase.cpp $(srcdir)/offerselection.cpp $(srcdir)/offerwidget.cpp $(srcdir)/pref.cpp $(srcdir)/sensoraddwidget.cpp $(srcdir)/sensorview.cpp $(srcdir)/simulationview.cpp $(srcdir)/kedaiface_skel.cpp $(srcdir)/amview.cpp $(srcdir)/humiditywidget.cpp $(srcdir)/kedawidget.cpp $(srcdir)/lightwidget.cpp $(srcdir)/magnetismwidget.cpp $(srcdir)/sensorwidget.cpp $(srcdir)/simulationwidget.cpp $(srcdir)/kedapcbview.moc.cpp $(srcdir)/sensorview.moc.cpp $(srcdir)/simulationview.moc.cpp  sensorwidget.moc magnetismwidget.moc simulationwidget.moc amview.moc sensoraddwidget.moc kedawidget.moc lightwidget.moc offerselection.moc humiditywidget.moc keda.moc pref.moc kedaview.moc offerwidget.moc
 	@echo 'creating keda.all_cpp.cpp ...'; \
 	rm -f keda.all_cpp.files keda.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> keda.all_cpp.final; \
-	for file in automanager.cpp keda.cpp kedapcbview.cpp kedaview.cpp main.cpp menudatabase.cpp offerselection.cpp offerwidget.cpp pref.cpp kedaiface_skel.cpp amview.cpp kedawidget.cpp simulation.cpp kedapcbview.moc.cpp ; do \
+	for file in automanager.cpp keda.cpp kedapcbview.cpp kedaview.cpp main.cpp menudatabase.cpp offerselection.cpp offerwidget.cpp pref.cpp sensoraddwidget.cpp sensorview.cpp simulationview.cpp kedaiface_skel.cpp amview.cpp humiditywidget.cpp kedawidget.cpp lightwidget.cpp magnetismwidget.cpp sensorwidget.cpp simulationwidget.cpp kedapcbview.moc.cpp sensorview.moc.cpp simulationview.moc.cpp ; do \
 	  echo "#include \"$$file\"" >> keda.all_cpp.files; \
 	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> keda.all_cpp.final; \
 	done; \
@@ -876,11 +918,11 @@ keda.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/automanager.cpp $(srcdir)/keda
 	rm -f keda.all_cpp.final keda.all_cpp.files
 
 #>+ 11
-keda_client.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/keda_client.cpp $(srcdir)/kedapcbview.moc.cpp 
+keda_client.all_cpp.cpp: $(srcdir)/Makefile.in $(srcdir)/keda_client.cpp $(srcdir)/kedapcbview.moc.cpp $(srcdir)/sensorview.moc.cpp $(srcdir)/simulationview.moc.cpp 
 	@echo 'creating keda_client.all_cpp.cpp ...'; \
 	rm -f keda_client.all_cpp.files keda_client.all_cpp.final; \
 	echo "#define KDE_USE_FINAL 1" >> keda_client.all_cpp.final; \
-	for file in keda_client.cpp kedapcbview.moc.cpp ; do \
+	for file in keda_client.cpp kedapcbview.moc.cpp sensorview.moc.cpp simulationview.moc.cpp ; do \
 	  echo "#include \"$$file\"" >> keda_client.all_cpp.files; \
 	  test ! -f $(srcdir)/$$file || egrep '^#pragma +implementation' $(srcdir)/$$file >> keda_client.all_cpp.final; \
 	done; \
@@ -911,45 +953,37 @@ no-final-install:
 kde-rpo-clean:
 	-rm -f *.rpo
 
-#>+ 22
+#>+ 29
 kedaview.o: kedaview.moc 
-$(srcdir)/main.cpp: amview.h kedawidget.h simulation.h 
+$(srcdir)/main.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
+$(srcdir)/sensorview.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
 kedaview.lo: kedaview.moc 
-offerselection.lo: offerselection.moc 
 offerwidget.lo: offerwidget.moc 
-nmcheck: 
-$(srcdir)/offerwidget.cpp: amview.h kedawidget.h simulation.h 
-$(srcdir)/kedapcbview.cpp: amview.h kedawidget.h simulation.h 
+$(srcdir)/sensoraddwidget.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
+$(srcdir)/kedapcbview.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
 offerselection.o: offerselection.moc 
-$(srcdir)/pref.cpp: amview.h kedawidget.h simulation.h 
+sensoraddwidget.o: sensoraddwidget.moc 
 offerwidget.o: offerwidget.moc 
 nmcheck-am: nmcheck
-$(srcdir)/offerselection.cpp: amview.h kedawidget.h simulation.h 
+$(srcdir)/offerselection.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
 pref.lo: pref.moc 
-$(srcdir)/automanager.cpp: amview.h kedawidget.h simulation.h 
-$(srcdir)/menudatabase.cpp: amview.h kedawidget.h simulation.h 
-pref.o: pref.moc 
-$(srcdir)/keda.cpp: amview.h kedawidget.h simulation.h 
-$(srcdir)/kedaview.cpp: amview.h kedawidget.h simulation.h 
-keda.lo: keda.moc 
+$(srcdir)/simulationview.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
+$(srcdir)/keda.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
+$(srcdir)/kedaview.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
 keda.o: keda.moc 
+sensoraddwidget.lo: sensoraddwidget.moc 
+offerselection.lo: offerselection.moc 
+$(srcdir)/offerwidget.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
+nmcheck: 
+humidity.lo: humidity.moc 
+$(srcdir)/pref.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
+humidity.o: humidity.moc 
+$(srcdir)/automanager.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
+$(srcdir)/menudatabase.cpp: amview.h humiditywidget.h kedawidget.h lightwidget.h magnetismwidget.h sensorwidget.h simulationwidget.h 
+pref.o: pref.moc 
+keda.lo: keda.moc 
 
-#>+ 45
-simulation.cpp: $(srcdir)/simulation.ui simulation.h simulation.moc
-	rm -f simulation.cpp
-	echo '#include <kdialog.h>' > simulation.cpp
-	echo '#include <klocale.h>' >> simulation.cpp
-	$(UIC) -tr ${UIC_TR} -i simulation.h $(srcdir)/simulation.ui > simulation.cpp.temp ; ret=$$?; \
-	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" simulation.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_simulation,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> simulation.cpp ;\
-	rm -f simulation.cpp.temp ;\
-	if test "$$ret" = 0; then echo '#include "simulation.moc"' >> simulation.cpp; else rm -f simulation.cpp ; exit $$ret ; fi
-
-simulation.h: $(srcdir)/simulation.ui
-	rm -rf simulation.h;
-	$(UIC) $(srcdir)/simulation.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> simulation.h ;
-simulation.moc: simulation.h
-	$(MOC) simulation.h -o simulation.moc
-
+#>+ 105
 amview.cpp: $(srcdir)/amview.ui amview.h amview.moc
 	rm -f amview.cpp
 	echo '#include <kdialog.h>' > amview.cpp
@@ -964,6 +998,81 @@ amview.h: $(srcdir)/amview.ui
 	$(UIC) $(srcdir)/amview.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> amview.h ;
 amview.moc: amview.h
 	$(MOC) amview.h -o amview.moc
+
+humiditywidget.cpp: $(srcdir)/humiditywidget.ui humiditywidget.h humiditywidget.moc
+	rm -f humiditywidget.cpp
+	echo '#include <kdialog.h>' > humiditywidget.cpp
+	echo '#include <klocale.h>' >> humiditywidget.cpp
+	$(UIC) -tr ${UIC_TR} -i humiditywidget.h $(srcdir)/humiditywidget.ui > humiditywidget.cpp.temp ; ret=$$?; \
+	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" humiditywidget.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_humiditywidget,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> humiditywidget.cpp ;\
+	rm -f humiditywidget.cpp.temp ;\
+	if test "$$ret" = 0; then echo '#include "humiditywidget.moc"' >> humiditywidget.cpp; else rm -f humiditywidget.cpp ; exit $$ret ; fi
+
+humiditywidget.h: $(srcdir)/humiditywidget.ui
+	rm -rf humiditywidget.h;
+	$(UIC) $(srcdir)/humiditywidget.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> humiditywidget.h ;
+humiditywidget.moc: humiditywidget.h
+	$(MOC) humiditywidget.h -o humiditywidget.moc
+
+magnetismwidget.cpp: $(srcdir)/magnetismwidget.ui magnetismwidget.h magnetismwidget.moc
+	rm -f magnetismwidget.cpp
+	echo '#include <kdialog.h>' > magnetismwidget.cpp
+	echo '#include <klocale.h>' >> magnetismwidget.cpp
+	$(UIC) -tr ${UIC_TR} -i magnetismwidget.h $(srcdir)/magnetismwidget.ui > magnetismwidget.cpp.temp ; ret=$$?; \
+	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" magnetismwidget.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_magnetismwidget,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> magnetismwidget.cpp ;\
+	rm -f magnetismwidget.cpp.temp ;\
+	if test "$$ret" = 0; then echo '#include "magnetismwidget.moc"' >> magnetismwidget.cpp; else rm -f magnetismwidget.cpp ; exit $$ret ; fi
+
+magnetismwidget.h: $(srcdir)/magnetismwidget.ui
+	rm -rf magnetismwidget.h;
+	$(UIC) $(srcdir)/magnetismwidget.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> magnetismwidget.h ;
+magnetismwidget.moc: magnetismwidget.h
+	$(MOC) magnetismwidget.h -o magnetismwidget.moc
+
+sensorwidget.cpp: $(srcdir)/sensorwidget.ui sensorwidget.h sensorwidget.moc
+	rm -f sensorwidget.cpp
+	echo '#include <kdialog.h>' > sensorwidget.cpp
+	echo '#include <klocale.h>' >> sensorwidget.cpp
+	$(UIC) -tr ${UIC_TR} -i sensorwidget.h $(srcdir)/sensorwidget.ui > sensorwidget.cpp.temp ; ret=$$?; \
+	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" sensorwidget.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_sensorwidget,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> sensorwidget.cpp ;\
+	rm -f sensorwidget.cpp.temp ;\
+	if test "$$ret" = 0; then echo '#include "sensorwidget.moc"' >> sensorwidget.cpp; else rm -f sensorwidget.cpp ; exit $$ret ; fi
+
+sensorwidget.h: $(srcdir)/sensorwidget.ui
+	rm -rf sensorwidget.h;
+	$(UIC) $(srcdir)/sensorwidget.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> sensorwidget.h ;
+sensorwidget.moc: sensorwidget.h
+	$(MOC) sensorwidget.h -o sensorwidget.moc
+
+lightwidget.cpp: $(srcdir)/lightwidget.ui lightwidget.h lightwidget.moc
+	rm -f lightwidget.cpp
+	echo '#include <kdialog.h>' > lightwidget.cpp
+	echo '#include <klocale.h>' >> lightwidget.cpp
+	$(UIC) -tr ${UIC_TR} -i lightwidget.h $(srcdir)/lightwidget.ui > lightwidget.cpp.temp ; ret=$$?; \
+	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" lightwidget.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_lightwidget,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> lightwidget.cpp ;\
+	rm -f lightwidget.cpp.temp ;\
+	if test "$$ret" = 0; then echo '#include "lightwidget.moc"' >> lightwidget.cpp; else rm -f lightwidget.cpp ; exit $$ret ; fi
+
+lightwidget.h: $(srcdir)/lightwidget.ui
+	rm -rf lightwidget.h;
+	$(UIC) $(srcdir)/lightwidget.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> lightwidget.h ;
+lightwidget.moc: lightwidget.h
+	$(MOC) lightwidget.h -o lightwidget.moc
+
+simulationwidget.cpp: $(srcdir)/simulationwidget.ui simulationwidget.h simulationwidget.moc
+	rm -f simulationwidget.cpp
+	echo '#include <kdialog.h>' > simulationwidget.cpp
+	echo '#include <klocale.h>' >> simulationwidget.cpp
+	$(UIC) -tr ${UIC_TR} -i simulationwidget.h $(srcdir)/simulationwidget.ui > simulationwidget.cpp.temp ; ret=$$?; \
+	$(PERL) -pe "s,${UIC_TR}( \"\" ),QString::null,g" simulationwidget.cpp.temp | $(PERL) -pe "s,${UIC_TR}( \"\"\, \"\" ),QString::null,g" | $(PERL) -pe "s,image([0-9][0-9]*)_data,img\$$1_simulationwidget,g" | $(PERL) -pe "s,: QWizard\(,: KWizard(,g" >> simulationwidget.cpp ;\
+	rm -f simulationwidget.cpp.temp ;\
+	if test "$$ret" = 0; then echo '#include "simulationwidget.moc"' >> simulationwidget.cpp; else rm -f simulationwidget.cpp ; exit $$ret ; fi
+
+simulationwidget.h: $(srcdir)/simulationwidget.ui
+	rm -rf simulationwidget.h;
+	$(UIC) $(srcdir)/simulationwidget.ui | $(PERL) -pi -e "s,public QWizard,public KWizard,g; s,#include <qwizard.h>,#include <kwizard.h>,g" >> simulationwidget.h ;
+simulationwidget.moc: simulationwidget.h
+	$(MOC) simulationwidget.h -o simulationwidget.moc
 
 kedawidget.cpp: $(srcdir)/kedawidget.ui kedawidget.h kedawidget.moc
 	rm -f kedawidget.cpp

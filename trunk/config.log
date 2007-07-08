@@ -669,9 +669,9 @@ configure:11148: checking whether stripping libraries is possible
 configure:11153: result: yes
 configure:11279: checking for shl_load
 configure:11336: gcc -o conftest -std=iso9899:1990 -W -Wall -Wchar-subscripts -Wshadow -Wpointer-arith -Wmissing-prototypes -Wwrite-strings -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -O2   -Wformat-security -Wmissing-format-attribute   conftest.c  >&5
-/tmp/ccYk5BkO.o: In function `main':
+/tmp/ccoOn8BC.o: In function `main':
 conftest.c:(.text+0x14): undefined reference to `shl_load'
-/tmp/ccYk5BkO.o:(.data+0x0): undefined reference to `shl_load'
+/tmp/ccoOn8BC.o:(.data+0x0): undefined reference to `shl_load'
 collect2: ld returned 1 exit status
 configure:11342: $? = 1
 configure: failed program was:
@@ -794,9 +794,9 @@ configure: failed program was:
 configure:11434: result: no
 configure:11439: checking for dlopen
 configure:11496: gcc -o conftest -std=iso9899:1990 -W -Wall -Wchar-subscripts -Wshadow -Wpointer-arith -Wmissing-prototypes -Wwrite-strings -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -O2   -Wformat-security -Wmissing-format-attribute   conftest.c  >&5
-/tmp/ccClYvVC.o: In function `main':
+/tmp/ccaxdefm.o: In function `main':
 conftest.c:(.text+0x14): undefined reference to `dlopen'
-/tmp/ccClYvVC.o:(.data+0x0): undefined reference to `dlopen'
+/tmp/ccaxdefm.o:(.data+0x0): undefined reference to `dlopen'
 collect2: ld returned 1 exit status
 configure:11502: $? = 1
 configure: failed program was:
@@ -1990,9 +1990,9 @@ configure:28029: checking for crt_externs.h
 configure:28036: result: no
 configure:28049: checking for _NSGetEnviron
 configure:28106: gcc -o conftest -std=iso9899:1990 -W -Wall -Wchar-subscripts -Wshadow -Wpointer-arith -Wmissing-prototypes -Wwrite-strings -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -O2   -Wformat-security -Wmissing-format-attribute   conftest.c  >&5
-/tmp/cc0qFk6Y.o: In function `main':
+/tmp/cceND75m.o: In function `main':
 conftest.c:(.text+0x14): undefined reference to `_NSGetEnviron'
-/tmp/cc0qFk6Y.o:(.data+0x0): undefined reference to `_NSGetEnviron'
+/tmp/cceND75m.o:(.data+0x0): undefined reference to `_NSGetEnviron'
 collect2: ld returned 1 exit status
 configure:28112: $? = 1
 configure: failed program was:

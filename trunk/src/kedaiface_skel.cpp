@@ -6,7 +6,7 @@
 **
 *****************************************************************************/
 
-#include "/home/bastl/Kdevel/keda/src/kedaiface.h"
+#include "/home/bastl/Kdevel/Keda/trunk/src/kedaiface.h"
 
 #include <kdatastream.h>
 

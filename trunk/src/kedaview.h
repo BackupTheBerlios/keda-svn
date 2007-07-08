@@ -32,6 +32,7 @@
 
 #include "offerwidget.h"
 #include "menudatabase.h"
+#include "simulationview.h"
 
 class QPainter;
 class KURL;
@@ -53,6 +54,7 @@ class KedaView : public KedaWidget, public KedaIface
 	#define BOARDS	1
 	
 	KProcess *co;
+	SimulationView *sim;
 	QString currentURL();
 	QWidget *lastwidget;
 	MenuDatabase *databasemenu;
@@ -65,6 +67,7 @@ class KedaView : public KedaWidget, public KedaIface
 	void print(QPainter *, int height, int width);
 	QWidget* showclicked( QWidget*, QWidget* );
 	void start_composer();
+	void start_simulation();
 	void linears_clicked();
 	void logicals_clicked();
 	void boards_clicked();

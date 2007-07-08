@@ -79,7 +79,9 @@ keda.o keda.o: keda.cpp keda.h ../config.h \
   /usr/qt/include/qcstring.h offerwidget.h menudatabase.h \
   /usr/qt/include/qpopupmenu.h /usr/qt/include/qmenudata.h \
   /usr/qt/include/qiconset.h /usr/qt/include/qkeysequence.h \
-  /usr/qt/include/qsignal.h /usr/qt/include/qvariant.h kedapcbview.h \
+  /usr/qt/include/qsignal.h /usr/qt/include/qvariant.h simulationview.h \
+  simulationwidget.h lightwidget.h magnetismwidget.h humiditywidget.h \
+  sensorview.h sensorwidget.h sensoraddwidget.h kedapcbview.h \
   automanager.h ./amview.h pref.h /usr/local/kde/include/kdialogbase.h \
   /usr/local/kde/include/kdialog.h /usr/qt/include/qdialog.h \
   /usr/local/kde/include/kjanuswidget.h /usr/qt/include/qsplitter.h \
@@ -445,6 +447,22 @@ menudatabase.h:
 /usr/qt/include/qsignal.h:
 
 /usr/qt/include/qvariant.h:
+
+simulationview.h:
+
+simulationwidget.h:
+
+lightwidget.h:
+
+magnetismwidget.h:
+
+humiditywidget.h:
+
+sensorview.h:
+
+sensorwidget.h:
+
+sensoraddwidget.h:
 
 kedapcbview.h:
 

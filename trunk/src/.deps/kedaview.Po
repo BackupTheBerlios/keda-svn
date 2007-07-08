@@ -65,7 +65,10 @@ kedaview.o kedaview.o: kedaview.cpp kedaview.h /usr/qt/include/qwidget.h \
   /usr/qt/include/qwidget.h /usr/qt/include/qmenudata.h \
   /usr/qt/include/qiconset.h /usr/qt/include/qpixmap.h \
   /usr/qt/include/qkeysequence.h /usr/qt/include/qsignal.h \
-  /usr/qt/include/qvariant.h /usr/qt/include/qpainter.h \
+  /usr/qt/include/qvariant.h simulationview.h simulationwidget.h \
+  /usr/qt/include/qpixmap.h lightwidget.h magnetismwidget.h \
+  humiditywidget.h sensorview.h sensorwidget.h sensoraddwidget.h \
+  /usr/qt/include/qframe.h /usr/qt/include/qpainter.h \
   /usr/qt/include/qpen.h /usr/qt/include/qpointarray.h \
   /usr/qt/include/qwmatrix.h /usr/qt/include/qlayout.h \
   /usr/qt/include/qlabel.h /usr/qt/include/qtoolbutton.h \
@@ -80,15 +83,15 @@ kedaview.o kedaview.o: kedaview.cpp kedaview.h /usr/qt/include/qwidget.h \
   /usr/include/stdlib.h /usr/include/alloca.h \
   /usr/local/kde/include/kmessagebox.h /usr/qt/include/qmessagebox.h \
   /usr/qt/include/qdialog.h /usr/local/kde/include/kguiitem.h \
-  /usr/qt/include/qiconset.h /usr/qt/include/qpixmap.h \
-  /usr/local/kde/include/kstdguiitem.h /usr/qt/include/qpair.h \
-  /usr/local/kde/include/krun.h /usr/include/sys/stat.h \
-  /usr/include/bits/stat.h /usr/qt/include/qtimer.h \
-  /usr/local/kde/include/kstartupinfo.h /usr/local/kde/include/klocale.h \
-  kedaview.moc /usr/qt/include/qmetaobject.h \
-  /usr/qt/include/qconnection.h /usr/qt/include/qapplication.h \
-  /usr/qt/include/qdesktopwidget.h /usr/qt/include/qasciidict.h \
-  /usr/qt/include/qtranslator.h /usr/qt/include/private/qucomextra_p.h \
+  /usr/qt/include/qiconset.h /usr/local/kde/include/kstdguiitem.h \
+  /usr/qt/include/qpair.h /usr/local/kde/include/krun.h \
+  /usr/include/sys/stat.h /usr/include/bits/stat.h \
+  /usr/qt/include/qtimer.h /usr/local/kde/include/kstartupinfo.h \
+  /usr/local/kde/include/klocale.h kedaview.moc \
+  /usr/qt/include/qmetaobject.h /usr/qt/include/qconnection.h \
+  /usr/qt/include/qapplication.h /usr/qt/include/qdesktopwidget.h \
+  /usr/qt/include/qasciidict.h /usr/qt/include/qtranslator.h \
+  /usr/qt/include/private/qucomextra_p.h \
   /usr/qt/include/private/qucom_p.h /usr/qt/include/quuid.h
 
 kedaview.h:
@@ -359,6 +362,26 @@ menudatabase.h:
 
 /usr/qt/include/qvariant.h:
 
+simulationview.h:
+
+simulationwidget.h:
+
+/usr/qt/include/qpixmap.h:
+
+lightwidget.h:
+
+magnetismwidget.h:
+
+humiditywidget.h:
+
+sensorview.h:
+
+sensorwidget.h:
+
+sensoraddwidget.h:
+
+/usr/qt/include/qframe.h:
+
 /usr/qt/include/qpainter.h:
 
 /usr/qt/include/qpen.h:
@@ -412,8 +435,6 @@ menudatabase.h:
 /usr/local/kde/include/kguiitem.h:
 
 /usr/qt/include/qiconset.h:
-
-/usr/qt/include/qpixmap.h:
 
 /usr/local/kde/include/kstdguiitem.h:
 

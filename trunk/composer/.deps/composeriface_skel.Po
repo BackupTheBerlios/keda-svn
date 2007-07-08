@@ -1,5 +1,5 @@
 composeriface_skel.o composeriface_skel.o: composeriface_skel.cpp \
-  /home/bastl/Kdevel/keda/composer/composeriface.h \
+  /home/bastl/Kdevel/Keda/trunk/composer/composeriface.h \
   /usr/local/kde/include/dcopobject.h /usr/qt/include/qobject.h \
   /usr/qt/include/qobjectdefs.h /usr/qt/include/qglobal.h \
   /usr/qt/include/qconfig.h /usr/qt/include/qmodules.h \
@@ -36,7 +36,7 @@ composeriface_skel.o composeriface_skel.o: composeriface_skel.cpp \
   /usr/local/kde/include/kdelibs_export.h \
   /usr/local/kde/include/kdemacros.h /usr/qt/include/qglobal.h
 
-/home/bastl/Kdevel/keda/composer/composeriface.h:
+/home/bastl/Kdevel/Keda/trunk/composer/composeriface.h:
 
 /usr/local/kde/include/dcopobject.h:
 

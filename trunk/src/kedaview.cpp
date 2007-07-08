@@ -83,7 +83,7 @@ KedaView::KedaView(QWidget *parent): DCOPObject("KedaIface"), KedaWidget(parent)
 		KMessageBox::error(this, i18n("Could not find a suitable HTML component"));
 		return;
 	}
-	
+	sim = new SimulationView( 0 ); sim->hide();
 	boards = new OfferWidget( "Boards", this ); boards->move( 126, 0 );
 	connect( boards->headline, SIGNAL( clicked() ), this, SLOT( headline_clicked() ) );
 	groups = new OfferWidget( "Part groups", this ); groups->move( 126, 0 );
@@ -454,7 +454,10 @@ void KedaView::start_composer()
 		}
 	}
 	
-
+void KedaView::start_simulation()
+	{
+	sim->show();
+	}
 
 
 

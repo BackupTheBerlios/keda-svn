@@ -1,5 +1,5 @@
 <!DOCTYPE DCOP-IDL><DCOP-IDL>
-<SOURCE>/home/bastl/Kdevel/keda/composer/composeriface.h</SOURCE>
+<SOURCE>/home/bastl/Kdevel/Keda/trunk/composer/composeriface.h</SOURCE>
 <INCLUDE>dcopobject.h</INCLUDE>
 <CLASS>
     <NAME>ComposerIface</NAME>

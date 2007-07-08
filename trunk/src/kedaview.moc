@@ -1,7 +1,7 @@
 /****************************************************************************
 ** KedaView meta object code from reading C++ file 'kedaview.h'
 **
-** Created: Tue Jun 12 21:35:05 2007
+** Created: Sun Jul 8 14:56:10 2007
 **      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.5   edited Sep 2 14:41 $)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -73,66 +73,68 @@ QMetaObject* KedaView::staticMetaObject()
     };
     static const QUMethod slot_3 = {"showclicked", 3, param_slot_3 };
     static const QUMethod slot_4 = {"start_composer", 0, 0 };
-    static const QUMethod slot_5 = {"linears_clicked", 0, 0 };
-    static const QUMethod slot_6 = {"logicals_clicked", 0, 0 };
-    static const QUMethod slot_7 = {"boards_clicked", 0, 0 };
-    static const QUMethod slot_8 = {"custom_clicked", 0, 0 };
-    static const QUMethod slot_9 = {"cases_clicked", 0, 0 };
-    static const QUMethod slot_10 = {"heatsinks_clicked", 0, 0 };
-    static const QUMethod slot_11 = {"trafos_clicked", 0, 0 };
-    static const QUMethod slot_12 = {"switches_clicked", 0, 0 };
-    static const QUMethod slot_13 = {"conectors_clicked", 0, 0 };
-    static const QUMethod slot_14 = {"tyristors_clicked", 0, 0 };
-    static const QUMethod slot_15 = {"transistors_clicked", 0, 0 };
-    static const QUMethod slot_16 = {"triacs_clicked", 0, 0 };
-    static const QUMethod slot_17 = {"diacs_clicked", 0, 0 };
-    static const QUMethod slot_18 = {"leds_clicked", 0, 0 };
-    static const QUMethod slot_19 = {"diodes_clicked", 0, 0 };
-    static const QUMethod slot_20 = {"resistors_clicked", 0, 0 };
-    static const QUMethod slot_21 = {"headline_clicked", 0, 0 };
-    static const QUMethod slot_22 = {"ops_clicked", 0, 0 };
-    static const QUMethod slot_23 = {"coil_clicked", 0, 0 };
-    static const QUMethod slot_24 = {"capacitor_clicked", 0, 0 };
-    static const QUMethod slot_25 = {"part_group_clicked", 0, 0 };
-    static const QUMethod slot_26 = {"others_clicked", 0, 0 };
-    static const QUParameter param_slot_27[] = {
+    static const QUMethod slot_5 = {"start_simulation", 0, 0 };
+    static const QUMethod slot_6 = {"linears_clicked", 0, 0 };
+    static const QUMethod slot_7 = {"logicals_clicked", 0, 0 };
+    static const QUMethod slot_8 = {"boards_clicked", 0, 0 };
+    static const QUMethod slot_9 = {"custom_clicked", 0, 0 };
+    static const QUMethod slot_10 = {"cases_clicked", 0, 0 };
+    static const QUMethod slot_11 = {"heatsinks_clicked", 0, 0 };
+    static const QUMethod slot_12 = {"trafos_clicked", 0, 0 };
+    static const QUMethod slot_13 = {"switches_clicked", 0, 0 };
+    static const QUMethod slot_14 = {"conectors_clicked", 0, 0 };
+    static const QUMethod slot_15 = {"tyristors_clicked", 0, 0 };
+    static const QUMethod slot_16 = {"transistors_clicked", 0, 0 };
+    static const QUMethod slot_17 = {"triacs_clicked", 0, 0 };
+    static const QUMethod slot_18 = {"diacs_clicked", 0, 0 };
+    static const QUMethod slot_19 = {"leds_clicked", 0, 0 };
+    static const QUMethod slot_20 = {"diodes_clicked", 0, 0 };
+    static const QUMethod slot_21 = {"resistors_clicked", 0, 0 };
+    static const QUMethod slot_22 = {"headline_clicked", 0, 0 };
+    static const QUMethod slot_23 = {"ops_clicked", 0, 0 };
+    static const QUMethod slot_24 = {"coil_clicked", 0, 0 };
+    static const QUMethod slot_25 = {"capacitor_clicked", 0, 0 };
+    static const QUMethod slot_26 = {"part_group_clicked", 0, 0 };
+    static const QUMethod slot_27 = {"others_clicked", 0, 0 };
+    static const QUParameter param_slot_28[] = {
 	{ "url", &static_QUType_QString, 0, QUParameter::In }
     };
-    static const QUMethod slot_27 = {"slotOnURL", 1, param_slot_27 };
-    static const QUParameter param_slot_28[] = {
+    static const QUMethod slot_28 = {"slotOnURL", 1, param_slot_28 };
+    static const QUParameter param_slot_29[] = {
 	{ "title", &static_QUType_QString, 0, QUParameter::In }
     };
-    static const QUMethod slot_28 = {"slotSetTitle", 1, param_slot_28 };
+    static const QUMethod slot_29 = {"slotSetTitle", 1, param_slot_29 };
     static const QMetaData slot_tbl[] = {
 	{ "openURL(QString)", &slot_0, QMetaData::Public },
 	{ "openURL(const KURL&)", &slot_1, QMetaData::Public },
 	{ "print(QPainter*,int,int)", &slot_2, QMetaData::Public },
 	{ "showclicked(QWidget*,QWidget*)", &slot_3, QMetaData::Public },
 	{ "start_composer()", &slot_4, QMetaData::Public },
-	{ "linears_clicked()", &slot_5, QMetaData::Public },
-	{ "logicals_clicked()", &slot_6, QMetaData::Public },
-	{ "boards_clicked()", &slot_7, QMetaData::Public },
-	{ "custom_clicked()", &slot_8, QMetaData::Public },
-	{ "cases_clicked()", &slot_9, QMetaData::Public },
-	{ "heatsinks_clicked()", &slot_10, QMetaData::Public },
-	{ "trafos_clicked()", &slot_11, QMetaData::Public },
-	{ "switches_clicked()", &slot_12, QMetaData::Public },
-	{ "conectors_clicked()", &slot_13, QMetaData::Public },
-	{ "tyristors_clicked()", &slot_14, QMetaData::Public },
-	{ "transistors_clicked()", &slot_15, QMetaData::Public },
-	{ "triacs_clicked()", &slot_16, QMetaData::Public },
-	{ "diacs_clicked()", &slot_17, QMetaData::Public },
-	{ "leds_clicked()", &slot_18, QMetaData::Public },
-	{ "diodes_clicked()", &slot_19, QMetaData::Public },
-	{ "resistors_clicked()", &slot_20, QMetaData::Public },
-	{ "headline_clicked()", &slot_21, QMetaData::Public },
-	{ "ops_clicked()", &slot_22, QMetaData::Public },
-	{ "coil_clicked()", &slot_23, QMetaData::Public },
-	{ "capacitor_clicked()", &slot_24, QMetaData::Public },
-	{ "part_group_clicked()", &slot_25, QMetaData::Public },
-	{ "others_clicked()", &slot_26, QMetaData::Public },
-	{ "slotOnURL(const QString&)", &slot_27, QMetaData::Private },
-	{ "slotSetTitle(const QString&)", &slot_28, QMetaData::Private }
+	{ "start_simulation()", &slot_5, QMetaData::Public },
+	{ "linears_clicked()", &slot_6, QMetaData::Public },
+	{ "logicals_clicked()", &slot_7, QMetaData::Public },
+	{ "boards_clicked()", &slot_8, QMetaData::Public },
+	{ "custom_clicked()", &slot_9, QMetaData::Public },
+	{ "cases_clicked()", &slot_10, QMetaData::Public },
+	{ "heatsinks_clicked()", &slot_11, QMetaData::Public },
+	{ "trafos_clicked()", &slot_12, QMetaData::Public },
+	{ "switches_clicked()", &slot_13, QMetaData::Public },
+	{ "conectors_clicked()", &slot_14, QMetaData::Public },
+	{ "tyristors_clicked()", &slot_15, QMetaData::Public },
+	{ "transistors_clicked()", &slot_16, QMetaData::Public },
+	{ "triacs_clicked()", &slot_17, QMetaData::Public },
+	{ "diacs_clicked()", &slot_18, QMetaData::Public },
+	{ "leds_clicked()", &slot_19, QMetaData::Public },
+	{ "diodes_clicked()", &slot_20, QMetaData::Public },
+	{ "resistors_clicked()", &slot_21, QMetaData::Public },
+	{ "headline_clicked()", &slot_22, QMetaData::Public },
+	{ "ops_clicked()", &slot_23, QMetaData::Public },
+	{ "coil_clicked()", &slot_24, QMetaData::Public },
+	{ "capacitor_clicked()", &slot_25, QMetaData::Public },
+	{ "part_group_clicked()", &slot_26, QMetaData::Public },
+	{ "others_clicked()", &slot_27, QMetaData::Public },
+	{ "slotOnURL(const QString&)", &slot_28, QMetaData::Private },
+	{ "slotSetTitle(const QString&)", &slot_29, QMetaData::Private }
     };
     static const QUParameter param_signal_0[] = {
 	{ "text", &static_QUType_QString, 0, QUParameter::In }
@@ -148,7 +150,7 @@ QMetaObject* KedaView::staticMetaObject()
     };
     metaObj = QMetaObject::new_metaobject(
 	"KedaView", parentObject,
-	slot_tbl, 29,
+	slot_tbl, 30,
 	signal_tbl, 2,
 #ifndef QT_NO_PROPERTIES
 	0, 0,
@@ -188,30 +190,31 @@ bool KedaView::qt_invoke( int _id, QUObject* _o )
     case 2: print((QPainter*)static_QUType_ptr.get(_o+1),(int)static_QUType_int.get(_o+2),(int)static_QUType_int.get(_o+3)); break;
     case 3: static_QUType_ptr.set(_o,showclicked((QWidget*)static_QUType_ptr.get(_o+1),(QWidget*)static_QUType_ptr.get(_o+2))); break;
     case 4: start_composer(); break;
-    case 5: linears_clicked(); break;
-    case 6: logicals_clicked(); break;
-    case 7: boards_clicked(); break;
-    case 8: custom_clicked(); break;
-    case 9: cases_clicked(); break;
-    case 10: heatsinks_clicked(); break;
-    case 11: trafos_clicked(); break;
-    case 12: switches_clicked(); break;
-    case 13: conectors_clicked(); break;
-    case 14: tyristors_clicked(); break;
-    case 15: transistors_clicked(); break;
-    case 16: triacs_clicked(); break;
-    case 17: diacs_clicked(); break;
-    case 18: leds_clicked(); break;
-    case 19: diodes_clicked(); break;
-    case 20: resistors_clicked(); break;
-    case 21: headline_clicked(); break;
-    case 22: ops_clicked(); break;
-    case 23: coil_clicked(); break;
-    case 24: capacitor_clicked(); break;
-    case 25: part_group_clicked(); break;
-    case 26: others_clicked(); break;
-    case 27: slotOnURL((const QString&)static_QUType_QString.get(_o+1)); break;
-    case 28: slotSetTitle((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 5: start_simulation(); break;
+    case 6: linears_clicked(); break;
+    case 7: logicals_clicked(); break;
+    case 8: boards_clicked(); break;
+    case 9: custom_clicked(); break;
+    case 10: cases_clicked(); break;
+    case 11: heatsinks_clicked(); break;
+    case 12: trafos_clicked(); break;
+    case 13: switches_clicked(); break;
+    case 14: conectors_clicked(); break;
+    case 15: tyristors_clicked(); break;
+    case 16: transistors_clicked(); break;
+    case 17: triacs_clicked(); break;
+    case 18: diacs_clicked(); break;
+    case 19: leds_clicked(); break;
+    case 20: diodes_clicked(); break;
+    case 21: resistors_clicked(); break;
+    case 22: headline_clicked(); break;
+    case 23: ops_clicked(); break;
+    case 24: coil_clicked(); break;
+    case 25: capacitor_clicked(); break;
+    case 26: part_group_clicked(); break;
+    case 27: others_clicked(); break;
+    case 28: slotOnURL((const QString&)static_QUType_QString.get(_o+1)); break;
+    case 29: slotSetTitle((const QString&)static_QUType_QString.get(_o+1)); break;
     default:
 	return KedaWidget::qt_invoke( _id, _o );
     }

@@ -1,7 +1,7 @@
 /****************************************************************************
-** Form interface generated from reading ui file '/home/bastl/Kdevel/keda/composer/composerwidget.ui'
+** Form interface generated from reading ui file '/home/bastl/Kdevel/Keda/trunk/composer/composerwidget.ui'
 **
-** Created: Sa Jun 9 09:32:04 2007
+** Created: So Jul 8 14:54:32 2007
 **      by: The User Interface Compiler ($Id: qt/main.cpp   3.3.5   edited Aug 31 12:13 $)
 **
 ** WARNING! All changes made in this file will be lost!

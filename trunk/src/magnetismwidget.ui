@@ -1,0 +1,116 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Magnetismwidget</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>Magnetismwidget</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>524</width>
+            <height>27</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Magnetism</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <widget class="QComboBox" row="0" column="2">
+            <item>
+                <property name="text">
+                    <string>H</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>mH</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>nH</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox11_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="currentItem">
+                <number>1</number>
+            </property>
+        </widget>
+        <widget class="QScrollBar" row="0" column="0">
+            <property name="name">
+                <cstring>scrollBar1_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="minValue">
+                <number>1</number>
+            </property>
+            <property name="maxValue">
+                <number>1000</number>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="0" column="1">
+            <property name="name">
+                <cstring>kDoubleNumInput15_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+</includehints>
+</UI>

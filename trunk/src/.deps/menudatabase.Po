@@ -80,8 +80,10 @@ menudatabase.o menudatabase.o: menudatabase.cpp menudatabase.h \
   /usr/include/bits/waitstatus.h /usr/include/unistd.h \
   /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
   /usr/include/bits/confname.h /usr/include/getopt.h \
-  /usr/qt/include/qcstring.h offerwidget.h kedapcbview.h automanager.h \
-  ./amview.h
+  /usr/qt/include/qcstring.h offerwidget.h simulationview.h \
+  simulationwidget.h lightwidget.h magnetismwidget.h humiditywidget.h \
+  sensorview.h sensorwidget.h sensoraddwidget.h kedapcbview.h \
+  automanager.h ./amview.h
 
 menudatabase.h:
 
@@ -404,6 +406,22 @@ kedawidget.h:
 /usr/qt/include/qcstring.h:
 
 offerwidget.h:
+
+simulationview.h:
+
+simulationwidget.h:
+
+lightwidget.h:
+
+magnetismwidget.h:
+
+humiditywidget.h:
+
+sensorview.h:
+
+sensorwidget.h:
+
+sensoraddwidget.h:
 
 kedapcbview.h:
 

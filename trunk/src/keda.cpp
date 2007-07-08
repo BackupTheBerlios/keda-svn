@@ -125,7 +125,7 @@ void Keda::setupActions()
 	
 	KAction *partco_action = new KAction(i18n("Part composer"), 0,  centralWidget(), SLOT( start_composer() ), actionCollection(), "part_action");
 	KAction *am_action = new KAction(i18n("Auto Manager"), 0,  this, SLOT( startAutoManager() ), actionCollection(), "am_action");
-	sim = new KAction(i18n("Simulation"), 0, this, SLOT(optionsPreferences()), actionCollection(), "simulation_action");
+	sim = new KAction(i18n("Simulation"), 0, centralWidget(), SLOT(start_simulation()), actionCollection(), "simulation_action");
 	osci = new KAction(i18n("New oscilloscope"), 0, this, SLOT(optionsPreferences()), actionCollection(), "osci_action");
 	meter = new KAction(i18n("New meter"), 0, this, SLOT(optionsPreferences()), actionCollection(), "meter_action");
 	

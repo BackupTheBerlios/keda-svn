@@ -1,19 +1,31 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <!DOCTYPE KDevPrjSession>
 <KDevPrjSession>
- <DocsAndViews NumberOfDocuments="4" >
+ <DocsAndViews NumberOfDocuments="8" >
   <Doc0 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/kedaview.cpp" >
    <View0 Encoding="" Type="Source" />
   </Doc0>
   <Doc1 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/kedaview.h" >
    <View0 Encoding="" Type="Source" />
   </Doc1>
-  <Doc2 NumberOfViews="1" URL="file:///home/bastl/Kdevel/pcnc_neu/src/f_kreis.ui" >
-   <View0 Type="Other" />
+  <Doc2 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/simulationview.cpp" >
+   <View0 Encoding="ISO 8859-15" Type="Source" />
   </Doc2>
-  <Doc3 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/keda.cpp" >
-   <View0 Encoding="" line="143" Type="Source" />
+  <Doc3 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/simulationview.h" >
+   <View0 Encoding="ISO 8859-15" Type="Source" />
   </Doc3>
+  <Doc4 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/sensorview.cpp" >
+   <View0 Encoding="" Type="Source" />
+  </Doc4>
+  <Doc5 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/sensorview.h" >
+   <View0 Encoding="" Type="Source" />
+  </Doc5>
+  <Doc6 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/sensoraddwidget.cpp" >
+   <View0 Encoding="" Type="Source" />
+  </Doc6>
+  <Doc7 NumberOfViews="1" URL="file:///home/bastl/Kdevel/Keda/trunk/src/sensoraddwidget.h" >
+   <View0 Encoding="" line="32" Type="Source" />
+  </Doc7>
  </DocsAndViews>
  <pluginList>
   <kdevdebugger>

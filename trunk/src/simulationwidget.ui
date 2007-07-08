@@ -1,0 +1,1630 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Simulationwidget</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>Simulationwidget</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>503</width>
+            <height>491</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Simulation</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QScrollBar" row="1" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>scrollBar1</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="minValue">
+                <number>1</number>
+            </property>
+            <property name="maxValue">
+                <number>999</number>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="1" column="6">
+            <item>
+                <property name="text">
+                    <string>Ps</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Ts</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Gs</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Ms</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Ks</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>ss</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>mins</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>ms</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>hs</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>ds</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>µs</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>ms</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>as</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>ns</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox11</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="currentItem">
+                <number>3</number>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>textLabel1_5_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>0</red>
+                    <green>132</green>
+                    <blue>188</blue>
+                </color>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="text">
+                <string>Time / Motion [Samples/s]:</string>
+            </property>
+        </widget>
+        <widget class="QScrollBar" row="3" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>scrollBar1_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="minValue">
+                <number>1</number>
+            </property>
+            <property name="maxValue">
+                <number>999</number>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="KIntSpinBox" row="1" column="5">
+            <property name="name">
+                <cstring>samples</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="maxValue">
+                <number>1000</number>
+            </property>
+            <property name="minValue">
+                <number>1</number>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="3" column="6">
+            <item>
+                <property name="text">
+                    <string>1/s</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>1/ms</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>1/ns</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>1/ps</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>1/fs</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox11_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="currentItem">
+                <number>2</number>
+            </property>
+        </widget>
+        <widget class="KIntSpinBox" row="3" column="5">
+            <property name="name">
+                <cstring>samples_per_second</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="maxValue">
+                <number>1000</number>
+            </property>
+            <property name="minValue">
+                <number>1</number>
+            </property>
+            <property name="value">
+                <number>1</number>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="17" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>ne</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>Ne&amp;w</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+W</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>sa</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>Save</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>lo</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Load</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+L</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cl</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>Cl&amp;ose</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="Line" row="14" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>line3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>10</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>10</height>
+                </size>
+            </property>
+            <property name="frameShape">
+                <enum>HLine</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="15" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <widget class="QToolButton">
+                    <property name="name">
+                        <cstring>pb</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>1</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>2</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image0</iconset>
+                    </property>
+                    <property name="usesBigPixmap">
+                        <bool>false</bool>
+                    </property>
+                    <property name="textPosition">
+                        <enum>BesideIcon</enum>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Page back on oscilloscope</string>
+                    </property>
+                </widget>
+                <widget class="QToolButton">
+                    <property name="name">
+                        <cstring>pl</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image1</iconset>
+                    </property>
+                    <property name="usesBigPixmap">
+                        <bool>false</bool>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Starts simulation.&lt;br&gt;Continues from Stop.</string>
+                    </property>
+                </widget>
+                <widget class="QToolButton">
+                    <property name="name">
+                        <cstring>sto</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image2</iconset>
+                    </property>
+                    <property name="usesBigPixmap">
+                        <bool>false</bool>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Stop, stops the simulation like pause.&lt;br&gt;Second click will reset to start</string>
+                    </property>
+                </widget>
+                <widget class="QToolButton">
+                    <property name="name">
+                        <cstring>pau</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image3</iconset>
+                    </property>
+                    <property name="usesBigPixmap">
+                        <bool>false</bool>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Pause, freezes the simulation.&lt;br&gt;Each cklick does one sample</string>
+                    </property>
+                </widget>
+                <widget class="QToolButton">
+                    <property name="name">
+                        <cstring>pf</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="iconSet">
+                        <iconset>image4</iconset>
+                    </property>
+                    <property name="usesBigPixmap">
+                        <bool>false</bool>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Next page on oscilloscope</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>textLabel1_5</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>0</red>
+                    <green>132</green>
+                    <blue>188</blue>
+                </color>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="text">
+                <string>Samples:</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="5" column="6">
+            <item>
+                <property name="text">
+                    <string>°C</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>K</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox11_2_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+        </widget>
+        <widget class="Line" row="16" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>line3_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>10</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>10</height>
+                </size>
+            </property>
+            <property name="frameShape">
+                <enum>HLine</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QScrollBar" row="5" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>scrollBar1_4</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="minValue">
+                <number>1</number>
+            </property>
+            <property name="maxValue">
+                <number>1000000</number>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="5" column="5">
+            <property name="name">
+                <cstring>kDoubleNumInput15_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="6" column="1">
+            <property name="name">
+                <cstring>kDoubleNumInput15_3_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="6" column="2">
+            <item>
+                <property name="text">
+                    <string>°C</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>K</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>deg_from</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="6" column="6">
+            <item>
+                <property name="text">
+                    <string>°C</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>K</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox11_2_2_2_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>80</width>
+                    <height>25</height>
+                </size>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+        </widget>
+        <widget class="KDoubleNumInput" row="6" column="5">
+            <property name="name">
+                <cstring>kDoubleNumInput15_3_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>100</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLabel" row="6" column="0">
+            <property name="name">
+                <cstring>textLabel1_5_2_2_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>0</red>
+                    <green>132</green>
+                    <blue>188</blue>
+                </color>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="text">
+                <string>Range from:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="6" column="4">
+            <property name="name">
+                <cstring>textLabel1_5_2_2_2_3</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>0</red>
+                    <green>132</green>
+                    <blue>188</blue>
+                </color>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="text">
+                <string>to:</string>
+            </property>
+        </widget>
+        <spacer row="6" column="3">
+            <property name="name">
+                <cstring>spacer2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>16</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLabel" row="4" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>textLabel1_5_2_2_2</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>16</height>
+                </size>
+            </property>
+            <property name="paletteForegroundColor">
+                <color>
+                    <red>0</red>
+                    <green>132</green>
+                    <blue>188</blue>
+                </color>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="text">
+                <string>Surounding temperature:</string>
+            </property>
+        </widget>
+        <widget class="QFrame" row="8" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>magnetism_frame</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>textLabel1_5_2_2</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>132</green>
+                            <blue>188</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Magnetics field:</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>magneticspop</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image5</pixmap>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="10" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>sensor_frame</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>textLabel1_5_2_2_3_2</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>132</green>
+                            <blue>188</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Sensor activity:</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>compositionpop</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image5</pixmap>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="11" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>acceleration_frame</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>textLabel1_5_2_2_4</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>132</green>
+                            <blue>188</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Acceleration:</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>a_pop</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image5</pixmap>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="12" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>vibration_frame</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>textLabel1_5_2_2_5</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>132</green>
+                            <blue>188</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Vibration:</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>vibr_pop</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image5</pixmap>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="13" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>pressure_frame</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <widget class="QPushButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>press_pop</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image5</pixmap>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>textLabel1_5_2_2_6</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>132</green>
+                            <blue>188</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Air pressure:</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="7" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>light_frame</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <widget class="QPushButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>lightpop</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image5</pixmap>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>em</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>132</green>
+                            <blue>188</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Electromagnetics spectrum and intensity:</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QFrame" row="9" column="0" rowspan="1" colspan="7">
+            <property name="name">
+                <cstring>humidity_frame</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Plain</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>textLabel1_5_2_2_3</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>16</height>
+                        </size>
+                    </property>
+                    <property name="paletteForegroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>132</green>
+                            <blue>188</blue>
+                        </color>
+                    </property>
+                    <property name="font">
+                        <font>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Air humidity:</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>humiditypop</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image5</pixmap>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="PNG" length="1545">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005d0494441545885c597df6f145514c73f33b333bbdbc2f60755a015014502225a3a4a8c808a89921013d1f8e80f4017ed437d32bc9898e83f60a22fea4614e5451f447de0c15f181194842eb60435e86aabd66de98fddb6bb3b333b33f7fab0bfbbbb141a134ff24d66ce3977cef79e39f7dc7be17f16e55a9cfbfa87d683dc0da217e8458aaa6fc861a41846b8274d8e2600118bc5e47f42a0af7fe800b01fb81724204035400d151c840dbe5d3de40cc23b66ca778e006e2c16134b22d0d73fb40d457d0d29ee43d5c06807a3132318664d648ebb6e480190b1e1ab91b558761e9c49b0a741ba80b4f0ed174dde7f0fb01b11694aa038eb23008457612cbb9e67b68fb1f5a6656cbca18590a1d68d199b72f8e1e7594efd02e74674c88e160c7efeb8c9bbcf0273b158cc5b944039b81684c8469ed8f6378fece8a26359a069b6e4824f9dba90e6ad933a13e3e3e06540b8c3a63cf21030599d09ad69f0400b6bd6ace6c53d191ebcb3133da0e2099ac217b2063d5d41766d8254c663645201e9af4cca2db77633f4a9699a5e3c1e977504fafa7fdc06ca09349d9e9e1e0e3f2c59b73284ebc92521a0296c5d17e6f29ce0af6900794bd25dff7db7fad35f45122ccce9bbe043642b07774d13696921e72cba92eae49ba159eebfa3adfcfed4ee0813f33abffd9e01a3fd1504e7011770cb19e8eb8f1f00f91ce16e9edc9e62f3da65b8beacc1e98bf38c4c388c4c385cdfa1d7d94b3e03fb5633326197751258d725f836d10eeedceaa4d89cee5686cf9ba699af64408afd283a2bbb96b369ad4dd6ae5fba03fb56979fbffe71b6ce7e712457f659383ed2aaf368ef14c7cfe8a0851e43f001600500fa9e3fb71eb897d00a1ed8308de7b7e2f9fe15d39c736aed7f249d1a82d576d7934ccfe59168105a01d678efa0b377b3193c912a6560370046275d9139b256d3c655966a9fcb69b72678c93e3e63f3e78cc2d9b19e8ac1b0c01a07bd6d0770be44a01760559b4036985d2329f9642c5117bc649fc9f89c1d5b5ba3378261f200aab10908570868213ac279325731fb5260a0617080ef7ed5011da5b455151793a6028a0eaabf0141a852846a8848304fd6a910680dd6b7db6a69161ce0d24c67f9594a50940a0902ade0580aa09708280059d760deaab4ead6e0d2822f14a5f996a75632206c525688805a693ce3998ae7a5994e06f655de77bd0aa75ebe6a0eb544bc6c5957242087f1ed9d692788271b6f38cb0d17d06b74d74a22a082eb53d8aaa59b0044e1274b310c90b53c1c5f6b08dbd71b7e74d7ab8b07d6b5021485c29901c07712805b2020dc9300e4a75155b521b42bd4e3622434b502f2d305653e15076c15a078863b833589aeb884038d71255948a223ec96511aaf2b2e589320bc0b66f8f3514aad181008ef182af7cca5a7b8b9a7b54998ca6fb8a963aecefaf41b707420522010b2eaec89b16ce1ff7b992fd0c80256798144a3d1e0a076e81b50eebe75e33a3a5aaf7d1b2ec9eb87ba78e1eda91a5d2aabf0d3a591c2ece53b03c02890ac2e7917df3e8c16fe36313ac6cedbaf43d79646e2a5a3ffb0bcaa87b8be426274b2f06227df24481a48537d1e88c7e3f26133904ccadb52be50f74ca51d36741b18ba86ae294b868ac7e9e11439db857cea3553ffe42b2009a463b198bfb0b63d93a36fe15b87e77379be1c4ce13a16415d5d125cc7e2cbc114f3b97c21b8f6d1c7c00490023c5870268cc7e398a6e977333494945b665da13d7869ccc6152a6b56a8e8019580caa250a4c7e06f39bebf98c6f54475f0247019b04ab7a6865d3a1a8daa40cba0f7f8fd18edafa0687d415de5c6552d6ce9167476b6a169b58dc9f75d666666b9f88fca9fe3391c5780f02e6027df348327ce17677e19c8551fcb9b6e13451221a063503e71102df4188ad65bb2870de86a2bd4f0d4ac8795af1a2cbc0b78992f4cedc3cf8ac536554c7bddede88a57b36834aa50d82f5a81f64167ef66f4b61da8c626547d035256c64b3781ef24c8a7e2c5269305668b04b280d7e8b27a5597d36236f46246c245848aba52210b0a476d1bb08ab059e472fa2f200606ca7677fed20000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="1535">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005c6494441545885c597cb6f1b5514c67f33e319db49ea3c1ada2669e983821a4a21cd40177d00451404aa44a958f28608225156a81b56f00f80040b8ad5964037740185050b1e2a0f511e222e4954a82a8c524aeab479d8496ccf8c67e65e161ec74e6c27b442e2489f3cbe8f39df3973ee39f7c0ff2ccab52ceeed1fda08722f881ea007292ade2187916218e19e36194802221e8fcbff84406fffd033c0d3c0dd200101aa016aa4b840d8e0db955bce20bc13a63c7a0c70e3f1b8b82e02bdfd43db51d43790e21e540d8c1630da30c251d6c566b96b6d1a80ac0d5f8daec7b20be04c803d05d205a4856fbf62f2fe7b805d8b485d0281d5c70088aec1685ac5733bc6d8b6a9895bd6361031d4aa3d63930e3ffe3ec377e7e197511d72178b137ee16393e3cf03b3f178dc5b96c0bc722d0cb15b787cfbdf3cb2ab9dd6a6505d6fc945affa6e24c391d33a57c6c7c1cb8270874d79ec0160a2d2135a5de5a106d6adebe09507b3ecbbb30d3da4e209eac2177201badac3ecd902e9acc7e88402d25f9d925b6fed64e813d334bd442221ab08f4f6ffba1d94cfd074bababa38bc5fb2617504d793d78590a6b06d4394abb3824b5300f2e694bbf1874ef5b74b010916fbf438f810dbc6b37ba68835349077aa4fd2d74333dc7b4773ddcfb1589edc1be3ca9cce1f7f66c168790dc159c005dc790ff4f6279e01f902d14e9ed891a67b7d13ae2f6be2e0ee959cfc669255ad7add359590c08676c1b7c91670673b52a23bd3a90c9f354db3500e65299e068dd5ed2bd8b2be919c2dea02e0d0810e7e3e9f5d725d25628d3a8ff6cc80a283163908b400ba0ad0fbe22f1b81bb89ace4becd53783ee41dbf2e4a72e84007e746f34baecd3b3e33398f3f5379241a445682a2f50c3a0f770391520cec05c068a33d364bceaa9bb8aae4d0810ede3a9562558b5e35373e6df3d7b4c24f635de541c3026b1cf4e65dc0d912811e8035cd02090bacbc16124dd185c9693aebf3d3d8fa056346384a014035b600d132012d426bb440f61aacaf4502c07605e7af44011da554aa82c3a4a914e340f53723ca9f00d408b170819c5326d018ae4eb7cb9178eeed692e4cb72d18971214a54c8250233896422908095272ce3598b398c762b15dc1af7f87972471f4a5b6aa31a57ec953cb1e1036692b42482d279ef16c79e562abeac99ed7ebcfcd13f172f3630101398c6fefce38613c59bbe0ac30dc224f09501df1cb290708a9e0fa144bb5749380286a93621845236779e85a6d0292a5e36129e57a45c5b1ec42f1c1779268b8456dc23d8da641610a55ed58da8c6b540e41e497a43015fca61344b143002603c9415e388335b15357da095515e9b2a4ad85eeafa5bc35ead6dcebf9803501c21b31a39f5f04ac92bf05c23b81caced9cc24377535d625d01ab18018004fbd35cba6d6fa64174b722c57fcfe5ef60b347280a501241209f6f72a2329d5bcdf73b26bdb5b63b4447d22a1da78c86ce0e57727ebced782e50852972f15ad573e7813b802642a23cec5b70fa345bf4d5e1c63f7ed37a06bb56fd5af0e5c66c5d2e96081b8be42f2e244f18f9d7a8730192043e57d209148c8fd66289592b7a57da13e389971d8dc6960e81abaa65c37543cbe1f4e93b75d28a4df30f5535f012920138fc7fdc567cb331938826f1d9ecb17f872308deb588475f5bae03a165f0ea699cb178acab5931f05ae4f031e2cba132612094cd3f43b191a4ac9ad33aed0f65d18b37185caba952a7a4825a4b22c14e931f8479e1fce65703d51a93c055c05ac52d754334bf7f5f5a940c3a0f7d8bd182dafa168bd615de5c6350d6ced14b4b535a3690b8fa3efbb4c4fcf70eeb2ca5fe3791c5780f046b053ef98e1cfce06965f05f295d7f2ba65222011015a07e5e3cfa2450ea2683da5f9a801edcdc5189e9cf1b00a159b85378297fdc2d43efc3408b6c9c0ed55ddd192ad595f5f9f42b15e34022d83cec3dde8cdbb508d2da8fa66a42cef976e12df495248278224930366020239c0abd5acfeabe634f0861e78241a20128c95025950bc6adb8015c06699e6f41f787e48de2c016f640000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="1409">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000548494441545885c597df6f145514c73f33b333bbdbd6fea20ab454402b29544ce928517e292648424854e2232aa26bec036f844713e21fc0032f900d20ca8b3e08fac083403012410c5d680948084b2850b7d01fdb1fbb3bb33b33f7fab0b33fda524b4b134f723277eecc39e77bcf3df79c7be07f2665363f7774762f07b919443bd08e14653a640f52f4209cf326c7e3808846a3725e007474767f06ec0236810404a806a8a1fc0fc206cf2e17b988704f98f2c851c08946a3624e003a3abbd7a0a80790e26d540d8c5a30ea3182619aabc77863491280940de7ee2dc5b273901d007b08a403480bcfde6bf2ddb780fd2420d302f0577d1480f0228caa17f87c6d1fab5faa62c5920a42863a45a66f30cb9f7f8f72e1165cb9a743ba37ffc1cb9d3439f60530168d46dd1901148d6b41a85ec1ce350f797f7d0375558169bd2527a9ba707d84c3e7751ef5f7839b02e1f498f2e87bc040b927b4698d072a686e5eccdead29b6bc5e8f1e507105d3b227e4046e6a08b2b1159229977b030a486f6142b6ad6aa4fb67d334dd582c26a700e8e8bcb60694d3683a4d4d4decdb2e59b63084e3ca3971405358bd2ccce331c1832100f94ac2597ea951bdf9c007c1649f1e030faa57b37be310d5151564b2339ea419e993cdd53c1ad7b973370546ed7e04570107708a1bd7d119cbbb3edcc8c7eb72bcd5565b54f0d7add49c0caf6dad2a8e134359be39493e30ddf4d7a672e2203056f28014bb507416363c47eb529bb43df1c4ecf960f1ac8c1f3c9598a0a3ba52e7c3f6414e5ed4410bed40f03d60a9001d5f5d590e6c22b480775b86703dc864bd22cf950af2a36997bb890c120d420b40d1dabbb2db5602a18207360360d4d3503d46da9a3671cd8ae27d19ee0f2b5cee6b2a4d1a1658fda0d7ac07ae1600b4032caa11481ff97cd070cae372dfd2097346304c0e40355a8170098016a22e9c23354fabbff6300804510aa5ca3f4c9a0a283aa85e0ba2b405a086a80ee648674b002a8353d3edd3d2ede1fae2584a50941208029590b514402f005000d28ec1b8554ad595c139db9f40caf4254f2d7940d824ad1001b59478fae776fc6706e2a68b733e00d983676f18c90671e5f405e75929a082e3912fd5d28903226f4d8a1e148db4e5a26bf30f402fab38969dcb0fbc6c1c0d276f4d38e7d134c80da1aab3cb784f435a792ce786fc673246185b05f0ef7017b106d0158770602acf96eac24e910b3a74c5016b00847bdd0cffda0b58057f0b847b029575632383bcdc543945e1a707add901084d9d8bf7a5f3fbefa6cea09106ace201894422c12eedcbdf407973d58a65d4553e7b192ea7645ae1e6ed7bf9d5cb237b805e20511e710e9ebd0f2dfc7bbcb78f0daf3d8faecd0f08c75388f70ee45fecc421828c002380538ccf582c26b79b814442be9af484ba7570244b4ba381a16be89a32675671f9a32749c67620973c60eaa7ce010960241a8d7a9373ad6b72fc309eb56f3c93e36c5712276b11d4d539b193b538db95643c93cb1bd77efc09780424011726dd0963b118a6697a8d74772764dba823b42db7fb6c1ca1d2bc40450fa80454666445ba74ddc970e9c6088e2bca8d2780c78055e89a9e98a52391880a5474b91fbd8351bb1f45eb08ea2a2f2eaaa0ad51505f5f83a6e913643ccf617878941bffa8dcefcf90750408f73a76e290193c7dd55ff96320537e2d9fb64cf82042405d97dcb91b2db403456b2f7c0f1bd050938fe1c151172b57262cdcebb8a933a6f6c32f7eb00dfa6e9fd21dfd676b16894414f2f5a212a8edca6e5b895eb31ed56845d55b90b2242f9d385e364e2e19f3934c1a18f501a401f749cdea5335a7be3774df23619f43fe5c219005f9abb60d583edbccd09cfe0bb1bd976f7f80230f0000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="1470">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af400000585494441545885c597df6f145514c73f33b333bbdb427f51055a901f5652a898d251a2fc524c90849088c4475444d7d807de904713e21fc0032f900d20ca8b3e88fac0838018511043175a0212a48602750bfdb16dd9edcceeccdcebc3cefe68bbdb961f89273999b973eeb9e77bce9c7bcebdf03f93f22893dbda3b9780dc08a21568458aa23564175274219cb326c7ba01118d46e55301d0d6def921b013d8001210a01aa086b213840d9e5dac721ee11e37e5e12380138d46c56301686bef5c85a2ee478ad75135306ac0a8c30886595835ca2b0b1200246d38737b11969d81743fd883201d405a78f61e93afbe04ec5240ca02f0bd3e0240781ec6ac67f968752f2b97ce62d9820a42863a49a77720cd1f7f8d70ee065cbaad43aa272bf032274c8e7e0c8c46a351775a0079e35a10aa96b163d53dde5e5b4fedac40d968c9094b9dbb3acca1b33af7fbfac04d8270ba4c79e42da0bf38125a59e3810a162e9ccf9ecd4936bd5c871e50710565d913721c37d60759df0c89a4cbed7e05a437372e5b5634d0f983699a6e2c16939300b4b55f5905ca49349dc6c646f66e952c9e1bc271e56371405358b938cc8351c1dd4100f942dc5972a141bd7ed707c1c4981e050faa56b26bfd205515158ca5a7dd49d3d2fb1babb8ff50e7d63f49306af621b80c388093ff716dedb16ce8c30dbcb726c36b2d359316faf34672dc7875f3ac19c900e28369be38413631ddd4e7a672fc00305a8880143b5174e6d6cfa679914dca9ebc75776f9b3f6efcf3959119c900aa2a75de691de0c4791db4d076045f035600a0edd34b4b800d84e6f066d320ae5789eb7993004ca4b174f939c532c7950c8e669068109a03565f6b477acb72337832918bc046008c3aeaab464959650bd7389a6a5eca12f40dd9dc1952b8d8db58101816587da057af052ee700b402ccab16c8693c2be76529d950d2e362efa271df8d60980c806a3403e102002d446d38437286de0353cefded6f1dd05172adcadf4c9a0a283aa85e1382502109d51055c10ca97461d1cae0e4723b916ca734889b4375f9772941510a20085442da52003d0740014839060fad42a9ae0c4e6dfccabd60ded86753cc53cab73cb510016193b04204d442e1e92bdada3787ead8bd6dbc76b19733a13c103795ffe603905d78f6bae1741057966e38b30d07d01fc9e0440aa8e078645bb574ba0191b52645178a46ca72d1b5d20024d3e74339d28b3a8e6567b22f5eba1b0d276b4d3867d134c80ca2aaf34b2cf164a41563cf0cfacf448c30b60ae09fe1ce63f5a32b0ee140697e14aa0d3b79cee9eb8a03563f08f7aa19fea9875c290604c23d8eca9ad1e1019e6fac2cb9e80707ac71e3a5b5c5b209004293f5bb7b53d9ffef264fa19102acfc06894422c10eed935f407975c5b2c5d4563e791b2ea6444ae1facddb59efe5e1dd400f102fce3807cfde8b16feb5bba797752f3d83ae3d1d108ea7d0ddd39f1dd8f1830419068601279f9fb1584c6e3503f1b87c31e10975f3c0709aa6060343d7d035e5b159c5e5f7ae0463b60399c47e53fffe0c100786a3d1a837716fb926c70ee1597b1f8e6538dd91c0495b0475f5b1d8495b9cee48f0702c9335ae7dfb1d701f48002e4c3813c662314cd3f41ae8ec8ccb961147689b6ef6da384265e11c153da01250999615e9d2716b8c0bd786715c516c3c0e3c00acdcada964958e44222a50d1e1befb0646cd3e14ad2da8ab3c37af829606415d5d359a36be2a7a9ec3d0d008d7fe55b9d33746da1120dcabd8f18366f0e465dff307c058f1b1bc6c9bf0418480da0eb963175a683b8ad69a93870da8afcee6f0c0888b95295216ee55dce42953fbe6473fd906fcb04fba1d4d79358b44220ad97e5109d474a4b72c47af5e8b6a34a3ea4d4859d0974e375eba9b4c22e617991430e20348016ea9cbea8c2ea77e34743f22619f43feb75c220bb2476d1bb07cb699e672fa1fe60ab790e49809650000000049454e44ae426082</data>
+    </image>
+    <image name="image4">
+        <data format="PNG" length="1551">89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af4000005d6494441545885c5975d8c13d715c77f33e319dbbb8bf7834d80dd000b0504a144cb4e1a55252425523e849092a2264fe4b371d27d489e125e22554a5ffb10a97d496a8594342f6da5a6ed4354050851482091b0611741a305472ce9e285fdb077b13d63cfccbd79f0f86bed810555ea918e3c9e73ef3dfff39f7bceb917fecfa2dccee091d1b10d20f78018068691a2610d398e14e308e7b8c9e13420128984fc9f0018191d7b117801780824204035408d5406081b3cbb71ca4984fb9129df3f0438894442dc118091d1b19d28ea3b48f130aa06460f187d18e1286b638bfce49e2c00791b8e5d5e8f6597a13403f61c480790169efd86c9877f02ec76400201f8511f0220ba1aa3eb6e7ef5c0143b3676b1e59e0e2286da32676ab6c4d7ff59e0c4b770fab20e85c98ac12b7f6cf2c1cbc0622291706f09a0e65c0b436c0b0776fe972777f5d3db150a644b2e59eac4b91cef1dd7b9363d0d6e1e84336eca438f01338d4c6881ce431dac5dbb86371ecff3e8fd7de821155710a89e904d3ad81f66f756c8e65d2ecf2820bd5519b9fdde01c6fe699aa69b4aa5640b8091d1b33b41f9044d6770709083fb2443ab2238aebc230d690a3b86a25c5f147c3f072037679c0da706d40bdffb2058cae907e0416c072fed9e23d6d141b154cfa47f9fcef2c4fdbd819f21489edb13e3da0d9d4bdfe5c1e8791bc119c0019c1a0323a3a91741be4a7480671fc8b26d7d178e279bf49987fbf9f0e87506561a2d36c7931c3bbbc0a5ab3697aeda4d632430d42ff822dd03cee29a8cd8961b50c6cf98a659ae3320c50b283aabfa57b075bd4dc16e9fba6f3e3dc8effe3685b9b9abadad2a9f9d5d68b2c53a757e313ccbc72775d022fb11fc19b05480915f9fde003c4464258f6c9ac3f5a058f25ab4d151f2623ed00ecdf3170a2edf658a483488ac04451b4e96f66e03225506f60060f4d11f5ba4600516ae1626d6dd156e6b2f5882e9799b2bf30adf4cd599c1b0c09a06bd7b1770a65a4d860156770b24eda35f1a6115c49599522003f379afd9396084a39507d5d80a44ab0c0ca345e88d96c92f23fa764c44f4e6caf8e5451dd051aaadca4f264d05141d546f1382487d961a21162e5328899ade0e08db691e3f31dfc7c47c5fcdb9d25828439d20a502e855061480826370c3aa97eacef69f3710449028c12d4fada7a1b0c95a11426abdf04ce7eb2327e6fb78eda96000bb7f0b277e73739035206ea1f6ce0720c7f1ec0773a530ae6cdf7056180ea0073a5f8e8454703c2aad5a3a694054bc49318ea251b05c74ad3d00496bfb5dae73bda1e35876b9f2e095d26838156fc2398ea641790e555db3bc7096e91cfc9d5f95f29cff9b4d11c55601fc33dc49ac1974c5211a6aafb7e3bc37ead4b43a5f571cb06640b8e7cce8a7938055e55b20dc8f50f9d9626e961f0d76062c5bd903cfff61918d6d9b62ac0e2062b558d35385caf777f347d02800562d41e2f17838a9bdf239283fbd77cb10bd9dad07dadfbfd2cfeb7f9cbd79e801922d285c98b85c895ebeff1a3009641a779c83671f448b7e919e9ce2c1fbee42d79a41bc75f82a2b6ea336d416f614d29333953f76e65dc2e4801c8de781542a25f799a14c46fe38eb09f5f1d95c894d030686aea16bca1dab8acb57e3598ab603e5ec3ba6fe8f634006c82512096f696eb92687dfc3b30ede2896399acce2942cc2ba7a47ea942c8e26b3dc28962bceb5bffe1db806640117969c0953a914a6697a038c8d65e4f60547688f4e4cd9384265ed4a153da41252b9a52ad22579a9c8a9f3391c57343acf00d701ab7a6b6a5ba5e3f1b80a7424dd5ffe1ca3e76d146d24acabac5bddc1f601415f5f379ad65c153dcf617e7e81f35755ae4c17293902847b0e3bf3ae19fee48c1ff975a0d8782c0f6c133e8808d09b94075e428bec47d186abf6a801fddd953d3cbbe062951b260bf71c6efe88a9fde55ffe669bf5696fb91dddf46a168fc7152afda213e84996f66e43efde856a6c45d537f92db522d249e395d294b329bfc81480051f400170db5d56977539f5d9d07d46a2be46fc77d58d2ca81cb56dc0f2d5e61697d31f001b121d02fe4dc76c0000000049454e44ae426082</data>
+    </image>
+    <image name="image5">
+        <data format="PNG" length="170">89504e470d0a1a0a0000000d49484452000000090000000b0806000000ad59a71b00000071494441541895636468d9f39f810060fcf083a01a0646060e7e828a5818acac202ca7624c23f7f5324214dd7c0b5584c508a81c0bc3bf5fb8ed81ca3112e33b268609598c78554cc8626462f8ff9f81a13f13bbc2fe4c4686ffff19985004d015c0ad63f8cf00c7fd191089fe0c4664710029db2487d6cb5c6b0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>cl</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>lightpop</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>light_popup_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>magneticspop</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>magnetism_popup_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pb</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>next_page_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>humiditypop</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>humidity_popup_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>compositionpop</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>sensor_popup_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>a_pop</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>acceleration_popup_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>vibr_pop</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>vibration_popup_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>press_pop</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>pressure_popup_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pb</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>page_back_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pf</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>next_page_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pl</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>play_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>sto</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>stop_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pau</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>pause_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>ne</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>new_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>sa</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>save_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>lo</sender>
+        <signal>clicked()</signal>
+        <receiver>Simulationwidget</receiver>
+        <slot>load_clicked()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>pressure_popup_clicked()</slot>
+    <slot>save_clicked()</slot>
+    <slot>vibration_popup_clicked()</slot>
+    <slot>new_clicked()</slot>
+    <slot>magnetism_popup_clicked()</slot>
+    <slot>load_clicked()</slot>
+    <slot>light_popup_clicked()</slot>
+    <slot>humidity_popup_clicked()</slot>
+    <slot>acceleration_popup_clicked()</slot>
+    <slot>next_page_clicked()</slot>
+    <slot>sensor_popup_clicked()</slot>
+    <slot>page_back_clicked()</slot>
+    <slot>play_clicked()</slot>
+    <slot>stop_clicked()</slot>
+    <slot>pause_clicked()</slot>
+</slots>
+<layoutdefaults spacing="5" margin="10"/>
+<includehints>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+</includehints>
+</UI>

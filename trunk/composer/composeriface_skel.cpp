@@ -6,7 +6,7 @@
 **
 *****************************************************************************/
 
-#include "/home/bastl/Kdevel/keda/composer/composeriface.h"
+#include "/home/bastl/Kdevel/Keda/trunk/composer/composeriface.h"
 
 #include <kdatastream.h>
 

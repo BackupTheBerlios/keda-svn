@@ -3,7 +3,7 @@
 /****************************************************************************
 ** Form implementation generated from reading ui file '/home/bastl/Kdevel/Keda/trunk/src/kedawidget.ui'
 **
-** Created: Di Jun 12 21:35:20 2007
+** Created: So Jul 8 14:57:10 2007
 **      by: The User Interface Compiler ($Id: qt/main.cpp   3.3.5   edited Aug 31 12:13 $)
 **
 ** WARNING! All changes made in this file will be lost!
